@@ -1,3 +1,4 @@
 # Crypto_Clustering
 Clustering Crypto
-Cluster analysis of tradable cryptocurrencies
+A Cluster analysis of tradable cryptocurrencies
+![](https://i.stack.imgur.com/EKFve.png)
