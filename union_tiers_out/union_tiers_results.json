@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-10-02T23:17:19.836958+00:00",
+  "n_events": 1294,
+  "n_winners": 808,
+  "n_losers": 486,
+  "overall_wr": 0.624420401854714,
+  "overall_pnl": 156.97571757515018,
+  "n_filters": 118,
+  "n_combos_55plus": 3213,
+  "n_combos_75plus": 862,
+  "n_combos_90plus": 313,
+  "n_combos_100plus": 308,
+  "unions": {
+    "100%+": {
+      "n": 51,
+      "wins": 51,
+      "losses": 0,
+      "wr": 1.0,
+      "pnl": 144.27861234509393,
+      "n_combos": 308,
+      "assertion_pass": true,
+      "assertion_detail": "51/51",
+      "is_win_only_bug": false,
+      "per_day_5": 6.87041011167114,
+      "per_day_100": 137.4082022334228
+    },
+    "90%+": {
+      "n": 60,
+      "wins": 58,
+      "losses": 2,
+      "wr": 0.9666666666666667,
+      "pnl": 146.74940067345293,
+      "n_combos": 313,
+      "assertion_pass": true,
+      "assertion_detail": "60/60",
+      "is_win_only_bug": false,
+      "per_day_5": 6.988066698735854,
+      "per_day_100": 139.76133397471708
+    },
+    "75%+": {
+      "n": 338,
+      "wins": 252,
+      "losses": 86,
+      "wr": 0.7455621301775148,
+      "pnl": 288.30746439852766,
+      "n_combos": 862,
+      "assertion_pass": true,
+      "assertion_detail": "338/338",
+      "is_win_only_bug": false,
+      "per_day_5": 13.728926876120365,
+      "per_day_100": 274.5785375224073
+    }
+  },
+  "top_15_combos": [
+    {
+      "filters": [
+        "prob>=0.65",
+        "stream~t",
+        "cell~MY290"
+      ],
+      "n": 8,
+      "wr": 1.0,
+      "pnl": 20.36090965025225,
+      "wins": 8,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~IND2_T",
+        "side=DOWN",
+        "stream~t"
+      ],
+      "n": 7,
+      "wr": 1.0,
+      "pnl": 18.823059240603047,
+      "wins": 7,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~C8FLOW",
+        "prob>=0.75"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 9.149910787177458,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~FILT402",
+        "side=DOWN"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 20.464301141228404,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "side=UP",
+        "stream~d",
+        "prob>=0.80"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 8.124850992448089,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~C8FLOW",
+        "prob>=0.65",
+        "prob>=0.75"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 9.149910787177458,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~C8FLOW",
+        "side=DOWN",
+        "prob>=0.75"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 9.149910787177458,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~C8FLOW",
+        "side=DOWN",
+        "prob>=0.70"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 9.149910787177458,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~C8FLOW",
+        "prob>=0.75",
+        "stream~d"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 9.149910787177458,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~C8FLOW",
+        "prob>=0.75",
+        "prob>=0.70"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 9.149910787177458,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "cell~C8FLOW",
+        "prob>=0.75",
+        "stream~8"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 9.149910787177458,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "prob>=0.65",
+        "cell~C57_A457_EU",
+        "cell~MY290"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 14.832106798023656,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "prob>=0.65",
+        "cell~INCUMBENT",
+        "cell~MY290"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 13.78773413967788,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "side=DOWN",
+        "cell~FILT402",
+        "stream~t"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 20.464301141228404,
+      "wins": 6,
+      "losses": 0
+    },
+    {
+      "filters": [
+        "stream~t",
+        "cell~IND2_L",
+        "cell~MY290"
+      ],
+      "n": 6,
+      "wr": 1.0,
+      "pnl": 20.125518049860972,
+      "wins": 6,
+      "losses": 0
+    }
+  ],
+  "weekly_walkforward": {
+    "37-2026": {
+      "n": 48,
+      "wr": 0.7708333333333334,
+      "pnl": 54.90294743402061,
+      "wins": 37,
+      "losses": 11
+    },
+    "38-2026": {
+      "n": 62,
+      "wr": 0.8709677419354839,
+      "pnl": 134.92266898449432,
+      "wins": 54,
+      "losses": 8
+    },
+    "39-2026": {
+      "n": 95,
+      "wr": 0.7684210526315789,
+      "pnl": 94.22453504690718,
+      "wins": 73,
+      "losses": 22
+    },
+    "40-2026": {
+      "n": 133,
+      "wr": 0.6616541353383458,
+      "pnl": 4.257312933105551,
+      "wins": 88,
+      "losses": 45
+    }
+  }
+}
