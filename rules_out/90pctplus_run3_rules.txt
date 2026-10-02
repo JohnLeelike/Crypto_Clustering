@@ -1,0 +1,33 @@
+RUN3 -- 90%+ WR tier -- 31 qualifying rules
+====================================================================================================
+  asset==doge & prob>=0.753                                               n=16   w=15   WR= 93.75%  pnl@5=  +28.78
+  cell==C8DOWN & prob>=0.697 & prob<=0.723                                n=16   w=15   WR= 93.75%  pnl@5=  +28.53
+  asset==hype & prob>=0.626 & prob<=0.723                                 n=14   w=13   WR= 92.86%  pnl@5=  +28.12
+  asset==hype & prob>=0.675 & prob<=0.753                                 n=14   w=13   WR= 92.86%  pnl@5=  +24.98
+  asset==hype & prob>=0.697 & prob<=0.753                                 n=13   w=12   WR= 92.31%  pnl@5=  +23.65
+  side==UP & cell==CELLS13 & prob>=0.753                                  n=13   w=12   WR= 92.31%  pnl@5=  +12.80
+  cell==BASE & stream==prec & prob<=0.602                                 n=13   w=12   WR= 92.31%  pnl@5=  +49.52
+  cell==C57_A457_EU & prob>=0.675 & prob<=0.753                           n=13   w=12   WR= 92.31%  pnl@5=  +22.50
+  asset==bnb & side==UP & prob>=0.753                                     n=12   w=11   WR= 91.67%  pnl@5=  +16.25
+  asset==doge & side==UP & prob>=0.753                                    n=12   w=11   WR= 91.67%  pnl@5=  +19.33
+  asset==sol & cell==C8LGBM & prob<=0.675                                 n=12   w=11   WR= 91.67%  pnl@5=  +30.73
+  asset==xrp & cell==BASE & prob<=0.753                                   n=12   w=11   WR= 91.67%  pnl@5=  +39.47
+  cell==GREEDY & stream==consensus_obl & stream==prec                     n=12   w=11   WR= 91.67%  pnl@5=  +29.16
+  stream==consensus & stream==prec & prob>=0.653                          n=12   w=11   WR= 91.67%  pnl@5=  +21.16
+  asset==hype & stream==shadow                                            n=11   w=10   WR= 90.91%  pnl@5=  +13.58
+  asset==bnb & cell==C8LGBM_gL & prob<=0.653                              n=11   w=10   WR= 90.91%  pnl@5=  +34.57
+  asset==hype & stream==c8lgbm & prob<=0.723                              n=11   w=10   WR= 90.91%  pnl@5=  +19.70
+  cell==GREEDY & cell==INCUMBENT & stream==prec                           n=11   w=10   WR= 90.91%  pnl@5=  +25.38
+  cell==GREEDY & cell==MY290 & stream==consensus_obl                      n=11   w=10   WR= 90.91%  pnl@5=  +27.13
+  cell==MY290 & stream==consensus & prob>=0.653                           n=11   w=10   WR= 90.91%  pnl@5=  +19.12
+  cell==CELLS6 & stream==prec                                             n=10   w=9    WR= 90.00%  pnl@5=  +24.96
+  asset==eth & cell==C57_A457_EU & prob>=0.653                            n=10   w=9    WR= 90.00%  pnl@5=  +18.43
+  asset==hype & stream==shadow & prob>=0.602                              n=10   w=9    WR= 90.00%  pnl@5=   +9.13
+  asset==hype & stream==shadow & prob<=0.753                              n=10   w=9    WR= 90.00%  pnl@5=  +12.47
+  asset==xrp & cell==BASE & prob<=0.723                                   n=10   w=9    WR= 90.00%  pnl@5=  +32.97
+  side==DOWN & cell==C8FLOW & prob>=0.675                                 n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  cell==BASE & cell==MY290 & prob<=0.602                                  n=10   w=9    WR= 90.00%  pnl@5=  +38.69
+  cell==C57_A457_EU & prob>=0.675 & prob<=0.723                           n=10   w=9    WR= 90.00%  pnl@5=  +15.80
+  cell==GREEDY & stream==prec & prob>=0.602                               n=10   w=9    WR= 90.00%  pnl@5=  +18.02
+  cell==HW_PRIMARY & stream==shadow & prob<=0.753                         n=10   w=9    WR= 90.00%  pnl@5=  +19.53
+  stream==c8down & prob>=0.697 & prob<=0.723                              n=10   w=9    WR= 90.00%  pnl@5=  +13.89
