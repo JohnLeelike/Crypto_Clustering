@@ -1,73 +1,624 @@
-CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
+CLASSIC / RUN3 -- 75%+ WR tier -- 1259 qualifying rules
 ====================================================================================================
+  stream==prec & prob>=0.653 & stream==newstreams                         n=9    w=9    WR=100.00%  pnl@5=  +22.40
+  prob>=0.653 & asset==hype & stream==shadow                              n=9    w=9    WR=100.00%  pnl@5=  +14.31
+  stream==consensus & stream==prec & prob>=0.675                          n=8    w=8    WR=100.00%  pnl@5=  +19.24
+  stream==consensus & prob>=0.675 & cell==MY290                           n=8    w=8    WR=100.00%  pnl@5=  +19.24
+  prob>=0.697 & asset==hype & stream==shadow                              n=8    w=8    WR=100.00%  pnl@5=  +11.85
+  prob>=0.653 & cell==MY290 & stream==newstreams                          n=8    w=8    WR=100.00%  pnl@5=  +20.36
+  prob>=0.675 & asset==hype & stream==shadow                              n=8    w=8    WR=100.00%  pnl@5=  +11.85
+  cell==IND2_T & stream==newstreams                                       n=7    w=7    WR=100.00%  pnl@5=  +18.82
+  cell==IND2_T & prob>=0.675                                              n=7    w=7    WR=100.00%  pnl@5=  +16.14
+  stream==consensus & prob>=0.675 & cell==IND2_T                          n=7    w=7    WR=100.00%  pnl@5=  +16.14
+  stream==consensus & cell==IND2_T & stream==newstreams                   n=7    w=7    WR=100.00%  pnl@5=  +18.82
+  cell==INCUMBENT & stream==prec & prob>=0.653                            n=7    w=7    WR=100.00%  pnl@5=  +15.83
+  cell==INCUMBENT & stream==prec & side==DOWN                             n=7    w=7    WR=100.00%  pnl@5=  +23.05
+  stream==prec & cell==IND2_L & stream==newstreams                        n=7    w=7    WR=100.00%  pnl@5=  +19.00
+  stream==prec & prob>=0.653 & cell==C57_A457_EU                          n=7    w=7    WR=100.00%  pnl@5=  +16.87
+  stream==consensus_obl & cell==IND2_T & stream==newstreams               n=7    w=7    WR=100.00%  pnl@5=  +18.82
+  cell==IND2_L & prob>=0.675 & cell==IND2_T                               n=7    w=7    WR=100.00%  pnl@5=  +16.14
+  cell==IND2_L & cell==IND2_T & stream==newstreams                        n=7    w=7    WR=100.00%  pnl@5=  +18.82
+  prob>=0.653 & prob>=0.675 & cell==IND2_T                                n=7    w=7    WR=100.00%  pnl@5=  +16.14
+  prob>=0.653 & asset==hype & cell==BASE                                  n=7    w=7    WR=100.00%  pnl@5=  +11.87
+  prob>=0.675 & stream==shadow & cell==IND2_T                             n=7    w=7    WR=100.00%  pnl@5=  +16.14
+  prob>=0.675 & cell==IND2_T & side==DOWN                                 n=7    w=7    WR=100.00%  pnl@5=  +16.14
+  prob>=0.675 & cell==IND2_T & cell==BASE                                 n=7    w=7    WR=100.00%  pnl@5=  +16.14
+  cell==IND2_T & side==DOWN & stream==newstreams                          n=7    w=7    WR=100.00%  pnl@5=  +18.82
+  asset==hype & cell==CELLS13                                             n=6    w=6    WR=100.00%  pnl@5=  +12.30
+  side==DOWN & cell==FILT402                                              n=6    w=6    WR=100.00%  pnl@5=  +20.46
+  cell==C8FLOW & prob>=0.753                                              n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  stream==cdc8 & prob>=0.753                                              n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  cell==C8FLOW & prob>=0.697 & side==DOWN                                 n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  cell==C8FLOW & prob>=0.697 & prob>=0.753                                n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  cell==C8FLOW & prob>=0.653 & prob>=0.753                                n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  cell==C8FLOW & prob>=0.675 & prob>=0.753                                n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  cell==C8FLOW & stream==cdc8 & prob>=0.753                               n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  cell==C8FLOW & side==DOWN & prob>=0.753                                 n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  stream==consensus & stream==prec & cell==CELLS6                         n=6    w=6    WR=100.00%  pnl@5=  +22.99
+  cell==INCUMBENT & prob>=0.653 & cell==MY290                             n=6    w=6    WR=100.00%  pnl@5=  +13.79
+  prob>=0.697 & asset==hype & cell==BASE                                  n=6    w=6    WR=100.00%  pnl@5=   +9.42
+  prob>=0.697 & stream==cdc8 & side==DOWN                                 n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  prob>=0.697 & stream==cdc8 & prob>=0.753                                n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  stream==prec & cell==IND2_L & cell==CELLS6                              n=6    w=6    WR=100.00%  pnl@5=  +22.99
+  stream==prec & cell==IND2_T & cell==CELLS6                              n=6    w=6    WR=100.00%  pnl@5=  +22.99
+  stream==prec & cell==IND2_T & stream==newstreams                        n=6    w=6    WR=100.00%  pnl@5=  +17.16
+  prob>=0.653 & asset==hype & cell==CELLS13                               n=6    w=6    WR=100.00%  pnl@5=  +12.30
+  prob>=0.653 & stream==cdc8 & prob>=0.753                                n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  prob>=0.653 & cell==C57_A457_EU & cell==MY290                           n=6    w=6    WR=100.00%  pnl@5=  +14.83
+  prob>=0.675 & asset==hype & cell==BASE                                  n=6    w=6    WR=100.00%  pnl@5=   +9.42
+  prob>=0.675 & stream==cdc8 & prob>=0.753                                n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  asset==hype & stream==shadow & cell==CELLS13                            n=6    w=6    WR=100.00%  pnl@5=  +12.30
+  stream==shadow & cell==IND2_T & stream==newstreams                      n=6    w=6    WR=100.00%  pnl@5=  +16.14
+  stream==cdc8 & side==DOWN & prob>=0.753                                 n=6    w=6    WR=100.00%  pnl@5=   +9.15
+  cell==IND2_T & cell==BASE & stream==newstreams                          n=6    w=6    WR=100.00%  pnl@5=  +16.14
+  cell==FILT402 & side==DOWN & stream==newstreams                         n=6    w=6    WR=100.00%  pnl@5=  +20.46
+  asset==xrp & cell==MY195                                                n=5    w=5    WR=100.00%  pnl@5=  +17.75
+  cell==BASE & cell==PREC191                                              n=5    w=5    WR=100.00%  pnl@5=  +17.32
+  cell==FILT402 & prob>=0.653                                             n=5    w=5    WR=100.00%  pnl@5=  +13.01
+  cell==FILT402 & prob>=0.675                                             n=5    w=5    WR=100.00%  pnl@5=  +13.01
+  cell==GREEDY & cell==IND2_T                                             n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==HW_PRIMARY & cell==IND2_T                                         n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==INCUMBENT & cell==IND2_T                                          n=5    w=5    WR=100.00%  pnl@5=  +11.73
+  cell==IND2_T & stream==filtboth                                         n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==IND2_T & prob>=0.697                                              n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  cell==PREC191 & stream==shadow                                          n=5    w=5    WR=100.00%  pnl@5=  +17.32
+  cell==C8FLOW & prob>=0.675 & asset==bnb                                 n=5    w=5    WR=100.00%  pnl@5=  +12.53
+  stream==consensus & cell==INCUMBENT & cell==IND2_T                      n=5    w=5    WR=100.00%  pnl@5=  +11.73
+  stream==consensus & prob>=0.697 & stream==prec                          n=5    w=5    WR=100.00%  pnl@5=  +12.04
+  stream==consensus & prob>=0.697 & cell==IND2_T                          n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  stream==consensus & prob>=0.697 & cell==MY290                           n=5    w=5    WR=100.00%  pnl@5=  +12.04
+  stream==consensus & stream==filtboth & cell==IND2_T                     n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==consensus & stream==prec & cell==HW_PRIMARY                     n=5    w=5    WR=100.00%  pnl@5=  +12.10
+  stream==consensus & cell==HW_PRIMARY & cell==IND2_T                     n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==consensus & cell==GREEDY & cell==IND2_T                         n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  asset==xrp & stream==prec & cell==MY195                                 n=5    w=5    WR=100.00%  pnl@5=  +17.75
+  cell==PREC191 & stream==prec & stream==shadow                           n=5    w=5    WR=100.00%  pnl@5=  +17.32
+  cell==PREC191 & stream==prec & cell==BASE                               n=5    w=5    WR=100.00%  pnl@5=  +17.32
+  cell==PREC191 & stream==shadow & side==DOWN                             n=5    w=5    WR=100.00%  pnl@5=  +17.32
+  cell==PREC191 & stream==shadow & cell==BASE                             n=5    w=5    WR=100.00%  pnl@5=  +17.32
+  cell==PREC191 & side==DOWN & cell==BASE                                 n=5    w=5    WR=100.00%  pnl@5=  +17.32
+  cell==INCUMBENT & stream==prec & cell==IND2_L                           n=5    w=5    WR=100.00%  pnl@5=  +11.91
+  cell==INCUMBENT & stream==prec & cell==HW_PRIMARY                       n=5    w=5    WR=100.00%  pnl@5=  +10.66
+  cell==INCUMBENT & stream==consensus_obl & cell==IND2_T                  n=5    w=5    WR=100.00%  pnl@5=  +11.73
+  cell==INCUMBENT & cell==IND2_L & cell==IND2_T                           n=5    w=5    WR=100.00%  pnl@5=  +11.73
+  cell==INCUMBENT & cell==IND2_T & side==DOWN                             n=5    w=5    WR=100.00%  pnl@5=  +11.73
+  cell==INCUMBENT & cell==IND2_T & stream==newstreams                     n=5    w=5    WR=100.00%  pnl@5=  +11.73
+  prob>=0.697 & stream==prec & stream==consensus_obl                      n=5    w=5    WR=100.00%  pnl@5=  +12.04
+  prob>=0.697 & stream==consensus_obl & cell==MY290                       n=5    w=5    WR=100.00%  pnl@5=  +12.04
+  prob>=0.697 & cell==IND2_L & cell==IND2_T                               n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  prob>=0.697 & prob>=0.653 & cell==IND2_T                                n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  prob>=0.697 & prob>=0.675 & cell==IND2_T                                n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  prob>=0.697 & asset==hype & cell==CELLS13                               n=5    w=5    WR=100.00%  pnl@5=   +9.84
+  prob>=0.697 & stream==shadow & cell==IND2_T                             n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  prob>=0.697 & cell==IND2_T & side==DOWN                                 n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  prob>=0.697 & cell==IND2_T & cell==BASE                                 n=5    w=5    WR=100.00%  pnl@5=  +10.89
+  stream==filtboth & stream==prec & cell==IND2_L                          n=5    w=5    WR=100.00%  pnl@5=  +12.10
+  stream==filtboth & stream==prec & prob>=0.653                           n=5    w=5    WR=100.00%  pnl@5=  +13.58
+  stream==filtboth & stream==consensus_obl & cell==IND2_T                 n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==filtboth & cell==IND2_L & cell==IND2_T                          n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==filtboth & prob>=0.653 & cell==IND2_T                           n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==filtboth & cell==HW_PRIMARY & cell==IND2_T                      n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==filtboth & cell==GREEDY & cell==IND2_T                          n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==filtboth & cell==IND2_T & side==DOWN                            n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==filtboth & cell==IND2_T & stream==newstreams                    n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==filtboth & side==DOWN & cell==MY290                             n=5    w=5    WR=100.00%  pnl@5=  +18.00
+  stream==prec & stream==consensus_obl & prob>=0.675                      n=5    w=5    WR=100.00%  pnl@5=  +12.04
+  stream==prec & stream==consensus_obl & cell==HW_PRIMARY                 n=5    w=5    WR=100.00%  pnl@5=  +12.10
+  stream==prec & cell==IND2_L & prob>=0.675                               n=5    w=5    WR=100.00%  pnl@5=  +12.63
+  stream==prec & cell==IND2_L & cell==HW_PRIMARY                          n=5    w=5    WR=100.00%  pnl@5=  +12.10
+  stream==prec & cell==IND2_L & cell==GREEDY                              n=5    w=5    WR=100.00%  pnl@5=  +12.10
+  stream==prec & prob>=0.653 & cell==GREEDY                               n=5    w=5    WR=100.00%  pnl@5=  +13.58
+  stream==prec & prob>=0.675 & cell==IND2_T                               n=5    w=5    WR=100.00%  pnl@5=  +12.63
+  stream==prec & prob>=0.675 & stream==newstreams                         n=5    w=5    WR=100.00%  pnl@5=  +12.13
+  stream==consensus_obl & prob>=0.675 & cell==MY290                       n=5    w=5    WR=100.00%  pnl@5=  +12.04
+  stream==consensus_obl & cell==HW_PRIMARY & cell==IND2_T                 n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  stream==consensus_obl & cell==GREEDY & cell==IND2_T                     n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==IND2_L & prob>=0.675 & cell==MY290                                n=5    w=5    WR=100.00%  pnl@5=  +12.63
+  cell==IND2_L & cell==HW_PRIMARY & cell==IND2_T                          n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==IND2_L & cell==GREEDY & cell==IND2_T                              n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==IND2_L & cell==MY290 & stream==newstreams                         n=5    w=5    WR=100.00%  pnl@5=  +12.52
+  prob>=0.653 & prob>=0.675 & cell==FILT402                               n=5    w=5    WR=100.00%  pnl@5=  +13.01
+  prob>=0.653 & cell==HW_PRIMARY & cell==IND2_T                           n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  prob>=0.653 & cell==GREEDY & cell==IND2_T                               n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  prob>=0.653 & cell==IND2_T & stream==newstreams                         n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  prob>=0.653 & cell==FILT402 & stream==newstreams                        n=5    w=5    WR=100.00%  pnl@5=  +13.01
+  prob>=0.675 & asset==bnb & stream==cdc8                                 n=5    w=5    WR=100.00%  pnl@5=  +12.53
+  prob>=0.675 & asset==hype & cell==CELLS13                               n=5    w=5    WR=100.00%  pnl@5=   +9.84
+  prob>=0.675 & cell==IND2_T & cell==MY290                                n=5    w=5    WR=100.00%  pnl@5=  +12.63
+  prob>=0.675 & cell==FILT402 & stream==newstreams                        n=5    w=5    WR=100.00%  pnl@5=  +13.01
+  prob>=0.675 & cell==MY290 & stream==newstreams                          n=5    w=5    WR=100.00%  pnl@5=  +12.13
+  asset==hype & stream==shadow & side==DOWN                               n=5    w=5    WR=100.00%  pnl@5=  +13.19
+  cell==HW_PRIMARY & cell==GREEDY & cell==IND2_T                          n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==HW_PRIMARY & cell==IND2_T & side==DOWN                            n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==HW_PRIMARY & cell==IND2_T & stream==newstreams                    n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==GREEDY & cell==IND2_T & side==DOWN                                n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==GREEDY & cell==IND2_T & stream==newstreams                        n=5    w=5    WR=100.00%  pnl@5=  +11.92
+  cell==GREEDY & side==DOWN & cell==MY290                                 n=5    w=5    WR=100.00%  pnl@5=  +18.00
+  asset==hype & cell==CELLS6                                              n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  cell==AGREE4_60 & cell==IND2_T                                          n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==C57_A457_EU & cell==IND2_T                                        n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==ETHUP_T & prob>=0.653                                             n=4    w=4    WR=100.00%  pnl@5=   +8.95
+  cell==HW_PRIMARY & cell==MY290                                          n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  stream==consensus & stream==prec & cell==AGREE4_60                      n=4    w=4    WR=100.00%  pnl@5=   +9.03
+  stream==consensus & cell==ETHUP_T & prob>=0.653                         n=4    w=4    WR=100.00%  pnl@5=   +8.95
+  stream==consensus & cell==AGREE4_60 & cell==IND2_T                      n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  stream==consensus & cell==HW_PRIMARY & cell==MY290                      n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  stream==consensus & cell==IND2_T & cell==C57_A457_EU                    n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  stream==consensus & cell==CELLS6 & cell==MY290                          n=4    w=4    WR=100.00%  pnl@5=  +17.89
+  asset==xrp & stream==prec & stream==shadow                              n=4    w=4    WR=100.00%  pnl@5=  +11.50
+  asset==xrp & stream==prec & cell==BASE                                  n=4    w=4    WR=100.00%  pnl@5=  +11.50
+  cell==PREC191 & prob>=0.697 & side==DOWN                                n=4    w=4    WR=100.00%  pnl@5=   +9.39
+  cell==INCUMBENT & stream==filtboth & cell==IND2_T                       n=4    w=4    WR=100.00%  pnl@5=   +7.29
+  cell==INCUMBENT & stream==prec & cell==IND2_T                           n=4    w=4    WR=100.00%  pnl@5=  +10.07
+  cell==INCUMBENT & prob>=0.653 & cell==IND2_T                            n=4    w=4    WR=100.00%  pnl@5=   +7.29
+  cell==INCUMBENT & stream==shadow & cell==IND2_T                         n=4    w=4    WR=100.00%  pnl@5=   +9.05
+  cell==INCUMBENT & cell==HW_PRIMARY & cell==IND2_T                       n=4    w=4    WR=100.00%  pnl@5=   +7.29
+  cell==INCUMBENT & cell==GREEDY & cell==IND2_T                           n=4    w=4    WR=100.00%  pnl@5=   +7.29
+  cell==INCUMBENT & cell==IND2_T & cell==BASE                             n=4    w=4    WR=100.00%  pnl@5=   +9.05
+  cell==INCUMBENT & side==DOWN & cell==MY290                              n=4    w=4    WR=100.00%  pnl@5=  +13.37
+  prob>=0.697 & stream==prec & stream==newstreams                         n=4    w=4    WR=100.00%  pnl@5=  +10.19
+  prob>=0.697 & stream==consensus_obl & cell==IND2_T                      n=4    w=4    WR=100.00%  pnl@5=   +9.04
+  prob>=0.697 & asset==hype & cell==CELLS6                                n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  prob>=0.697 & cell==MY290 & stream==newstreams                          n=4    w=4    WR=100.00%  pnl@5=  +10.19
+  stream==filtboth & stream==prec & cell==IND2_T                          n=4    w=4    WR=100.00%  pnl@5=  +10.25
+  stream==filtboth & cell==IND2_L & cell==MY290                           n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  stream==filtboth & prob>=0.653 & cell==MY290                            n=4    w=4    WR=100.00%  pnl@5=  +11.55
+  stream==filtboth & stream==shadow & cell==IND2_T                        n=4    w=4    WR=100.00%  pnl@5=   +9.23
+  stream==filtboth & cell==HW_PRIMARY & cell==MY290                       n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  stream==filtboth & cell==IND2_T & cell==BASE                            n=4    w=4    WR=100.00%  pnl@5=   +9.23
+  stream==prec & stream==consensus_obl & cell==AGREE4_60                  n=4    w=4    WR=100.00%  pnl@5=   +9.03
+  stream==prec & cell==IND2_L & cell==AGREE4_60                           n=4    w=4    WR=100.00%  pnl@5=   +9.03
+  stream==prec & cell==IND2_L & cell==C57_A457_EU                         n=4    w=4    WR=100.00%  pnl@5=   +9.03
+  stream==prec & cell==ETHUP_T & prob>=0.653                              n=4    w=4    WR=100.00%  pnl@5=   +8.95
+  stream==prec & prob>=0.653 & cell==HW_PRIMARY                           n=4    w=4    WR=100.00%  pnl@5=  +10.25
+  stream==prec & prob>=0.653 & cell==CELLS6                               n=4    w=4    WR=100.00%  pnl@5=  +10.97
+  stream==prec & cell==HW_PRIMARY & cell==IND2_T                          n=4    w=4    WR=100.00%  pnl@5=  +10.25
+  stream==prec & cell==HW_PRIMARY & cell==MY290                           n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  stream==prec & cell==GREEDY & cell==IND2_T                              n=4    w=4    WR=100.00%  pnl@5=  +10.25
+  stream==consensus_obl & prob>=0.675 & cell==IND2_T                      n=4    w=4    WR=100.00%  pnl@5=   +9.04
+  stream==consensus_obl & cell==AGREE4_60 & cell==IND2_T                  n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  stream==consensus_obl & cell==HW_PRIMARY & cell==MY290                  n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  stream==consensus_obl & cell==IND2_T & cell==CELLS6                     n=4    w=4    WR=100.00%  pnl@5=  +10.79
+  stream==consensus_obl & cell==IND2_T & cell==C57_A457_EU                n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==C8LGBM_g & asset==hype & stream==shadow                           n=4    w=4    WR=100.00%  pnl@5=   +4.54
+  cell==C8LGBM_g & asset==hype & cell==BASE                               n=4    w=4    WR=100.00%  pnl@5=   +4.54
+  cell==IND2_L & cell==AGREE4_60 & cell==IND2_T                           n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==IND2_L & cell==HW_PRIMARY & cell==MY290                           n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  cell==IND2_L & cell==GREEDY & cell==MY290                               n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  cell==IND2_L & cell==IND2_T & cell==C57_A457_EU                         n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==IND2_L & cell==CELLS6 & cell==MY290                               n=4    w=4    WR=100.00%  pnl@5=  +17.89
+  cell==ETHUP_T & prob>=0.653 & cell==C57_A457_EU                         n=4    w=4    WR=100.00%  pnl@5=   +8.95
+  cell==ETHUP_T & prob>=0.653 & cell==MY290                               n=4    w=4    WR=100.00%  pnl@5=   +8.95
+  cell==ETHUP_T & prob>=0.653 & stream==newstreams                        n=4    w=4    WR=100.00%  pnl@5=   +8.95
+  prob>=0.653 & asset==hype & cell==CELLS6                                n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  prob>=0.653 & stream==shadow & cell==FILT402                            n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  prob>=0.653 & cell==GREEDY & cell==MY290                                n=4    w=4    WR=100.00%  pnl@5=  +11.55
+  prob>=0.653 & cell==FILT402 & cell==C57_A457_EU                         n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  prob>=0.675 & asset==hype & cell==CELLS6                                n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  prob>=0.675 & stream==shadow & cell==FILT402                            n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  prob>=0.675 & cell==IND2_T & cell==CELLS13                              n=4    w=4    WR=100.00%  pnl@5=  +10.71
+  prob>=0.675 & cell==FILT402 & cell==C57_A457_EU                         n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  cell==AGREE4_60 & cell==IND2_T & side==DOWN                             n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==AGREE4_60 & cell==IND2_T & cell==C57_A457_EU                      n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==AGREE4_60 & cell==IND2_T & stream==newstreams                     n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  asset==hype & stream==shadow & cell==CELLS6                             n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  asset==hype & stream==shadow & stream==c8lgbm                           n=4    w=4    WR=100.00%  pnl@5=   +4.54
+  asset==hype & cell==CELLS6 & side==DOWN                                 n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  asset==hype & cell==CELLS6 & cell==CELLS13                              n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  asset==hype & side==DOWN & cell==CELLS13                                n=4    w=4    WR=100.00%  pnl@5=   +8.74
+  asset==hype & stream==c8lgbm & cell==BASE                               n=4    w=4    WR=100.00%  pnl@5=   +4.54
+  asset==hype & cell==BASE & cell==CELLS13                                n=4    w=4    WR=100.00%  pnl@5=   +9.86
+  stream==shadow & cell==HW_PRIMARY & cell==IND2_T                        n=4    w=4    WR=100.00%  pnl@5=   +9.23
+  stream==shadow & cell==GREEDY & cell==IND2_T                            n=4    w=4    WR=100.00%  pnl@5=   +9.23
+  cell==HW_PRIMARY & cell==GREEDY & cell==MY290                           n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  cell==HW_PRIMARY & cell==IND2_T & cell==BASE                            n=4    w=4    WR=100.00%  pnl@5=   +9.23
+  cell==HW_PRIMARY & side==DOWN & cell==MY290                             n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  cell==HW_PRIMARY & cell==MY290 & stream==newstreams                     n=4    w=4    WR=100.00%  pnl@5=  +10.06
+  cell==GREEDY & cell==IND2_T & cell==BASE                                n=4    w=4    WR=100.00%  pnl@5=   +9.23
+  cell==IND2_T & cell==CELLS6 & cell==MY290                               n=4    w=4    WR=100.00%  pnl@5=  +17.89
+  cell==IND2_T & cell==CELLS6 & stream==newstreams                        n=4    w=4    WR=100.00%  pnl@5=  +10.79
+  cell==IND2_T & side==DOWN & cell==C57_A457_EU                           n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==IND2_T & cell==C57_A457_EU & stream==newstreams                   n=4    w=4    WR=100.00%  pnl@5=   +8.85
+  cell==IND2_T & cell==MY290 & stream==newstreams                         n=4    w=4    WR=100.00%  pnl@5=  +10.67
+  cell==IND2_T & stream==newstreams & cell==CELLS13                       n=4    w=4    WR=100.00%  pnl@5=  +10.79
+  cell==FILT402 & side==DOWN & cell==C57_A457_EU                          n=4    w=4    WR=100.00%  pnl@5=  +11.37
+  asset==bnb & stream==prec                                               n=3    w=3    WR=100.00%  pnl@5=   +8.23
+  asset==hype & cell==HW_PRIMARY                                          n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  asset==hype & cell==IND2_L                                              n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & cell==IND2_T                                              n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & stream==consensus                                         n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & stream==consensus_obl                                     n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==sol & cell==C8FLOW                                               n=3    w=3    WR=100.00%  pnl@5=   +5.22
+  asset==sol & stream==cdc8                                               n=3    w=3    WR=100.00%  pnl@5=   +5.22
+  cell==C8LGBM_g & cell==FILT402                                          n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==CORE_L & stream==prec                                             n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==D6_ge2_K2 & cell==P4_pmpct20_K4                                   n=3    w=3    WR=100.00%  pnl@5=  +16.90
+  cell==D72_maj_K1 & cell==MY290                                          n=3    w=3    WR=100.00%  pnl@5=  +22.94
+  cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72                            n=3    w=3    WR=100.00%  pnl@5=  +18.34
+  cell==ETHUP_T & prob>=0.675                                             n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==FILT402 & stream==c8lgbm                                          n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==INCUMBENT & cell==IND2N_T                                         n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==INCUMBENT & cell==PREC191                                         n=3    w=3    WR=100.00%  pnl@5=   +9.68
+  cell==IND2N_L & cell==PREC191                                           n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & stream==prec                                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_T & cell==PREC191                                           n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_T & stream==consensus_obl                                   n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_T & stream==newstreams                                      n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_T & stream==prec                                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2_L & cell==PREC191                                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2_T & cell==PREC191                                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==P3_base_86_K2 & cell==P4_pmpct20_K4                               n=3    w=3    WR=100.00%  pnl@5=  +16.90
+  cell==PREC191 & stream==consensus                                       n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==C8FLOW & prob>=0.653 & asset==sol                                 n=3    w=3    WR=100.00%  pnl@5=   +5.22
+  cell==C8FLOW & prob>=0.675 & asset==sol                                 n=3    w=3    WR=100.00%  pnl@5=   +5.22
+  cell==C8FLOW & stream==cdc8 & asset==sol                                n=3    w=3    WR=100.00%  pnl@5=   +5.22
+  stream==consensus & cell==IND2N_L & cell==PREC191                       n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==IND2N_L & stream==prec                        n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==PREC191 & stream==prec                        n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==PREC191 & cell==IND2_L                        n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==PREC191 & stream==shadow                      n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==PREC191 & cell==IND2_T                        n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==PREC191 & side==DOWN                          n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==PREC191 & cell==IND2N_T                       n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==PREC191 & cell==BASE                          n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & cell==INCUMBENT & cell==IND2N_T                     n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==consensus & cell==CORE_L & stream==prec                         n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  stream==consensus & stream==prec & cell==C8LGBM_g                       n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==consensus & stream==prec & cell==IND2N_T                        n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==consensus & stream==prec & stream==c8lgbm                       n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==consensus & stream==prec & asset==sol                           n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  stream==consensus & stream==consensus_obl & asset==hype                 n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus & stream==consensus_obl & cell==IND2N_T               n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==consensus & cell==IND2_L & asset==hype                          n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus & cell==ETHUP_T & prob>=0.675                         n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  stream==consensus & cell==AGREE4_60 & cell==MY290                       n=3    w=3    WR=100.00%  pnl@5=   +6.99
+  stream==consensus & asset==hype & stream==shadow                        n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus & asset==hype & cell==IND2_T                          n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus & asset==hype & side==DOWN                            n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus & asset==hype & cell==BASE                            n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus & asset==hype & stream==newstreams                    n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus & cell==IND2N_T & stream==newstreams                  n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_L & cell==PREC191 & stream==prec                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & cell==PREC191 & cell==IND2_L                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & cell==PREC191 & stream==shadow                          n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & cell==PREC191 & cell==IND2_T                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & cell==PREC191 & side==DOWN                              n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & cell==PREC191 & cell==IND2N_T                           n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & cell==PREC191 & cell==BASE                              n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & cell==INCUMBENT & cell==IND2_T                          n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_L & cell==INCUMBENT & cell==IND2N_T                         n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_L & stream==prec & cell==IND2_L                             n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & stream==prec & stream==shadow                           n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & stream==prec & cell==IND2_T                             n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & stream==prec & side==DOWN                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & stream==prec & cell==IND2N_T                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & stream==prec & cell==BASE                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==IND2N_L & stream==consensus_obl & cell==IND2_T                    n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_L & stream==consensus_obl & cell==IND2N_T                   n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_L & cell==IND2_T & stream==newstreams                       n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_L & cell==IND2N_T & stream==newstreams                      n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  asset==xrp & cell==PREC191 & cell==MY195                                n=3    w=3    WR=100.00%  pnl@5=  +12.10
+  cell==PREC191 & cell==INCUMBENT & stream==prec                          n=3    w=3    WR=100.00%  pnl@5=   +9.68
+  cell==PREC191 & cell==INCUMBENT & side==DOWN                            n=3    w=3    WR=100.00%  pnl@5=   +9.68
+  cell==PREC191 & cell==INCUMBENT & stream==newstreams                    n=3    w=3    WR=100.00%  pnl@5=   +9.68
+  cell==PREC191 & stream==prec & cell==IND2_L                             n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & stream==prec & cell==IND2_T                             n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & stream==prec & cell==IND2N_T                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_L & stream==shadow                           n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_L & cell==IND2_T                             n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_L & side==DOWN                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_L & cell==IND2N_T                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_L & cell==BASE                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==MY195 & prob>=0.653                               n=3    w=3    WR=100.00%  pnl@5=  +11.14
+  cell==PREC191 & stream==shadow & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & stream==shadow & cell==IND2N_T                          n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_T & side==DOWN                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_T & cell==IND2N_T                            n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2_T & cell==BASE                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & side==DOWN & cell==IND2N_T                              n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==PREC191 & cell==IND2N_T & cell==BASE                              n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  cell==INCUMBENT & prob>=0.697 & stream==prec                            n=3    w=3    WR=100.00%  pnl@5=   +5.56
+  cell==INCUMBENT & prob>=0.697 & cell==MY290                             n=3    w=3    WR=100.00%  pnl@5=   +5.56
+  cell==INCUMBENT & cell==CORE_L & stream==prec                           n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==INCUMBENT & cell==CORE_L & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==INCUMBENT & stream==prec & cell==C8LGBM_g                         n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  cell==INCUMBENT & stream==prec & prob>=0.675                            n=3    w=3    WR=100.00%  pnl@5=   +5.56
+  cell==INCUMBENT & stream==prec & cell==AGREE4_60                        n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==INCUMBENT & stream==prec & stream==c8lgbm                         n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  cell==INCUMBENT & stream==consensus_obl & cell==IND2N_T                 n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==INCUMBENT & cell==C8LGBM_g & cell==IND2_T                         n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==INCUMBENT & cell==IND2_L & cell==IND2N_T                          n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==INCUMBENT & cell==IND2_L & cell==MY290                            n=3    w=3    WR=100.00%  pnl@5=   +5.43
+  cell==INCUMBENT & cell==ETHUP_T & prob>=0.653                           n=3    w=3    WR=100.00%  pnl@5=   +7.01
+  cell==INCUMBENT & prob>=0.675 & cell==MY290                             n=3    w=3    WR=100.00%  pnl@5=   +5.56
+  cell==INCUMBENT & cell==AGREE4_60 & cell==IND2_T                        n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==INCUMBENT & stream==shadow & cell==IND2N_T                        n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==INCUMBENT & cell==HW_PRIMARY & cell==MY290                        n=3    w=3    WR=100.00%  pnl@5=   +5.43
+  cell==INCUMBENT & cell==IND2_T & cell==IND2N_T                          n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==INCUMBENT & cell==IND2_T & stream==c8lgbm                         n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==INCUMBENT & cell==IND2_T & cell==C57_A457_EU                      n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==INCUMBENT & side==DOWN & cell==IND2N_T                            n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==INCUMBENT & cell==IND2N_T & cell==BASE                            n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==INCUMBENT & cell==IND2N_T & stream==newstreams                    n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  prob>=0.697 & stream==filtboth & stream==prec                           n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  prob>=0.697 & stream==filtboth & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  prob>=0.697 & stream==filtboth & cell==MY290                            n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  prob>=0.697 & stream==prec & cell==IND2_L                               n=3    w=3    WR=100.00%  pnl@5=   +7.38
+  prob>=0.697 & stream==prec & cell==GREEDY                               n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  prob>=0.697 & stream==prec & cell==IND2_T                               n=3    w=3    WR=100.00%  pnl@5=   +7.38
+  prob>=0.697 & cell==IND2_L & cell==MY290                                n=3    w=3    WR=100.00%  pnl@5=   +7.38
+  prob>=0.697 & cell==HW_PRIMARY & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  prob>=0.697 & cell==GREEDY & cell==IND2_T                               n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  prob>=0.697 & cell==GREEDY & cell==MY290                                n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  prob>=0.697 & cell==IND2_T & cell==CELLS6                               n=3    w=3    WR=100.00%  pnl@5=   +8.14
+  prob>=0.697 & cell==IND2_T & cell==MY290                                n=3    w=3    WR=100.00%  pnl@5=   +7.38
+  prob>=0.697 & cell==IND2_T & stream==newstreams                         n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  prob>=0.697 & cell==IND2_T & cell==CELLS13                              n=3    w=3    WR=100.00%  pnl@5=   +8.14
+  cell==CORE_L & stream==filtboth & stream==prec                          n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==filtboth & cell==IND2_T                          n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==CORE_L & stream==prec & stream==consensus_obl                     n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==prec & cell==IND2_L                              n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==prec & cell==AGREE4_60                           n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==prec & cell==HW_PRIMARY                          n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==prec & cell==GREEDY                              n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==prec & side==DOWN                                n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==prec & cell==C57_A457_EU                         n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==prec & stream==newstreams                        n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  cell==CORE_L & stream==consensus_obl & cell==IND2_T                     n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==CORE_L & cell==AGREE4_60 & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==CORE_L & cell==HW_PRIMARY & cell==IND2_T                          n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==CORE_L & cell==GREEDY & cell==IND2_T                              n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==CORE_L & cell==IND2_T & cell==C57_A457_EU                         n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==CORE_L & cell==IND2_T & stream==newstreams                        n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  stream==filtboth & stream==prec & cell==C8LGBM_g                        n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==filtboth & stream==prec & prob>=0.675                           n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  stream==filtboth & stream==prec & cell==AGREE4_60                       n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  stream==filtboth & stream==prec & stream==c8lgbm                        n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==filtboth & cell==C8LGBM_g & cell==IND2_T                        n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  stream==filtboth & prob>=0.653 & asset==hype                            n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  stream==filtboth & prob>=0.675 & asset==hype                            n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  stream==filtboth & prob>=0.675 & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  stream==filtboth & prob>=0.675 & cell==MY290                            n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  stream==filtboth & cell==AGREE4_60 & cell==IND2_T                       n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  stream==filtboth & asset==hype & cell==HW_PRIMARY                       n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  stream==filtboth & cell==IND2_T & cell==CELLS6                          n=3    w=3    WR=100.00%  pnl@5=   +8.34
+  stream==filtboth & cell==IND2_T & stream==c8lgbm                        n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  stream==filtboth & cell==IND2_T & cell==C57_A457_EU                     n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  stream==filtboth & cell==IND2_T & cell==MY290                           n=3    w=3    WR=100.00%  pnl@5=   +8.22
+  stream==filtboth & cell==IND2_T & cell==CELLS13                         n=3    w=3    WR=100.00%  pnl@5=   +8.34
+  stream==prec & stream==consensus_obl & cell==C8LGBM_g                   n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & stream==consensus_obl & cell==CELLS6                     n=3    w=3    WR=100.00%  pnl@5=   +9.13
+  stream==prec & stream==consensus_obl & stream==c8lgbm                   n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & stream==consensus_obl & asset==sol                       n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  stream==prec & cell==C8LGBM_g & cell==GREEDY                            n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & cell==C8LGBM_g & side==DOWN                              n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  stream==prec & cell==C8LGBM_g & cell==C57_A457_EU                       n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & cell==C8LGBM_g & stream==newstreams                      n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & cell==C8LGBM_g & cell==CELLS13                           n=3    w=3    WR=100.00%  pnl@5=   +7.22
+  stream==prec & cell==IND2_L & cell==IND2N_T                             n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==prec & cell==IND2_L & asset==sol                                n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  stream==prec & cell==ETHUP_T & prob>=0.675                              n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  stream==prec & prob>=0.675 & cell==GREEDY                               n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  stream==prec & prob>=0.675 & cell==CELLS6                               n=3    w=3    WR=100.00%  pnl@5=   +8.94
+  stream==prec & prob>=0.675 & cell==C57_A457_EU                          n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  stream==prec & cell==AGREE4_60 & cell==HW_PRIMARY                       n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  stream==prec & cell==AGREE4_60 & cell==GREEDY                           n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  stream==prec & cell==AGREE4_60 & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  stream==prec & cell==D72_maj_K1 & cell==MY290                           n=3    w=3    WR=100.00%  pnl@5=  +22.94
+  stream==prec & stream==shadow & cell==HW_PRIMARY                        n=3    w=3    WR=100.00%  pnl@5=   +7.57
+  stream==prec & stream==shadow & cell==IND2N_T                           n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==prec & stream==shadow & prob>=0.753                             n=3    w=3    WR=100.00%  pnl@5=   +4.97
+  stream==prec & cell==HW_PRIMARY & cell==C57_A457_EU                     n=3    w=3    WR=100.00%  pnl@5=   +6.57
+  stream==prec & cell==HW_PRIMARY & cell==BASE                            n=3    w=3    WR=100.00%  pnl@5=   +7.57
+  stream==prec & cell==GREEDY & stream==c8lgbm                            n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & cell==IND2_T & cell==IND2N_T                             n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==prec & cell==IND2_T & asset==sol                                n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  stream==prec & cell==IND2_T & cell==C57_A457_EU                         n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  stream==prec & cell==CELLS6 & asset==sol                                n=3    w=3    WR=100.00%  pnl@5=   +6.95
+  stream==prec & cell==CELLS6 & stream==newstreams                        n=3    w=3    WR=100.00%  pnl@5=   +9.13
+  stream==prec & side==DOWN & cell==IND2N_T                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==prec & cell==IND2N_T & cell==BASE                               n=3    w=3    WR=100.00%  pnl@5=   +9.55
+  stream==prec & prob>=0.753 & cell==BASE                                 n=3    w=3    WR=100.00%  pnl@5=   +4.97
+  stream==prec & stream==c8lgbm & cell==C57_A457_EU                       n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & stream==c8lgbm & stream==newstreams                      n=3    w=3    WR=100.00%  pnl@5=   +8.06
+  stream==prec & stream==c8lgbm & cell==CELLS13                           n=3    w=3    WR=100.00%  pnl@5=   +7.22
+  stream==consensus_obl & cell==C8LGBM_g & cell==IND2_T                   n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  stream==consensus_obl & cell==IND2_L & asset==hype                      n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus_obl & cell==IND2_L & cell==IND2N_T                    n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==consensus_obl & cell==ETHUP_T & prob>=0.653                     n=3    w=3    WR=100.00%  pnl@5=   +7.01
+  stream==consensus_obl & cell==AGREE4_60 & cell==MY290                   n=3    w=3    WR=100.00%  pnl@5=   +6.99
+  stream==consensus_obl & asset==hype & stream==shadow                    n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus_obl & asset==hype & cell==IND2_T                      n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus_obl & asset==hype & side==DOWN                        n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus_obl & asset==hype & cell==BASE                        n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus_obl & asset==hype & stream==newstreams                n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==consensus_obl & stream==shadow & cell==IND2N_T                  n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==consensus_obl & cell==IND2_T & cell==IND2N_T                    n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==consensus_obl & cell==IND2_T & stream==c8lgbm                   n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  stream==consensus_obl & cell==IND2_T & asset==sol                       n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  stream==consensus_obl & side==DOWN & cell==IND2N_T                      n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==consensus_obl & cell==IND2N_T & cell==BASE                      n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==consensus_obl & cell==IND2N_T & stream==newstreams              n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==C8LGBM_g & prob>=0.653 & cell==FILT402                            n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==C8LGBM_g & prob>=0.675 & cell==FILT402                            n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==C8LGBM_g & cell==AGREE4_60 & cell==IND2_T                         n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==C8LGBM_g & cell==HW_PRIMARY & cell==IND2_T                        n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==C8LGBM_g & cell==GREEDY & cell==IND2_T                            n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==C8LGBM_g & cell==IND2_T & cell==C57_A457_EU                       n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==C8LGBM_g & cell==IND2_T & stream==newstreams                      n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==C8LGBM_g & cell==FILT402 & side==DOWN                             n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==C8LGBM_g & cell==FILT402 & stream==c8lgbm                         n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==C8LGBM_g & cell==FILT402 & stream==newstreams                     n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==IND2_L & cell==AGREE4_60 & cell==MY290                            n=3    w=3    WR=100.00%  pnl@5=   +6.99
+  cell==IND2_L & asset==hype & stream==shadow                             n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  cell==IND2_L & asset==hype & cell==IND2_T                               n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  cell==IND2_L & asset==hype & side==DOWN                                 n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  cell==IND2_L & asset==hype & cell==BASE                                 n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  cell==IND2_L & asset==hype & stream==newstreams                         n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  cell==IND2_L & cell==IND2N_T & stream==newstreams                       n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2_L & cell==C57_A457_EU & cell==MY290                          n=3    w=3    WR=100.00%  pnl@5=   +6.99
+  cell==P4_pmpct20_K4 & side==DOWN & cell==D6_ge2_K2                      n=3    w=3    WR=100.00%  pnl@5=  +16.90
+  cell==ETHUP_T & prob>=0.653 & prob>=0.675                               n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==ETHUP_T & prob>=0.653 & stream==shadow                            n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==ETHUP_T & prob>=0.653 & cell==BASE                                n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==ETHUP_T & prob>=0.675 & stream==shadow                            n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==ETHUP_T & prob>=0.675 & cell==C57_A457_EU                         n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==ETHUP_T & prob>=0.675 & cell==BASE                                n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==ETHUP_T & prob>=0.675 & cell==MY290                               n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==ETHUP_T & prob>=0.675 & stream==newstreams                        n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  prob>=0.653 & cell==AGREE4_60 & cell==IND2_T                            n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  prob>=0.653 & asset==hype & cell==HW_PRIMARY                            n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  prob>=0.653 & asset==hype & cell==GREEDY                                n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  prob>=0.653 & asset==hype & stream==newstreams                          n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  prob>=0.653 & stream==cdc8 & asset==sol                                 n=3    w=3    WR=100.00%  pnl@5=   +5.22
+  prob>=0.653 & cell==HW_PRIMARY & cell==MY290                            n=3    w=3    WR=100.00%  pnl@5=   +8.22
+  prob>=0.653 & cell==IND2_T & cell==C57_A457_EU                          n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  prob>=0.653 & cell==FILT402 & side==DOWN                                n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  prob>=0.653 & cell==FILT402 & stream==c8lgbm                            n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  prob>=0.653 & cell==FILT402 & cell==CELLS13                             n=3    w=3    WR=100.00%  pnl@5=   +7.41
+  prob>=0.653 & cell==CELLS6 & cell==MY290                                n=3    w=3    WR=100.00%  pnl@5=   +8.94
+  prob>=0.675 & asset==hype & cell==HW_PRIMARY                            n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  prob>=0.675 & asset==hype & cell==GREEDY                                n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  prob>=0.675 & asset==hype & stream==newstreams                          n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  prob>=0.675 & stream==cdc8 & asset==sol                                 n=3    w=3    WR=100.00%  pnl@5=   +5.22
+  prob>=0.675 & cell==HW_PRIMARY & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  prob>=0.675 & cell==GREEDY & cell==IND2_T                               n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  prob>=0.675 & cell==GREEDY & cell==MY290                                n=3    w=3    WR=100.00%  pnl@5=   +8.86
+  prob>=0.675 & cell==IND2_T & cell==CELLS6                               n=3    w=3    WR=100.00%  pnl@5=   +8.14
+  prob>=0.675 & cell==IND2_T & stream==newstreams                         n=3    w=3    WR=100.00%  pnl@5=   +7.19
+  prob>=0.675 & cell==FILT402 & side==DOWN                                n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  prob>=0.675 & cell==FILT402 & stream==c8lgbm                            n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  prob>=0.675 & cell==FILT402 & cell==CELLS13                             n=3    w=3    WR=100.00%  pnl@5=   +7.41
+  prob>=0.675 & cell==CELLS6 & cell==MY290                                n=3    w=3    WR=100.00%  pnl@5=   +8.94
+  prob>=0.675 & cell==C57_A457_EU & cell==MY290                           n=3    w=3    WR=100.00%  pnl@5=   +6.61
+  cell==AGREE4_60 & stream==shadow & cell==IND2_T                         n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  cell==AGREE4_60 & cell==HW_PRIMARY & cell==IND2_T                       n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==AGREE4_60 & cell==GREEDY & cell==IND2_T                           n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==AGREE4_60 & cell==IND2_T & cell==CELLS6                           n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  cell==AGREE4_60 & cell==IND2_T & stream==c8lgbm                         n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==AGREE4_60 & cell==IND2_T & asset==sol                             n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  cell==AGREE4_60 & cell==IND2_T & cell==BASE                             n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  cell==AGREE4_60 & cell==IND2_T & cell==CELLS13                          n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  asset==hype & stream==shadow & cell==IND2_T                             n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & stream==shadow & stream==newstreams                       n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & cell==HW_PRIMARY & cell==GREEDY                           n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  asset==hype & cell==HW_PRIMARY & side==DOWN                             n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  asset==hype & cell==HW_PRIMARY & stream==newstreams                     n=3    w=3    WR=100.00%  pnl@5=   +7.63
+  asset==hype & cell==IND2_T & side==DOWN                                 n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & cell==IND2_T & cell==BASE                                 n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & cell==IND2_T & stream==newstreams                         n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & side==DOWN & cell==BASE                                   n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  asset==hype & cell==BASE & stream==newstreams                           n=3    w=3    WR=100.00%  pnl@5=  +10.75
+  stream==shadow & cell==IND2_T & cell==C57_A457_EU                       n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  stream==shadow & cell==FILT402 & side==DOWN                             n=3    w=3    WR=100.00%  pnl@5=   +8.04
+  stream==shadow & cell==IND2N_T & stream==newstreams                     n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  stream==shadow & prob>=0.753 & cell==MY290                              n=3    w=3    WR=100.00%  pnl@5=   +4.97
+  cell==HW_PRIMARY & cell==IND2_T & cell==CELLS6                          n=3    w=3    WR=100.00%  pnl@5=   +8.34
+  cell==HW_PRIMARY & cell==IND2_T & stream==c8lgbm                        n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==HW_PRIMARY & cell==IND2_T & cell==C57_A457_EU                     n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==HW_PRIMARY & cell==IND2_T & cell==MY290                           n=3    w=3    WR=100.00%  pnl@5=   +8.22
+  cell==HW_PRIMARY & cell==IND2_T & cell==CELLS13                         n=3    w=3    WR=100.00%  pnl@5=   +8.34
+  cell==GREEDY & cell==IND2_T & cell==CELLS6                              n=3    w=3    WR=100.00%  pnl@5=   +8.34
+  cell==GREEDY & cell==IND2_T & stream==c8lgbm                            n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==GREEDY & cell==IND2_T & cell==C57_A457_EU                         n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==GREEDY & cell==IND2_T & cell==MY290                               n=3    w=3    WR=100.00%  pnl@5=   +8.22
+  cell==GREEDY & cell==IND2_T & cell==CELLS13                             n=3    w=3    WR=100.00%  pnl@5=   +8.34
+  cell==IND2_T & cell==CELLS6 & cell==C57_A457_EU                         n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  cell==IND2_T & cell==IND2N_T & stream==newstreams                       n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2_T & stream==c8lgbm & cell==C57_A457_EU                       n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==IND2_T & stream==c8lgbm & stream==newstreams                      n=3    w=3    WR=100.00%  pnl@5=   +6.39
+  cell==IND2_T & asset==sol & cell==C57_A457_EU                           n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  cell==IND2_T & asset==sol & stream==newstreams                          n=3    w=3    WR=100.00%  pnl@5=   +7.18
+  cell==IND2_T & cell==C57_A457_EU & cell==BASE                           n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  cell==IND2_T & cell==C57_A457_EU & cell==CELLS13                        n=3    w=3    WR=100.00%  pnl@5=   +6.16
+  cell==FILT402 & side==DOWN & stream==c8lgbm                             n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  cell==FILT402 & stream==c8lgbm & stream==newstreams                     n=3    w=3    WR=100.00%  pnl@5=   +9.74
+  side==DOWN & cell==IND2N_T & stream==newstreams                         n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  cell==IND2N_T & cell==BASE & stream==newstreams                         n=3    w=3    WR=100.00%  pnl@5=   +8.15
+  prob>=0.753 & cell==BASE & cell==MY290                                  n=3    w=3    WR=100.00%  pnl@5=   +4.97
+  asset==doge & prob>=0.753                                               n=16   w=15   WR= 93.75%  pnl@5=  +28.78
+  stream==consensus & stream==prec & prob>=0.653                          n=12   w=11   WR= 91.67%  pnl@5=  +21.16
+  stream==filtboth & stream==prec & stream==consensus_obl                 n=12   w=11   WR= 91.67%  pnl@5=  +29.16
+  stream==prec & stream==consensus_obl & cell==GREEDY                     n=12   w=11   WR= 91.67%  pnl@5=  +29.16
+  asset==hype & stream==shadow                                            n=11   w=10   WR= 90.91%  pnl@5=  +13.58
+  stream==consensus & prob>=0.653 & cell==MY290                           n=11   w=10   WR= 90.91%  pnl@5=  +19.12
+  cell==INCUMBENT & stream==filtboth & stream==prec                       n=11   w=10   WR= 90.91%  pnl@5=  +25.38
+  cell==INCUMBENT & stream==prec & cell==GREEDY                           n=11   w=10   WR= 90.91%  pnl@5=  +25.38
+  stream==filtboth & stream==consensus_obl & cell==MY290                  n=11   w=10   WR= 90.91%  pnl@5=  +27.13
+  stream==consensus_obl & cell==GREEDY & cell==MY290                      n=11   w=10   WR= 90.91%  pnl@5=  +27.13
+  cell==CELLS6 & stream==prec                                             n=10   w=9    WR= 90.00%  pnl@5=  +24.96
+  cell==C8FLOW & prob>=0.675 & side==DOWN                                 n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  stream==prec & stream==shadow & cell==CELLS6                            n=10   w=9    WR= 90.00%  pnl@5=  +24.96
+  stream==prec & cell==CELLS6 & cell==CELLS13                             n=10   w=9    WR= 90.00%  pnl@5=  +24.96
+  prob>=0.675 & stream==cdc8 & side==DOWN                                 n=10   w=9    WR= 90.00%  pnl@5=   +8.45
   asset==hype & cell==BASE                                                n=9    w=8    WR= 88.89%  pnl@5=  +11.14
-  asset==hype & side==DOWN & prob>=0.653                                  n=9    w=8    WR= 88.89%  pnl@5=  +16.30
-  asset==hype & cell==BASE & stream==shadow                               n=9    w=8    WR= 88.89%  pnl@5=  +11.14
-  side==DOWN & stream==prec & cell==CELLS6                                n=9    w=8    WR= 88.89%  pnl@5=  +17.35
-  stream==prec & cell==BASE & stream==filtboth                            n=9    w=8    WR= 88.89%  pnl@5=  +21.43
-  stream==prec & cell==BASE & cell==GREEDY                                n=9    w=8    WR= 88.89%  pnl@5=  +21.43
-  stream==prec & cell==BASE & cell==CELLS6                                n=9    w=8    WR= 88.89%  pnl@5=  +22.15
-  stream==prec & stream==shadow & stream==filtboth                        n=9    w=8    WR= 88.89%  pnl@5=  +21.43
-  stream==prec & stream==shadow & cell==GREEDY                            n=9    w=8    WR= 88.89%  pnl@5=  +21.43
+  cell==INCUMBENT & stream==filtboth & cell==MY290                        n=9    w=8    WR= 88.89%  pnl@5=  +20.15
+  cell==INCUMBENT & cell==GREEDY & cell==MY290                            n=9    w=8    WR= 88.89%  pnl@5=  +20.15
+  stream==filtboth & stream==prec & stream==shadow                        n=9    w=8    WR= 88.89%  pnl@5=  +21.43
+  stream==filtboth & stream==prec & cell==BASE                            n=9    w=8    WR= 88.89%  pnl@5=  +21.43
   stream==prec & stream==consensus_obl & prob>=0.653                      n=9    w=8    WR= 88.89%  pnl@5=  +13.96
-  stream==filtboth & cell==INCUMBENT & cell==MY290                        n=9    w=8    WR= 88.89%  pnl@5=  +20.15
-  cell==INCUMBENT & cell==MY290 & cell==GREEDY                            n=9    w=8    WR= 88.89%  pnl@5=  +20.15
+  stream==prec & stream==shadow & cell==GREEDY                            n=9    w=8    WR= 88.89%  pnl@5=  +21.43
+  stream==prec & cell==GREEDY & cell==BASE                                n=9    w=8    WR= 88.89%  pnl@5=  +21.43
+  stream==prec & cell==CELLS6 & side==DOWN                                n=9    w=8    WR= 88.89%  pnl@5=  +17.35
+  stream==prec & cell==CELLS6 & cell==BASE                                n=9    w=8    WR= 88.89%  pnl@5=  +22.15
+  prob>=0.653 & asset==hype & side==DOWN                                  n=9    w=8    WR= 88.89%  pnl@5=  +16.30
+  asset==hype & stream==shadow & cell==BASE                               n=9    w=8    WR= 88.89%  pnl@5=  +11.14
   cell==IND2_L & stream==prec                                             n=17   w=15   WR= 88.24%  pnl@5=  +37.45
-  side==DOWN & stream==prec & stream==consensus                           n=17   w=15   WR= 88.24%  pnl@5=  +37.79
-  stream==prec & stream==consensus & cell==IND2_L                         n=17   w=15   WR= 88.24%  pnl@5=  +37.45
+  stream==consensus & stream==prec & cell==IND2_L                         n=17   w=15   WR= 88.24%  pnl@5=  +37.45
+  stream==consensus & stream==prec & side==DOWN                           n=17   w=15   WR= 88.24%  pnl@5=  +37.79
   cell==IND2_T & stream==prec                                             n=16   w=14   WR= 87.50%  pnl@5=  +35.61
-  side==DOWN & stream==prec & cell==IND2_L                                n=16   w=14   WR= 87.50%  pnl@5=  +29.84
-  stream==prec & stream==consensus & cell==IND2_T                         n=16   w=14   WR= 87.50%  pnl@5=  +35.61
-  stream==prec & cell==IND2_T & cell==IND2_L                              n=16   w=14   WR= 87.50%  pnl@5=  +35.61
+  stream==consensus & stream==prec & cell==IND2_T                         n=16   w=14   WR= 87.50%  pnl@5=  +35.61
+  stream==prec & cell==IND2_L & cell==IND2_T                              n=16   w=14   WR= 87.50%  pnl@5=  +35.61
+  stream==prec & cell==IND2_L & side==DOWN                                n=16   w=14   WR= 87.50%  pnl@5=  +29.84
   cell==C8FLOW & prob>=0.697                                              n=8    w=7    WR= 87.50%  pnl@5=   +5.42
   cell==CELLS6 & cell==MY290                                              n=8    w=7    WR= 87.50%  pnl@5=  +19.86
   stream==cdc8 & prob>=0.697                                              n=8    w=7    WR= 87.50%  pnl@5=   +5.42
-  asset==hype & side==DOWN & prob>=0.675                                  n=8    w=7    WR= 87.50%  pnl@5=  +12.36
-  side==DOWN & cell==IND2_T & cell==CELLS6                                n=8    w=7    WR= 87.50%  pnl@5=  +13.77
-  cell==C8FLOW & prob>=0.675 & prob>=0.697                                n=8    w=7    WR= 87.50%  pnl@5=   +5.42
-  cell==C8FLOW & prob>=0.697 & stream==cdc8                               n=8    w=7    WR= 87.50%  pnl@5=   +5.42
   cell==C8FLOW & prob>=0.697 & prob>=0.653                                n=8    w=7    WR= 87.50%  pnl@5=   +5.42
+  cell==C8FLOW & prob>=0.697 & prob>=0.675                                n=8    w=7    WR= 87.50%  pnl@5=   +5.42
+  cell==C8FLOW & prob>=0.697 & stream==cdc8                               n=8    w=7    WR= 87.50%  pnl@5=   +5.42
+  prob>=0.697 & prob>=0.653 & stream==cdc8                                n=8    w=7    WR= 87.50%  pnl@5=   +5.42
+  prob>=0.697 & prob>=0.675 & stream==cdc8                                n=8    w=7    WR= 87.50%  pnl@5=   +5.42
+  stream==filtboth & stream==shadow & cell==MY290                         n=8    w=7    WR= 87.50%  pnl@5=  +19.39
+  stream==filtboth & cell==BASE & cell==MY290                             n=8    w=7    WR= 87.50%  pnl@5=  +19.39
+  stream==prec & cell==IND2_L & prob>=0.653                               n=8    w=7    WR= 87.50%  pnl@5=  +12.21
+  stream==prec & prob>=0.653 & cell==IND2_T                               n=8    w=7    WR= 87.50%  pnl@5=  +12.21
   stream==prec & prob>=0.675 & cell==CELLS13                              n=8    w=7    WR= 87.50%  pnl@5=  +12.80
-  stream==prec & cell==IND2_T & prob>=0.653                               n=8    w=7    WR= 87.50%  pnl@5=  +12.21
-  stream==prec & prob>=0.653 & cell==IND2_L                               n=8    w=7    WR= 87.50%  pnl@5=  +12.21
-  stream==prec & cell==MY290 & cell==CELLS6                               n=8    w=7    WR= 87.50%  pnl@5=  +19.86
-  prob>=0.675 & prob>=0.697 & stream==cdc8                                n=8    w=7    WR= 87.50%  pnl@5=   +5.42
-  prob>=0.675 & cell==MY290 & cell==CELLS13                               n=8    w=7    WR= 87.50%  pnl@5=  +12.80
-  cell==BASE & stream==filtboth & cell==MY290                             n=8    w=7    WR= 87.50%  pnl@5=  +19.39
-  cell==BASE & cell==MY290 & cell==GREEDY                                 n=8    w=7    WR= 87.50%  pnl@5=  +19.39
-  stream==shadow & stream==filtboth & cell==MY290                         n=8    w=7    WR= 87.50%  pnl@5=  +19.39
-  stream==shadow & cell==MY290 & cell==GREEDY                             n=8    w=7    WR= 87.50%  pnl@5=  +19.39
-  stream==shadow & cell==MY290 & cell==CELLS6                             n=8    w=7    WR= 87.50%  pnl@5=  +19.86
-  prob>=0.697 & stream==cdc8 & prob>=0.653                                n=8    w=7    WR= 87.50%  pnl@5=   +5.42
+  stream==prec & cell==CELLS6 & cell==MY290                               n=8    w=7    WR= 87.50%  pnl@5=  +19.86
   stream==consensus_obl & prob>=0.653 & cell==MY290                       n=8    w=7    WR= 87.50%  pnl@5=  +11.92
-  cell==MY290 & cell==CELLS6 & cell==CELLS13                              n=8    w=7    WR= 87.50%  pnl@5=  +19.86
+  prob>=0.675 & asset==hype & side==DOWN                                  n=8    w=7    WR= 87.50%  pnl@5=  +12.36
+  prob>=0.675 & cell==MY290 & cell==CELLS13                               n=8    w=7    WR= 87.50%  pnl@5=  +12.80
+  stream==shadow & cell==GREEDY & cell==MY290                             n=8    w=7    WR= 87.50%  pnl@5=  +19.39
+  stream==shadow & cell==CELLS6 & cell==MY290                             n=8    w=7    WR= 87.50%  pnl@5=  +19.86
+  cell==GREEDY & cell==BASE & cell==MY290                                 n=8    w=7    WR= 87.50%  pnl@5=  +19.39
+  cell==IND2_T & cell==CELLS6 & side==DOWN                                n=8    w=7    WR= 87.50%  pnl@5=  +13.77
+  cell==CELLS6 & cell==MY290 & cell==CELLS13                              n=8    w=7    WR= 87.50%  pnl@5=  +19.86
   cell==C8FLOW & prob>=0.675                                              n=15   w=13   WR= 86.67%  pnl@5=  +15.21
   cell==GREEDY & cell==MY290                                              n=15   w=13   WR= 86.67%  pnl@5=  +35.43
   cell==MY290 & stream==filtboth                                          n=15   w=13   WR= 86.67%  pnl@5=  +35.43
   stream==cdc8 & prob>=0.675                                              n=15   w=13   WR= 86.67%  pnl@5=  +15.21
-  side==DOWN & stream==prec & cell==IND2_T                                n=15   w=13   WR= 86.67%  pnl@5=  +28.00
+  cell==C8FLOW & prob>=0.653 & prob>=0.675                                n=15   w=13   WR= 86.67%  pnl@5=  +15.21
   cell==C8FLOW & prob>=0.675 & stream==cdc8                               n=15   w=13   WR= 86.67%  pnl@5=  +15.21
-  cell==C8FLOW & prob>=0.675 & prob>=0.653                                n=15   w=13   WR= 86.67%  pnl@5=  +15.21
-  stream==prec & stream==consensus & stream==filtboth                     n=15   w=13   WR= 86.67%  pnl@5=  +33.02
-  stream==prec & stream==consensus & cell==GREEDY                         n=15   w=13   WR= 86.67%  pnl@5=  +33.02
-  stream==prec & cell==BASE & cell==IND2_T                                n=15   w=13   WR= 86.67%  pnl@5=  +32.92
-  stream==prec & cell==BASE & cell==IND2_L                                n=15   w=13   WR= 86.67%  pnl@5=  +32.92
+  stream==consensus & stream==filtboth & stream==prec                     n=15   w=13   WR= 86.67%  pnl@5=  +33.02
+  stream==consensus & stream==prec & cell==GREEDY                         n=15   w=13   WR= 86.67%  pnl@5=  +33.02
+  stream==filtboth & stream==prec & cell==MY290                           n=15   w=13   WR= 86.67%  pnl@5=  +35.43
+  stream==filtboth & cell==GREEDY & cell==MY290                           n=15   w=13   WR= 86.67%  pnl@5=  +35.43
+  stream==filtboth & cell==MY290 & stream==newstreams                     n=15   w=13   WR= 86.67%  pnl@5=  +35.43
+  stream==prec & cell==IND2_L & stream==shadow                            n=15   w=13   WR= 86.67%  pnl@5=  +32.92
+  stream==prec & cell==IND2_L & cell==BASE                                n=15   w=13   WR= 86.67%  pnl@5=  +32.92
   stream==prec & stream==shadow & cell==IND2_T                            n=15   w=13   WR= 86.67%  pnl@5=  +32.92
-  stream==prec & stream==shadow & cell==IND2_L                            n=15   w=13   WR= 86.67%  pnl@5=  +32.92
-  stream==prec & stream==filtboth & cell==MY290                           n=15   w=13   WR= 86.67%  pnl@5=  +35.43
-  stream==prec & cell==MY290 & cell==GREEDY                               n=15   w=13   WR= 86.67%  pnl@5=  +35.43
-  prob>=0.675 & stream==cdc8 & prob>=0.653                                n=15   w=13   WR= 86.67%  pnl@5=  +15.21
-  stream==filtboth & stream==newstreams & cell==MY290                     n=15   w=13   WR= 86.67%  pnl@5=  +35.43
-  stream==filtboth & cell==MY290 & cell==GREEDY                           n=15   w=13   WR= 86.67%  pnl@5=  +35.43
-  stream==newstreams & cell==MY290 & cell==GREEDY                         n=15   w=13   WR= 86.67%  pnl@5=  +35.43
+  stream==prec & cell==GREEDY & cell==MY290                               n=15   w=13   WR= 86.67%  pnl@5=  +35.43
+  stream==prec & cell==IND2_T & side==DOWN                                n=15   w=13   WR= 86.67%  pnl@5=  +28.00
+  stream==prec & cell==IND2_T & cell==BASE                                n=15   w=13   WR= 86.67%  pnl@5=  +32.92
+  prob>=0.653 & prob>=0.675 & stream==cdc8                                n=15   w=13   WR= 86.67%  pnl@5=  +15.21
+  cell==GREEDY & cell==MY290 & stream==newstreams                         n=15   w=13   WR= 86.67%  pnl@5=  +35.43
   cell==IND2_L & cell==MY290                                              n=14   w=12   WR= 85.71%  pnl@5=  +27.91
-  side==DOWN & stream==consensus & cell==MY290                            n=14   w=12   WR= 85.71%  pnl@5=  +28.24
-  stream==prec & stream==filtboth & cell==C57_A457_EU                     n=14   w=12   WR= 85.71%  pnl@5=  +31.94
-  stream==prec & cell==MY290 & cell==IND2_L                               n=14   w=12   WR= 85.71%  pnl@5=  +27.91
-  stream==prec & cell==C57_A457_EU & cell==GREEDY                         n=14   w=12   WR= 85.71%  pnl@5=  +31.94
   stream==consensus & stream==filtboth & cell==MY290                      n=14   w=12   WR= 85.71%  pnl@5=  +30.98
-  stream==consensus & cell==MY290 & cell==GREEDY                          n=14   w=12   WR= 85.71%  pnl@5=  +30.98
-  stream==consensus & cell==MY290 & cell==IND2_L                          n=14   w=12   WR= 85.71%  pnl@5=  +27.91
+  stream==consensus & cell==IND2_L & cell==MY290                          n=14   w=12   WR= 85.71%  pnl@5=  +27.91
+  stream==consensus & cell==GREEDY & cell==MY290                          n=14   w=12   WR= 85.71%  pnl@5=  +30.98
+  stream==consensus & side==DOWN & cell==MY290                            n=14   w=12   WR= 85.71%  pnl@5=  +28.24
+  stream==filtboth & stream==prec & cell==C57_A457_EU                     n=14   w=12   WR= 85.71%  pnl@5=  +31.94
+  stream==prec & cell==IND2_L & cell==MY290                               n=14   w=12   WR= 85.71%  pnl@5=  +27.91
+  stream==prec & cell==GREEDY & cell==C57_A457_EU                         n=14   w=12   WR= 85.71%  pnl@5=  +31.94
   cell==C8FLOW & prob>=0.723                                              n=7    w=6    WR= 85.71%  pnl@5=   +4.01
   cell==C8LGBM_gL & stream==prec                                          n=7    w=6    WR= 85.71%  pnl@5=   +9.04
   cell==HW_PRIMARY & cell==IND2_L                                         n=7    w=6    WR= 85.71%  pnl@5=   +8.68
@@ -75,64 +626,64 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==HW_PRIMARY & stream==consensus_obl                                n=7    w=6    WR= 85.71%  pnl@5=   +8.68
   stream==c8lgbm_gL & stream==prec                                        n=7    w=6    WR= 85.71%  pnl@5=   +9.04
   stream==cdc8 & prob>=0.723                                              n=7    w=6    WR= 85.71%  pnl@5=   +4.01
-  asset==hype & side==DOWN & prob>=0.697                                  n=7    w=6    WR= 85.71%  pnl@5=  +11.03
-  side==DOWN & cell==D6_ge2_K2 & cell==D72_maj_K2                         n=7    w=6    WR= 85.71%  pnl@5=  +30.14
-  side==DOWN & stream==consensus & cell==HW_PRIMARY                       n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  side==DOWN & cell==HW_PRIMARY & stream==consensus_obl                   n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  side==DOWN & cell==HW_PRIMARY & cell==IND2_L                            n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  side==DOWN & stream==newstreams & cell==MY290                           n=7    w=6    WR= 85.71%  pnl@5=  +15.34
-  side==DOWN & cell==MY290 & cell==CELLS6                                 n=7    w=6    WR= 85.71%  pnl@5=  +12.26
-  stream==consensus & cell==HW_PRIMARY & stream==consensus_obl            n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  stream==consensus & cell==HW_PRIMARY & stream==filtboth                 n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  stream==consensus & cell==HW_PRIMARY & stream==newstreams               n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==consensus & stream==filtboth & cell==HW_PRIMARY                 n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==consensus & stream==consensus_obl & cell==HW_PRIMARY            n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==consensus & cell==IND2_L & cell==HW_PRIMARY                     n=7    w=6    WR= 85.71%  pnl@5=   +8.68
   stream==consensus & cell==HW_PRIMARY & cell==GREEDY                     n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  stream==consensus & cell==HW_PRIMARY & cell==IND2_L                     n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==HW_PRIMARY & stream==consensus_obl & stream==filtboth             n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==HW_PRIMARY & stream==consensus_obl & stream==newstreams           n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==HW_PRIMARY & stream==consensus_obl & cell==GREEDY                 n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==HW_PRIMARY & stream==consensus_obl & cell==IND2_L                 n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==HW_PRIMARY & stream==filtboth & cell==IND2_L                      n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==HW_PRIMARY & stream==newstreams & cell==IND2_L                    n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==HW_PRIMARY & cell==GREEDY & cell==IND2_L                          n=7    w=6    WR= 85.71%  pnl@5=   +8.68
-  cell==BASE & cell==MY290 & cell==CELLS6                                 n=7    w=6    WR= 85.71%  pnl@5=  +17.06
-  cell==IND2_T & stream==consensus_obl & prob>=0.653                      n=7    w=6    WR= 85.71%  pnl@5=   +8.61
-  cell==IND2_T & prob>=0.653 & cell==MY290                                n=7    w=6    WR= 85.71%  pnl@5=  +10.17
-  stream==consensus_obl & stream==filtboth & cell==ETHUP_T                n=7    w=6    WR= 85.71%  pnl@5=  +17.06
+  stream==consensus & cell==HW_PRIMARY & side==DOWN                       n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==consensus & cell==HW_PRIMARY & stream==newstreams               n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  prob>=0.697 & asset==hype & side==DOWN                                  n=7    w=6    WR= 85.71%  pnl@5=  +11.03
+  stream==filtboth & stream==consensus_obl & cell==ETHUP_T                n=7    w=6    WR= 85.71%  pnl@5=  +17.06
+  stream==filtboth & stream==consensus_obl & cell==HW_PRIMARY             n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==filtboth & cell==IND2_L & cell==HW_PRIMARY                      n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==consensus_obl & cell==IND2_L & cell==HW_PRIMARY                 n=7    w=6    WR= 85.71%  pnl@5=   +8.68
   stream==consensus_obl & cell==ETHUP_T & cell==GREEDY                    n=7    w=6    WR= 85.71%  pnl@5=  +17.06
-  prob>=0.653 & cell==MY290 & cell==IND2_L                                n=7    w=6    WR= 85.71%  pnl@5=  +10.17
+  stream==consensus_obl & prob>=0.653 & cell==IND2_T                      n=7    w=6    WR= 85.71%  pnl@5=   +8.61
+  stream==consensus_obl & cell==HW_PRIMARY & cell==GREEDY                 n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==consensus_obl & cell==HW_PRIMARY & side==DOWN                   n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  stream==consensus_obl & cell==HW_PRIMARY & stream==newstreams           n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  cell==D72_maj_K2 & side==DOWN & cell==D6_ge2_K2                         n=7    w=6    WR= 85.71%  pnl@5=  +30.14
+  cell==IND2_L & prob>=0.653 & cell==MY290                                n=7    w=6    WR= 85.71%  pnl@5=  +10.17
+  cell==IND2_L & cell==HW_PRIMARY & cell==GREEDY                          n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  cell==IND2_L & cell==HW_PRIMARY & side==DOWN                            n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  cell==IND2_L & cell==HW_PRIMARY & stream==newstreams                    n=7    w=6    WR= 85.71%  pnl@5=   +8.68
+  prob>=0.653 & cell==IND2_T & cell==MY290                                n=7    w=6    WR= 85.71%  pnl@5=  +10.17
+  cell==CELLS6 & side==DOWN & cell==MY290                                 n=7    w=6    WR= 85.71%  pnl@5=  +12.26
+  cell==CELLS6 & cell==BASE & cell==MY290                                 n=7    w=6    WR= 85.71%  pnl@5=  +17.06
+  side==DOWN & cell==MY290 & stream==newstreams                           n=7    w=6    WR= 85.71%  pnl@5=  +15.34
   asset==xrp & cell==BASE                                                 n=20   w=17   WR= 85.00%  pnl@5=  +42.34
-  asset==xrp & cell==BASE & stream==shadow                                n=20   w=17   WR= 85.00%  pnl@5=  +42.34
+  asset==xrp & stream==shadow & cell==BASE                                n=20   w=17   WR= 85.00%  pnl@5=  +42.34
   asset==bnb & prob<=0.626                                                n=13   w=11   WR= 84.62%  pnl@5=  +33.41
   cell==FILT_BOTH & cell==MY290                                           n=13   w=11   WR= 84.62%  pnl@5=  +29.90
   cell==FILT_BOTH & stream==prec                                          n=13   w=11   WR= 84.62%  pnl@5=  +29.90
   cell==IND2_T & cell==MY290                                              n=13   w=11   WR= 84.62%  pnl@5=  +26.06
-  side==DOWN & cell==MY290 & cell==IND2_L                                 n=13   w=11   WR= 84.62%  pnl@5=  +20.30
-  stream==prec & cell==IND2_T & cell==MY290                               n=13   w=11   WR= 84.62%  pnl@5=  +26.06
   stream==consensus & cell==IND2_T & cell==MY290                          n=13   w=11   WR= 84.62%  pnl@5=  +26.06
-  cell==IND2_T & cell==MY290 & cell==IND2_L                               n=13   w=11   WR= 84.62%  pnl@5=  +26.06
-  stream==filtboth & cell==MY290 & cell==C57_A457_EU                      n=13   w=11   WR= 84.62%  pnl@5=  +29.90
-  cell==MY290 & cell==C57_A457_EU & cell==GREEDY                          n=13   w=11   WR= 84.62%  pnl@5=  +29.90
+  stream==filtboth & cell==C57_A457_EU & cell==MY290                      n=13   w=11   WR= 84.62%  pnl@5=  +29.90
+  stream==prec & cell==IND2_T & cell==MY290                               n=13   w=11   WR= 84.62%  pnl@5=  +26.06
+  cell==IND2_L & cell==IND2_T & cell==MY290                               n=13   w=11   WR= 84.62%  pnl@5=  +26.06
+  cell==IND2_L & side==DOWN & cell==MY290                                 n=13   w=11   WR= 84.62%  pnl@5=  +20.30
+  cell==GREEDY & cell==C57_A457_EU & cell==MY290                          n=13   w=11   WR= 84.62%  pnl@5=  +29.90
   asset==hype & prob>=0.675                                               n=19   w=16   WR= 84.21%  pnl@5=  +19.27
-  asset==hype & prob>=0.675 & prob>=0.653                                 n=19   w=16   WR= 84.21%  pnl@5=  +19.27
   stream==prec & stream==consensus_obl & stream==newstreams               n=19   w=16   WR= 84.21%  pnl@5=  +33.60
+  prob>=0.653 & prob>=0.675 & asset==hype                                 n=19   w=16   WR= 84.21%  pnl@5=  +19.27
   side==UP & prob>=0.753                                                  n=73   w=61   WR= 83.56%  pnl@5=  +63.31
   asset==bnb & prob>=0.753                                                n=18   w=15   WR= 83.33%  pnl@5=  +11.79
   asset==hype & prob>=0.697                                               n=18   w=15   WR= 83.33%  pnl@5=  +17.94
   side==DOWN & cell==IND2_T                                               n=18   w=15   WR= 83.33%  pnl@5=  +26.38
   cell==IND2_T & prob>=0.57                                               n=18   w=15   WR= 83.33%  pnl@5=  +26.38
-  asset==hype & prob>=0.675 & prob>=0.697                                 n=18   w=15   WR= 83.33%  pnl@5=  +17.94
-  asset==hype & prob>=0.697 & prob>=0.653                                 n=18   w=15   WR= 83.33%  pnl@5=  +17.94
-  side==DOWN & stream==consensus & cell==IND2_T                           n=18   w=15   WR= 83.33%  pnl@5=  +26.38
-  side==DOWN & cell==IND2_T & cell==IND2_L                                n=18   w=15   WR= 83.33%  pnl@5=  +26.38
-  prob>=0.675 & prob>=0.753 & asset==bnb                                  n=18   w=15   WR= 83.33%  pnl@5=  +11.79
-  prob>=0.753 & prob>=0.697 & asset==bnb                                  n=18   w=15   WR= 83.33%  pnl@5=  +11.79
-  prob>=0.753 & prob>=0.653 & asset==bnb                                  n=18   w=15   WR= 83.33%  pnl@5=  +11.79
-  side==DOWN & asset==xrp & cell==BASE                                    n=12   w=10   WR= 83.33%  pnl@5=  +21.44
-  side==DOWN & cell==IND2_T & cell==MY290                                 n=12   w=10   WR= 83.33%  pnl@5=  +18.45
-  cell==BASE & cell==IND2_T & cell==MY290                                 n=12   w=10   WR= 83.33%  pnl@5=  +23.37
-  cell==BASE & cell==MY290 & cell==IND2_L                                 n=12   w=10   WR= 83.33%  pnl@5=  +23.37
+  stream==consensus & cell==IND2_T & side==DOWN                           n=18   w=15   WR= 83.33%  pnl@5=  +26.38
+  prob>=0.697 & prob>=0.653 & asset==hype                                 n=18   w=15   WR= 83.33%  pnl@5=  +17.94
+  prob>=0.697 & prob>=0.675 & asset==hype                                 n=18   w=15   WR= 83.33%  pnl@5=  +17.94
+  prob>=0.697 & asset==bnb & prob>=0.753                                  n=18   w=15   WR= 83.33%  pnl@5=  +11.79
+  cell==IND2_L & cell==IND2_T & side==DOWN                                n=18   w=15   WR= 83.33%  pnl@5=  +26.38
+  prob>=0.653 & asset==bnb & prob>=0.753                                  n=18   w=15   WR= 83.33%  pnl@5=  +11.79
+  prob>=0.675 & asset==bnb & prob>=0.753                                  n=18   w=15   WR= 83.33%  pnl@5=  +11.79
+  asset==xrp & side==DOWN & cell==BASE                                    n=12   w=10   WR= 83.33%  pnl@5=  +21.44
+  cell==IND2_L & stream==shadow & cell==MY290                             n=12   w=10   WR= 83.33%  pnl@5=  +23.37
+  cell==IND2_L & cell==BASE & cell==MY290                                 n=12   w=10   WR= 83.33%  pnl@5=  +23.37
   stream==shadow & cell==IND2_T & cell==MY290                             n=12   w=10   WR= 83.33%  pnl@5=  +23.37
-  stream==shadow & cell==MY290 & cell==IND2_L                             n=12   w=10   WR= 83.33%  pnl@5=  +23.37
+  cell==IND2_T & side==DOWN & cell==MY290                                 n=12   w=10   WR= 83.33%  pnl@5=  +18.45
+  cell==IND2_T & cell==BASE & cell==MY290                                 n=12   w=10   WR= 83.33%  pnl@5=  +23.37
   asset==bnb & cell==C8FLOW                                               n=6    w=5    WR= 83.33%  pnl@5=   +7.39
   asset==bnb & stream==cdc8                                               n=6    w=5    WR= 83.33%  pnl@5=   +7.39
   asset==hype & cell==C8LGBM                                              n=6    w=5    WR= 83.33%  pnl@5=  +12.25
@@ -147,68 +698,68 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==MY290 & stream==UNION_P4_D72                                      n=6    w=5    WR= 83.33%  pnl@5=  +29.70
   cell==MY290 & stream==c8lgbm_gL                                         n=6    w=5    WR= 83.33%  pnl@5=   +7.00
   stream==consensus_obl & prob<=0.602                                     n=6    w=5    WR= 83.33%  pnl@5=  +17.78
-  asset==hype & side==DOWN & stream==c8lgbm                               n=6    w=5    WR= 83.33%  pnl@5=   +9.22
-  side==DOWN & stream==prec & cell==C57_A457_EU                           n=6    w=5    WR= 83.33%  pnl@5=  +11.85
-  side==DOWN & stream==consensus & cell==IND2N_T                          n=6    w=5    WR= 83.33%  pnl@5=   +7.93
-  side==DOWN & cell==BASE & cell==IND2N_T                                 n=6    w=5    WR= 83.33%  pnl@5=   +7.93
-  side==DOWN & cell==IND2N_T & stream==shadow                             n=6    w=5    WR= 83.33%  pnl@5=   +7.93
-  side==DOWN & cell==IND2N_T & cell==IND2_T                               n=6    w=5    WR= 83.33%  pnl@5=   +7.93
-  side==DOWN & cell==IND2N_T & cell==IND2N_L                              n=6    w=5    WR= 83.33%  pnl@5=   +7.93
-  side==DOWN & cell==IND2N_T & cell==IND2_L                               n=6    w=5    WR= 83.33%  pnl@5=   +7.93
-  side==DOWN & cell==IND2_T & cell==IND2N_L                               n=6    w=5    WR= 83.33%  pnl@5=   +7.93
-  cell==C8FLOW & stream==cdc8 & asset==bnb                                n=6    w=5    WR= 83.33%  pnl@5=   +7.39
   cell==C8FLOW & prob>=0.653 & asset==bnb                                 n=6    w=5    WR= 83.33%  pnl@5=   +7.39
+  cell==C8FLOW & asset==bnb & stream==cdc8                                n=6    w=5    WR= 83.33%  pnl@5=   +7.39
+  stream==consensus & cell==INCUMBENT & cell==HW_PRIMARY                  n=6    w=5    WR= 83.33%  pnl@5=   +4.05
+  stream==consensus & prob>=0.653 & cell==HW_PRIMARY                      n=6    w=5    WR= 83.33%  pnl@5=   +6.84
+  stream==consensus & side==DOWN & cell==IND2N_T                          n=6    w=5    WR= 83.33%  pnl@5=   +7.93
+  cell==IND2N_L & cell==IND2_T & side==DOWN                               n=6    w=5    WR= 83.33%  pnl@5=   +7.93
+  cell==IND2N_L & side==DOWN & cell==IND2N_T                              n=6    w=5    WR= 83.33%  pnl@5=   +7.93
+  asset==xrp & stream==shadow & stream==c8lgbm                            n=6    w=5    WR= 83.33%  pnl@5=   +6.07
+  cell==INCUMBENT & stream==filtboth & cell==ETHUP_T                      n=6    w=5    WR= 83.33%  pnl@5=  +14.72
+  cell==INCUMBENT & stream==consensus_obl & cell==HW_PRIMARY              n=6    w=5    WR= 83.33%  pnl@5=   +4.05
+  cell==INCUMBENT & cell==IND2_L & cell==HW_PRIMARY                       n=6    w=5    WR= 83.33%  pnl@5=   +4.05
+  cell==INCUMBENT & cell==ETHUP_T & cell==GREEDY                          n=6    w=5    WR= 83.33%  pnl@5=  +14.72
+  stream==filtboth & cell==ETHUP_T & stream==shadow                       n=6    w=5    WR= 83.33%  pnl@5=  +13.86
+  stream==filtboth & cell==ETHUP_T & cell==BASE                           n=6    w=5    WR= 83.33%  pnl@5=  +13.86
   stream==prec & cell==C8LGBM_g & prob>=0.653                             n=6    w=5    WR= 83.33%  pnl@5=   +8.38
   stream==prec & cell==C8LGBM_g & stream==c8lgbm                          n=6    w=5    WR= 83.33%  pnl@5=   +8.38
-  stream==consensus & cell==HW_PRIMARY & cell==INCUMBENT                  n=6    w=5    WR= 83.33%  pnl@5=   +4.05
-  stream==consensus & cell==HW_PRIMARY & prob>=0.653                      n=6    w=5    WR= 83.33%  pnl@5=   +6.84
-  asset==xrp & stream==shadow & stream==c8lgbm                            n=6    w=5    WR= 83.33%  pnl@5=   +6.07
-  cell==HW_PRIMARY & stream==consensus_obl & cell==INCUMBENT              n=6    w=5    WR= 83.33%  pnl@5=   +4.05
-  cell==HW_PRIMARY & stream==consensus_obl & prob>=0.653                  n=6    w=5    WR= 83.33%  pnl@5=   +6.84
-  cell==HW_PRIMARY & cell==INCUMBENT & cell==IND2_L                       n=6    w=5    WR= 83.33%  pnl@5=   +4.05
-  cell==HW_PRIMARY & prob>=0.653 & cell==IND2_L                           n=6    w=5    WR= 83.33%  pnl@5=   +6.84
-  cell==BASE & stream==filtboth & cell==ETHUP_T                           n=6    w=5    WR= 83.33%  pnl@5=  +13.86
-  cell==BASE & cell==ETHUP_T & cell==GREEDY                               n=6    w=5    WR= 83.33%  pnl@5=  +13.86
-  stream==shadow & stream==filtboth & cell==ETHUP_T                       n=6    w=5    WR= 83.33%  pnl@5=  +13.86
-  stream==shadow & cell==ETHUP_T & cell==GREEDY                           n=6    w=5    WR= 83.33%  pnl@5=  +13.86
-  stream==filtboth & cell==INCUMBENT & cell==ETHUP_T                      n=6    w=5    WR= 83.33%  pnl@5=  +14.72
-  cell==INCUMBENT & cell==ETHUP_T & cell==GREEDY                          n=6    w=5    WR= 83.33%  pnl@5=  +14.72
-  stream==cdc8 & prob>=0.653 & asset==bnb                                 n=6    w=5    WR= 83.33%  pnl@5=   +7.39
+  stream==prec & side==DOWN & cell==C57_A457_EU                           n=6    w=5    WR= 83.33%  pnl@5=  +11.85
+  stream==consensus_obl & prob>=0.653 & cell==HW_PRIMARY                  n=6    w=5    WR= 83.33%  pnl@5=   +6.84
+  cell==IND2_L & prob>=0.653 & cell==HW_PRIMARY                           n=6    w=5    WR= 83.33%  pnl@5=   +6.84
+  cell==IND2_L & side==DOWN & cell==IND2N_T                               n=6    w=5    WR= 83.33%  pnl@5=   +7.93
+  cell==ETHUP_T & stream==shadow & cell==GREEDY                           n=6    w=5    WR= 83.33%  pnl@5=  +13.86
+  cell==ETHUP_T & cell==GREEDY & cell==BASE                               n=6    w=5    WR= 83.33%  pnl@5=  +13.86
+  prob>=0.653 & asset==bnb & stream==cdc8                                 n=6    w=5    WR= 83.33%  pnl@5=   +7.39
+  asset==hype & side==DOWN & stream==c8lgbm                               n=6    w=5    WR= 83.33%  pnl@5=   +9.22
+  stream==shadow & side==DOWN & cell==IND2N_T                             n=6    w=5    WR= 83.33%  pnl@5=   +7.93
+  cell==IND2_T & side==DOWN & cell==IND2N_T                               n=6    w=5    WR= 83.33%  pnl@5=   +7.93
+  side==DOWN & cell==IND2N_T & cell==BASE                                 n=6    w=5    WR= 83.33%  pnl@5=   +7.93
   cell==C8LGBM & prob>=0.753                                              n=65   w=54   WR= 83.08%  pnl@5=  +62.22
   asset==hype & prob>=0.626                                               n=23   w=19   WR= 82.61%  pnl@5=  +23.83
   asset==hype & prob>=0.653                                               n=23   w=19   WR= 82.61%  pnl@5=  +23.83
   asset==hype & prob<=0.723                                               n=17   w=14   WR= 82.35%  pnl@5=  +22.22
   cell==INCUMBENT & stream==prec                                          n=17   w=14   WR= 82.35%  pnl@5=  +26.45
-  side==DOWN & cell==BASE & cell==IND2_T                                  n=17   w=14   WR= 82.35%  pnl@5=  +23.70
-  side==DOWN & stream==shadow & cell==IND2_T                              n=17   w=14   WR= 82.35%  pnl@5=  +23.70
-  stream==prec & stream==newstreams & cell==INCUMBENT                     n=17   w=14   WR= 82.35%  pnl@5=  +26.45
-  stream==consensus_obl & stream==newstreams & cell==MY290                n=17   w=14   WR= 82.35%  pnl@5=  +27.11
+  cell==INCUMBENT & stream==prec & stream==newstreams                     n=17   w=14   WR= 82.35%  pnl@5=  +26.45
+  stream==consensus_obl & cell==MY290 & stream==newstreams                n=17   w=14   WR= 82.35%  pnl@5=  +27.11
+  stream==shadow & cell==IND2_T & side==DOWN                              n=17   w=14   WR= 82.35%  pnl@5=  +23.70
+  cell==IND2_T & side==DOWN & cell==BASE                                  n=17   w=14   WR= 82.35%  pnl@5=  +23.70
   asset==hype & side==DOWN                                                n=11   w=9    WR= 81.82%  pnl@5=  +15.58
   cell==IND2_T & prob>=0.653                                              n=11   w=9    WR= 81.82%  pnl@5=  +10.59
   cell==MY195 & prob>=0.653                                               n=11   w=9    WR= 81.82%  pnl@5=  +13.23
-  side==DOWN & stream==prec & stream==consensus_obl                       n=11   w=9    WR= 81.82%  pnl@5=  +18.50
-  side==DOWN & cell==IND2_T & prob>=0.653                                 n=11   w=9    WR= 81.82%  pnl@5=  +10.59
+  stream==consensus & prob>=0.653 & cell==IND2_T                          n=11   w=9    WR= 81.82%  pnl@5=  +10.59
+  asset==xrp & prob>=0.697 & cell==BASE                                   n=11   w=9    WR= 81.82%  pnl@5=  +12.71
+  stream==prec & stream==consensus_obl & side==DOWN                       n=11   w=9    WR= 81.82%  pnl@5=  +18.50
   stream==prec & cell==MY195 & prob>=0.653                                n=11   w=9    WR= 81.82%  pnl@5=  +13.23
-  stream==consensus & cell==IND2_T & prob>=0.653                          n=11   w=9    WR= 81.82%  pnl@5=  +10.59
-  asset==xrp & cell==BASE & prob>=0.697                                   n=11   w=9    WR= 81.82%  pnl@5=  +12.71
-  cell==IND2_T & prob>=0.653 & cell==IND2_L                               n=11   w=9    WR= 81.82%  pnl@5=  +10.59
+  cell==IND2_L & prob>=0.653 & cell==IND2_T                               n=11   w=9    WR= 81.82%  pnl@5=  +10.59
+  prob>=0.653 & cell==IND2_T & side==DOWN                                 n=11   w=9    WR= 81.82%  pnl@5=  +10.59
   cell==IND2_T & prob>=0.602                                              n=16   w=13   WR= 81.25%  pnl@5=  +18.88
   cell==IND2_T & prob>=0.626                                              n=16   w=13   WR= 81.25%  pnl@5=  +18.88
-  stream==prec & stream==consensus_obl & cell==C57_A457_EU                n=16   w=13   WR= 81.25%  pnl@5=  +23.62
   asset==xrp & cell==BASE & cell==CELLS13                                 n=16   w=13   WR= 81.25%  pnl@5=  +30.95
+  stream==prec & stream==consensus_obl & cell==C57_A457_EU                n=16   w=13   WR= 81.25%  pnl@5=  +23.62
   asset==hype & prob<=0.753                                               n=21   w=17   WR= 80.95%  pnl@5=  +23.64
   cell==IND2_T                                                            n=20   w=16   WR= 80.00%  pnl@5=  +28.81
   cell==IND2_L & cell==IND2_T                                             n=20   w=16   WR= 80.00%  pnl@5=  +28.81
   cell==IND2_T & stream==consensus                                        n=20   w=16   WR= 80.00%  pnl@5=  +28.81
   cell==IND2_T & prob>=0.293                                              n=20   w=16   WR= 80.00%  pnl@5=  +28.81
   cell==IND2_T & prob<=0.753                                              n=20   w=16   WR= 80.00%  pnl@5=  +28.81
-  stream==consensus & cell==IND2_T & cell==IND2_L                         n=20   w=16   WR= 80.00%  pnl@5=  +28.81
-  asset==hype & prob>=0.675 & stream==c8lgbm                              n=15   w=12   WR= 80.00%  pnl@5=  +11.96
-  stream==prec & stream==consensus & cell==INCUMBENT                      n=15   w=12   WR= 80.00%  pnl@5=  +20.06
-  stream==prec & stream==consensus_obl & cell==INCUMBENT                  n=15   w=12   WR= 80.00%  pnl@5=  +20.06
-  asset==xrp & cell==BASE & prob>=0.653                                   n=15   w=12   WR= 80.00%  pnl@5=  +14.78
-  prob>=0.753 & stream==c8lgbm & asset==bnb                               n=15   w=12   WR= 80.00%  pnl@5=   +5.94
-  stream==consensus_obl & cell==MY290 & cell==C57_A457_EU                 n=15   w=12   WR= 80.00%  pnl@5=  +21.58
+  stream==consensus & cell==IND2_L & cell==IND2_T                         n=20   w=16   WR= 80.00%  pnl@5=  +28.81
+  stream==consensus & cell==INCUMBENT & stream==prec                      n=15   w=12   WR= 80.00%  pnl@5=  +20.06
+  asset==xrp & prob>=0.653 & cell==BASE                                   n=15   w=12   WR= 80.00%  pnl@5=  +14.78
+  cell==INCUMBENT & stream==prec & stream==consensus_obl                  n=15   w=12   WR= 80.00%  pnl@5=  +20.06
+  stream==consensus_obl & cell==C57_A457_EU & cell==MY290                 n=15   w=12   WR= 80.00%  pnl@5=  +21.58
+  prob>=0.675 & asset==hype & stream==c8lgbm                              n=15   w=12   WR= 80.00%  pnl@5=  +11.96
+  asset==bnb & prob>=0.753 & stream==c8lgbm                               n=15   w=12   WR= 80.00%  pnl@5=   +5.94
   side==UP & cell==FILT_BOTH                                              n=10   w=8    WR= 80.00%  pnl@5=  +17.43
   side==UP & cell==GREEDY                                                 n=10   w=8    WR= 80.00%  pnl@5=  +17.43
   side==UP & stream==filtboth                                             n=10   w=8    WR= 80.00%  pnl@5=  +17.43
@@ -219,30 +770,30 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==ETHUP_T & cell==GREEDY                                            n=10   w=8    WR= 80.00%  pnl@5=  +20.92
   cell==ETHUP_T & stream==filtboth                                        n=10   w=8    WR= 80.00%  pnl@5=  +20.92
   cell==IND2_T & stream==consensus_obl                                    n=10   w=8    WR= 80.00%  pnl@5=  +10.38
-  side==DOWN & cell==IND2_T & stream==consensus_obl                       n=10   w=8    WR= 80.00%  pnl@5=  +10.38
-  stream==prec & stream==consensus_obl & cell==IND2_L                     n=10   w=8    WR= 80.00%  pnl@5=  +10.56
-  stream==prec & stream==filtboth & cell==ETHUP_T                         n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  stream==prec & cell==ETHUP_T & cell==GREEDY                             n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  stream==consensus & cell==IND2_T & stream==consensus_obl                n=10   w=8    WR= 80.00%  pnl@5=  +10.38
-  stream==consensus & cell==IND2_T & cell==CELLS6                         n=10   w=8    WR= 80.00%  pnl@5=  +16.19
   stream==consensus & stream==filtboth & cell==ETHUP_T                    n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  stream==consensus & stream==consensus_obl & cell==IND2_T                n=10   w=8    WR= 80.00%  pnl@5=  +10.38
   stream==consensus & cell==ETHUP_T & cell==GREEDY                        n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  asset==xrp & cell==BASE & cell==CELLS6                                  n=10   w=8    WR= 80.00%  pnl@5=  +15.54
-  cell==BASE & cell==IND2_T & prob>=0.653                                 n=10   w=8    WR= 80.00%  pnl@5=   +7.91
-  cell==BASE & cell==IND2_T & cell==CELLS6                                n=10   w=8    WR= 80.00%  pnl@5=  +16.19
-  cell==C8LGBM_g & prob>=0.753 & asset==sol                               n=10   w=8    WR= 80.00%  pnl@5=   +3.53
-  stream==shadow & cell==IND2_T & prob>=0.653                             n=10   w=8    WR= 80.00%  pnl@5=   +7.91
-  stream==shadow & cell==IND2_T & cell==CELLS6                            n=10   w=8    WR= 80.00%  pnl@5=  +16.19
-  cell==IND2_T & stream==consensus_obl & cell==IND2_L                     n=10   w=8    WR= 80.00%  pnl@5=  +10.38
-  cell==IND2_T & cell==CELLS6 & cell==CELLS13                             n=10   w=8    WR= 80.00%  pnl@5=  +16.19
-  cell==IND2_T & cell==CELLS6 & cell==IND2_L                              n=10   w=8    WR= 80.00%  pnl@5=  +16.19
-  stream==filtboth & stream==newstreams & cell==ETHUP_T                   n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  stream==filtboth & cell==ETHUP_T & cell==MY290                          n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  stream==filtboth & cell==ETHUP_T & cell==C57_A457_EU                    n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  stream==consensus & cell==IND2_T & cell==CELLS6                         n=10   w=8    WR= 80.00%  pnl@5=  +16.19
+  asset==xrp & cell==CELLS6 & cell==BASE                                  n=10   w=8    WR= 80.00%  pnl@5=  +15.54
+  stream==filtboth & stream==prec & cell==ETHUP_T                         n=10   w=8    WR= 80.00%  pnl@5=  +20.92
   stream==filtboth & cell==ETHUP_T & cell==GREEDY                         n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  stream==newstreams & cell==ETHUP_T & cell==GREEDY                       n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  cell==ETHUP_T & cell==MY290 & cell==GREEDY                              n=10   w=8    WR= 80.00%  pnl@5=  +20.92
-  cell==ETHUP_T & cell==C57_A457_EU & cell==GREEDY                        n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  stream==filtboth & cell==ETHUP_T & cell==C57_A457_EU                    n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  stream==filtboth & cell==ETHUP_T & cell==MY290                          n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  stream==filtboth & cell==ETHUP_T & stream==newstreams                   n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  stream==prec & stream==consensus_obl & cell==IND2_L                     n=10   w=8    WR= 80.00%  pnl@5=  +10.56
+  stream==prec & cell==ETHUP_T & cell==GREEDY                             n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  stream==consensus_obl & cell==IND2_L & cell==IND2_T                     n=10   w=8    WR= 80.00%  pnl@5=  +10.38
+  stream==consensus_obl & cell==IND2_T & side==DOWN                       n=10   w=8    WR= 80.00%  pnl@5=  +10.38
+  cell==C8LGBM_g & prob>=0.753 & asset==sol                               n=10   w=8    WR= 80.00%  pnl@5=   +3.53
+  cell==IND2_L & cell==IND2_T & cell==CELLS6                              n=10   w=8    WR= 80.00%  pnl@5=  +16.19
+  cell==ETHUP_T & cell==GREEDY & cell==C57_A457_EU                        n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  cell==ETHUP_T & cell==GREEDY & cell==MY290                              n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  cell==ETHUP_T & cell==GREEDY & stream==newstreams                       n=10   w=8    WR= 80.00%  pnl@5=  +20.92
+  prob>=0.653 & stream==shadow & cell==IND2_T                             n=10   w=8    WR= 80.00%  pnl@5=   +7.91
+  prob>=0.653 & cell==IND2_T & cell==BASE                                 n=10   w=8    WR= 80.00%  pnl@5=   +7.91
+  stream==shadow & cell==IND2_T & cell==CELLS6                            n=10   w=8    WR= 80.00%  pnl@5=  +16.19
+  cell==IND2_T & cell==CELLS6 & cell==BASE                                n=10   w=8    WR= 80.00%  pnl@5=  +16.19
+  cell==IND2_T & cell==CELLS6 & cell==CELLS13                             n=10   w=8    WR= 80.00%  pnl@5=  +16.19
   asset==bnb & prob<=0.602                                                n=5    w=4    WR= 80.00%  pnl@5=   +8.93
   asset==doge & cell==FILT_BOTH                                           n=5    w=4    WR= 80.00%  pnl@5=   +3.72
   asset==doge & cell==MY290                                               n=5    w=4    WR= 80.00%  pnl@5=   +2.10
@@ -275,109 +826,109 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==P4_pmpct20_K4 & prob>=0.293                                       n=5    w=4    WR= 80.00%  pnl@5=   +6.98
   cell==UNION_P4_D72_K1_D72 & stream==prec                                n=5    w=4    WR= 80.00%  pnl@5=  +17.80
   stream==prec & prob>=0.753                                              n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  asset==hype & side==DOWN & stream==newstreams                           n=5    w=4    WR= 80.00%  pnl@5=   +6.91
-  side==DOWN & stream==prec & cell==AGREE4_60                             n=5    w=4    WR= 80.00%  pnl@5=   +3.91
-  side==DOWN & stream==prec & stream==c8lgbm                              n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  side==DOWN & prob>=0.675 & cell==MY195                                  n=5    w=4    WR= 80.00%  pnl@5=   +3.24
-  side==DOWN & cell==HW_PRIMARY & cell==CORE_L                            n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  side==DOWN & cell==IND2N_T & cell==CELLS6                               n=5    w=4    WR= 80.00%  pnl@5=   +3.48
-  side==DOWN & cell==IND2N_T & cell==CELLS13                              n=5    w=4    WR= 80.00%  pnl@5=   +3.48
-  side==DOWN & cell==C8LGBM_g & cell==IND2_T                              n=5    w=4    WR= 80.00%  pnl@5=   +3.11
-  side==DOWN & cell==IND2_T & cell==CORE_L                                n=5    w=4    WR= 80.00%  pnl@5=   +3.11
-  side==DOWN & cell==IND2_T & asset==sol                                  n=5    w=4    WR= 80.00%  pnl@5=   +3.90
-  side==DOWN & cell==IND2_T & stream==c8lgbm                              n=5    w=4    WR= 80.00%  pnl@5=   +3.11
-  side==DOWN & cell==MY195 & prob>=0.653                                  n=5    w=4    WR= 80.00%  pnl@5=   +3.24
-  side==DOWN & cell==MY290 & cell==C57_A457_EU                            n=5    w=4    WR= 80.00%  pnl@5=   +9.81
-  stream==prec & prob>=0.675 & prob>=0.753                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  stream==prec & cell==AGREE4_60 & stream==newstreams                     n=5    w=4    WR= 80.00%  pnl@5=   +3.91
-  stream==prec & cell==AGREE4_60 & cell==C57_A457_EU                      n=5    w=4    WR= 80.00%  pnl@5=   +3.91
-  stream==prec & cell==UNION_P4_D72_K1_D72 & cell==D72_maj_K1             n=5    w=4    WR= 80.00%  pnl@5=  +17.80
-  stream==prec & cell==C8LGBM_g & cell==MY290                             n=5    w=4    WR= 80.00%  pnl@5=   +6.34
-  stream==prec & prob>=0.753 & prob>=0.697                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  stream==prec & prob>=0.753 & prob>=0.653                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  stream==prec & prob>=0.753 & cell==MY290                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  stream==prec & prob>=0.697 & cell==CELLS13                              n=5    w=4    WR= 80.00%  pnl@5=   +6.44
-  stream==prec & stream==filtboth & cell==CELLS13                         n=5    w=4    WR= 80.00%  pnl@5=   +8.21
-  stream==prec & cell==GREEDY & cell==CELLS13                             n=5    w=4    WR= 80.00%  pnl@5=   +8.21
-  prob>=0.675 & prob>=0.753 & cell==MY290                                 n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  cell==AGREE4_60 & stream==consensus & cell==HW_PRIMARY                  n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==AGREE4_60 & cell==HW_PRIMARY & stream==consensus_obl              n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==AGREE4_60 & cell==HW_PRIMARY & cell==CORE_L                       n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==AGREE4_60 & cell==HW_PRIMARY & cell==INCUMBENT                    n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==AGREE4_60 & cell==HW_PRIMARY & cell==IND2_L                       n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  stream==consensus & cell==HW_PRIMARY & cell==BASE                       n=5    w=4    WR= 80.00%  pnl@5=   +4.15
-  stream==consensus & cell==HW_PRIMARY & stream==shadow                   n=5    w=4    WR= 80.00%  pnl@5=   +4.15
-  stream==consensus & cell==HW_PRIMARY & cell==CORE_L                     n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  stream==consensus & cell==HW_PRIMARY & cell==C57_A457_EU                n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  stream==consensus & cell==C8LGBM_g & stream==filtboth                   n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  stream==consensus & cell==C8LGBM_g & cell==C57_A457_EU                  n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  stream==consensus & cell==C8LGBM_g & cell==GREEDY                       n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  stream==consensus & cell==IND2_T & asset==sol                           n=5    w=4    WR= 80.00%  pnl@5=   +3.90
+  stream==consensus & cell==CORE_L & cell==HW_PRIMARY                     n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  stream==consensus & stream==filtboth & cell==C8LGBM_g                   n=5    w=4    WR= 80.00%  pnl@5=   +4.64
   stream==consensus & stream==filtboth & stream==c8lgbm                   n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  stream==consensus & cell==C57_A457_EU & stream==c8lgbm                  n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==consensus & cell==C8LGBM_g & cell==GREEDY                       n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==consensus & cell==C8LGBM_g & cell==C57_A457_EU                  n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==consensus & cell==AGREE4_60 & cell==HW_PRIMARY                  n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  stream==consensus & stream==shadow & cell==HW_PRIMARY                   n=5    w=4    WR= 80.00%  pnl@5=   +4.15
+  stream==consensus & cell==HW_PRIMARY & cell==C57_A457_EU                n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  stream==consensus & cell==HW_PRIMARY & cell==BASE                       n=5    w=4    WR= 80.00%  pnl@5=   +4.15
   stream==consensus & cell==GREEDY & stream==c8lgbm                       n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  asset==xrp & cell==BASE & stream==c8lgbm                                n=5    w=4    WR= 80.00%  pnl@5=   +5.11
-  cell==HW_PRIMARY & cell==BASE & stream==consensus_obl                   n=5    w=4    WR= 80.00%  pnl@5=   +4.15
-  cell==HW_PRIMARY & cell==BASE & cell==IND2_L                            n=5    w=4    WR= 80.00%  pnl@5=   +4.15
-  cell==HW_PRIMARY & stream==shadow & stream==consensus_obl               n=5    w=4    WR= 80.00%  pnl@5=   +4.15
-  cell==HW_PRIMARY & stream==shadow & cell==IND2_L                        n=5    w=4    WR= 80.00%  pnl@5=   +4.15
-  cell==HW_PRIMARY & stream==consensus_obl & cell==CORE_L                 n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & stream==consensus_obl & cell==C57_A457_EU            n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & stream==filtboth & cell==CORE_L                      n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & cell==CORE_L & stream==newstreams                    n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & cell==CORE_L & cell==INCUMBENT                       n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & cell==CORE_L & cell==C57_A457_EU                     n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & cell==CORE_L & cell==GREEDY                          n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & cell==CORE_L & cell==IND2_L                          n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & cell==INCUMBENT & prob>=0.653                        n=5    w=4    WR= 80.00%  pnl@5=   +2.21
-  cell==HW_PRIMARY & cell==INCUMBENT & cell==C57_A457_EU                  n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==HW_PRIMARY & cell==C57_A457_EU & cell==IND2_L                     n=5    w=4    WR= 80.00%  pnl@5=   +3.16
-  cell==C8LGBM_g & cell==IND2_T & prob>=0.653                             n=5    w=4    WR= 80.00%  pnl@5=   +3.11
-  cell==C8LGBM_g & stream==consensus_obl & stream==filtboth               n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  cell==C8LGBM_g & stream==consensus_obl & cell==C57_A457_EU              n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  cell==C8LGBM_g & stream==consensus_obl & cell==GREEDY                   n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  cell==C8LGBM_g & stream==filtboth & cell==INCUMBENT                     n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  cell==C8LGBM_g & cell==INCUMBENT & cell==C57_A457_EU                    n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  cell==C8LGBM_g & cell==INCUMBENT & cell==GREEDY                         n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  cell==C8LGBM_g & prob>=0.653 & cell==MY290                              n=5    w=4    WR= 80.00%  pnl@5=   +6.34
-  cell==C8LGBM_g & cell==MY290 & stream==c8lgbm                           n=5    w=4    WR= 80.00%  pnl@5=   +6.34
-  prob>=0.753 & prob>=0.697 & cell==MY290                                 n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  prob>=0.753 & prob>=0.653 & cell==MY290                                 n=5    w=4    WR= 80.00%  pnl@5=   +1.89
-  cell==IND2_T & cell==CORE_L & prob>=0.653                               n=5    w=4    WR= 80.00%  pnl@5=   +3.11
-  cell==IND2_T & prob>=0.653 & cell==CELLS6                               n=5    w=4    WR= 80.00%  pnl@5=   +5.06
-  cell==IND2_T & prob>=0.653 & stream==c8lgbm                             n=5    w=4    WR= 80.00%  pnl@5=   +3.11
-  cell==IND2_T & asset==sol & cell==IND2_L                                n=5    w=4    WR= 80.00%  pnl@5=   +3.90
-  prob>=0.697 & cell==MY290 & cell==CELLS13                               n=5    w=4    WR= 80.00%  pnl@5=   +6.44
-  stream==consensus_obl & stream==filtboth & stream==c8lgbm               n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  stream==consensus_obl & cell==C57_A457_EU & stream==c8lgbm              n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  stream==consensus_obl & cell==GREEDY & stream==c8lgbm                   n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  stream==filtboth & cell==INCUMBENT & stream==c8lgbm                     n=5    w=4    WR= 80.00%  pnl@5=   +4.64
-  cell==INCUMBENT & cell==C57_A457_EU & stream==c8lgbm                    n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==consensus & cell==IND2_T & asset==sol                           n=5    w=4    WR= 80.00%  pnl@5=   +3.90
+  stream==consensus & stream==c8lgbm & cell==C57_A457_EU                  n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  asset==xrp & stream==c8lgbm & cell==BASE                                n=5    w=4    WR= 80.00%  pnl@5=   +5.11
+  cell==INCUMBENT & cell==CORE_L & cell==HW_PRIMARY                       n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==INCUMBENT & stream==filtboth & cell==C8LGBM_g                     n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  cell==INCUMBENT & stream==filtboth & stream==c8lgbm                     n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  cell==INCUMBENT & cell==C8LGBM_g & cell==GREEDY                         n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  cell==INCUMBENT & cell==C8LGBM_g & cell==C57_A457_EU                    n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  cell==INCUMBENT & prob>=0.653 & cell==HW_PRIMARY                        n=5    w=4    WR= 80.00%  pnl@5=   +2.21
+  cell==INCUMBENT & cell==AGREE4_60 & cell==HW_PRIMARY                    n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==INCUMBENT & cell==HW_PRIMARY & cell==C57_A457_EU                  n=5    w=4    WR= 80.00%  pnl@5=   +3.16
   cell==INCUMBENT & cell==GREEDY & stream==c8lgbm                         n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  cell==INCUMBENT & stream==c8lgbm & cell==C57_A457_EU                    n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  prob>=0.697 & stream==prec & prob>=0.753                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
+  prob>=0.697 & stream==prec & cell==CELLS13                              n=5    w=4    WR= 80.00%  pnl@5=   +6.44
+  prob>=0.697 & prob>=0.753 & cell==MY290                                 n=5    w=4    WR= 80.00%  pnl@5=   +1.89
+  prob>=0.697 & cell==MY290 & cell==CELLS13                               n=5    w=4    WR= 80.00%  pnl@5=   +6.44
+  cell==CORE_L & stream==filtboth & cell==HW_PRIMARY                      n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & stream==consensus_obl & cell==HW_PRIMARY                 n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & cell==IND2_L & cell==HW_PRIMARY                          n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & prob>=0.653 & cell==IND2_T                               n=5    w=4    WR= 80.00%  pnl@5=   +3.11
+  cell==CORE_L & cell==AGREE4_60 & cell==HW_PRIMARY                       n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & cell==HW_PRIMARY & cell==GREEDY                          n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & cell==HW_PRIMARY & side==DOWN                            n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & cell==HW_PRIMARY & cell==C57_A457_EU                     n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & cell==HW_PRIMARY & stream==newstreams                    n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==CORE_L & cell==IND2_T & side==DOWN                                n=5    w=4    WR= 80.00%  pnl@5=   +3.11
+  stream==filtboth & stream==prec & cell==CELLS13                         n=5    w=4    WR= 80.00%  pnl@5=   +8.21
+  stream==filtboth & stream==consensus_obl & cell==C8LGBM_g               n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==filtboth & stream==consensus_obl & stream==c8lgbm               n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==prec & cell==C8LGBM_g & cell==MY290                             n=5    w=4    WR= 80.00%  pnl@5=   +6.34
+  stream==prec & prob>=0.653 & prob>=0.753                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
+  stream==prec & prob>=0.675 & prob>=0.753                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
+  stream==prec & cell==AGREE4_60 & side==DOWN                             n=5    w=4    WR= 80.00%  pnl@5=   +3.91
+  stream==prec & cell==AGREE4_60 & cell==C57_A457_EU                      n=5    w=4    WR= 80.00%  pnl@5=   +3.91
+  stream==prec & cell==AGREE4_60 & stream==newstreams                     n=5    w=4    WR= 80.00%  pnl@5=   +3.91
+  stream==prec & cell==D72_maj_K1 & cell==UNION_P4_D72_K1_D72             n=5    w=4    WR= 80.00%  pnl@5=  +17.80
+  stream==prec & cell==GREEDY & cell==CELLS13                             n=5    w=4    WR= 80.00%  pnl@5=   +8.21
+  stream==prec & side==DOWN & stream==c8lgbm                              n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==prec & prob>=0.753 & cell==MY290                                n=5    w=4    WR= 80.00%  pnl@5=   +1.89
+  stream==consensus_obl & cell==C8LGBM_g & cell==GREEDY                   n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==consensus_obl & cell==C8LGBM_g & cell==C57_A457_EU              n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==consensus_obl & cell==AGREE4_60 & cell==HW_PRIMARY              n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  stream==consensus_obl & stream==shadow & cell==HW_PRIMARY               n=5    w=4    WR= 80.00%  pnl@5=   +4.15
+  stream==consensus_obl & cell==HW_PRIMARY & cell==C57_A457_EU            n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  stream==consensus_obl & cell==HW_PRIMARY & cell==BASE                   n=5    w=4    WR= 80.00%  pnl@5=   +4.15
+  stream==consensus_obl & cell==GREEDY & stream==c8lgbm                   n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  stream==consensus_obl & stream==c8lgbm & cell==C57_A457_EU              n=5    w=4    WR= 80.00%  pnl@5=   +4.64
+  cell==C8LGBM_g & prob>=0.653 & cell==IND2_T                             n=5    w=4    WR= 80.00%  pnl@5=   +3.11
+  cell==C8LGBM_g & prob>=0.653 & cell==MY290                              n=5    w=4    WR= 80.00%  pnl@5=   +6.34
+  cell==C8LGBM_g & cell==IND2_T & side==DOWN                              n=5    w=4    WR= 80.00%  pnl@5=   +3.11
+  cell==C8LGBM_g & stream==c8lgbm & cell==MY290                           n=5    w=4    WR= 80.00%  pnl@5=   +6.34
+  cell==IND2_L & cell==AGREE4_60 & cell==HW_PRIMARY                       n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==IND2_L & stream==shadow & cell==HW_PRIMARY                        n=5    w=4    WR= 80.00%  pnl@5=   +4.15
+  cell==IND2_L & cell==HW_PRIMARY & cell==C57_A457_EU                     n=5    w=4    WR= 80.00%  pnl@5=   +3.16
+  cell==IND2_L & cell==HW_PRIMARY & cell==BASE                            n=5    w=4    WR= 80.00%  pnl@5=   +4.15
+  cell==IND2_L & cell==IND2_T & asset==sol                                n=5    w=4    WR= 80.00%  pnl@5=   +3.90
+  cell==MY195 & prob>=0.653 & side==DOWN                                  n=5    w=4    WR= 80.00%  pnl@5=   +3.24
+  cell==MY195 & prob>=0.675 & side==DOWN                                  n=5    w=4    WR= 80.00%  pnl@5=   +3.24
+  prob>=0.653 & cell==IND2_T & cell==CELLS6                               n=5    w=4    WR= 80.00%  pnl@5=   +5.06
+  prob>=0.653 & cell==IND2_T & stream==c8lgbm                             n=5    w=4    WR= 80.00%  pnl@5=   +3.11
+  prob>=0.653 & prob>=0.753 & cell==MY290                                 n=5    w=4    WR= 80.00%  pnl@5=   +1.89
+  prob>=0.675 & prob>=0.753 & cell==MY290                                 n=5    w=4    WR= 80.00%  pnl@5=   +1.89
+  asset==hype & side==DOWN & stream==newstreams                           n=5    w=4    WR= 80.00%  pnl@5=   +6.91
+  cell==IND2_T & side==DOWN & stream==c8lgbm                              n=5    w=4    WR= 80.00%  pnl@5=   +3.11
+  cell==IND2_T & side==DOWN & asset==sol                                  n=5    w=4    WR= 80.00%  pnl@5=   +3.90
+  cell==CELLS6 & side==DOWN & cell==IND2N_T                               n=5    w=4    WR= 80.00%  pnl@5=   +3.48
+  side==DOWN & cell==IND2N_T & cell==CELLS13                              n=5    w=4    WR= 80.00%  pnl@5=   +3.48
+  side==DOWN & cell==C57_A457_EU & cell==MY290                            n=5    w=4    WR= 80.00%  pnl@5=   +9.81
   asset==hype & prob>=0.602                                               n=24   w=19   WR= 79.17%  pnl@5=  +18.65
   stream==c8lgbm & prob>=0.753                                            n=95   w=75   WR= 78.95%  pnl@5=  +54.71
+  prob>=0.697 & prob>=0.753 & stream==c8lgbm                              n=95   w=75   WR= 78.95%  pnl@5=  +54.71
+  prob>=0.653 & prob>=0.753 & stream==c8lgbm                              n=95   w=75   WR= 78.95%  pnl@5=  +54.71
   prob>=0.675 & prob>=0.753 & stream==c8lgbm                              n=95   w=75   WR= 78.95%  pnl@5=  +54.71
-  prob>=0.753 & prob>=0.697 & stream==c8lgbm                              n=95   w=75   WR= 78.95%  pnl@5=  +54.71
-  prob>=0.753 & prob>=0.653 & stream==c8lgbm                              n=95   w=75   WR= 78.95%  pnl@5=  +54.71
   cell==BASE & cell==IND2_T                                               n=19   w=15   WR= 78.95%  pnl@5=  +26.12
   cell==GREEDY & stream==prec                                             n=19   w=15   WR= 78.95%  pnl@5=  +30.44
   cell==IND2_T & stream==shadow                                           n=19   w=15   WR= 78.95%  pnl@5=  +26.12
   stream==filtboth & stream==prec                                         n=19   w=15   WR= 78.95%  pnl@5=  +30.44
-  stream==prec & stream==filtboth & stream==newstreams                    n=19   w=15   WR= 78.95%  pnl@5=  +30.44
-  stream==prec & stream==filtboth & cell==GREEDY                          n=19   w=15   WR= 78.95%  pnl@5=  +30.44
-  stream==prec & stream==newstreams & cell==GREEDY                        n=19   w=15   WR= 78.95%  pnl@5=  +30.44
-  stream==consensus & cell==BASE & cell==IND2_T                           n=19   w=15   WR= 78.95%  pnl@5=  +26.12
   stream==consensus & stream==shadow & cell==IND2_T                       n=19   w=15   WR= 78.95%  pnl@5=  +26.12
-  cell==BASE & stream==shadow & cell==IND2_T                              n=19   w=15   WR= 78.95%  pnl@5=  +26.12
-  cell==BASE & cell==IND2_T & cell==IND2_L                                n=19   w=15   WR= 78.95%  pnl@5=  +26.12
-  stream==shadow & cell==IND2_T & cell==IND2_L                            n=19   w=15   WR= 78.95%  pnl@5=  +26.12
+  stream==consensus & cell==IND2_T & cell==BASE                           n=19   w=15   WR= 78.95%  pnl@5=  +26.12
+  stream==filtboth & stream==prec & cell==GREEDY                          n=19   w=15   WR= 78.95%  pnl@5=  +30.44
+  stream==filtboth & stream==prec & stream==newstreams                    n=19   w=15   WR= 78.95%  pnl@5=  +30.44
+  stream==prec & cell==GREEDY & stream==newstreams                        n=19   w=15   WR= 78.95%  pnl@5=  +30.44
+  cell==IND2_L & stream==shadow & cell==IND2_T                            n=19   w=15   WR= 78.95%  pnl@5=  +26.12
+  cell==IND2_L & cell==IND2_T & cell==BASE                                n=19   w=15   WR= 78.95%  pnl@5=  +26.12
+  stream==shadow & cell==IND2_T & cell==BASE                              n=19   w=15   WR= 78.95%  pnl@5=  +26.12
   cell==D72_maj_K2 & prob<=0.293                                          n=14   w=11   WR= 78.57%  pnl@5=  +36.93
   cell==INCUMBENT & cell==MY290                                           n=14   w=11   WR= 78.57%  pnl@5=  +16.77
-  asset==hype & prob>=0.697 & stream==c8lgbm                              n=14   w=11   WR= 78.57%  pnl@5=  +10.62
-  stream==prec & cell==INCUMBENT & cell==MY290                            n=14   w=11   WR= 78.57%  pnl@5=  +16.77
-  stream==prec & cell==INCUMBENT & cell==C57_A457_EU                      n=14   w=11   WR= 78.57%  pnl@5=  +17.91
-  prob>=0.675 & asset==xrp & cell==BASE                                   n=14   w=11   WR= 78.57%  pnl@5=  +12.21
-  stream==newstreams & cell==INCUMBENT & cell==MY290                      n=14   w=11   WR= 78.57%  pnl@5=  +16.77
+  asset==xrp & prob>=0.675 & cell==BASE                                   n=14   w=11   WR= 78.57%  pnl@5=  +12.21
+  cell==INCUMBENT & stream==prec & cell==C57_A457_EU                      n=14   w=11   WR= 78.57%  pnl@5=  +17.91
+  cell==INCUMBENT & stream==prec & cell==MY290                            n=14   w=11   WR= 78.57%  pnl@5=  +16.77
+  cell==INCUMBENT & cell==MY290 & stream==newstreams                      n=14   w=11   WR= 78.57%  pnl@5=  +16.77
+  prob>=0.697 & asset==hype & stream==c8lgbm                              n=14   w=11   WR= 78.57%  pnl@5=  +10.62
   asset==doge & prob>=0.723                                               n=46   w=36   WR= 78.26%  pnl@5=  +34.36
   cell==C8FLOW                                                            n=18   w=14   WR= 77.78%  pnl@5=   +8.25
   stream==cdc8                                                            n=18   w=14   WR= 77.78%  pnl@5=   +8.25
@@ -393,7 +944,7 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   stream==cdc8 & prob>=0.57                                               n=18   w=14   WR= 77.78%  pnl@5=   +8.25
   stream==cdc8 & prob>=0.602                                              n=18   w=14   WR= 77.78%  pnl@5=   +8.25
   stream==cdc8 & prob>=0.626                                              n=18   w=14   WR= 77.78%  pnl@5=   +8.25
-  asset==hype & prob>=0.653 & stream==c8lgbm                              n=18   w=14   WR= 77.78%  pnl@5=  +14.06
+  prob>=0.653 & asset==hype & stream==c8lgbm                              n=18   w=14   WR= 77.78%  pnl@5=  +14.06
   asset==doge & cell==CELLS6                                              n=9    w=7    WR= 77.78%  pnl@5=   +9.27
   cell==D6_ge2_K2 & cell==D72_maj_K2                                      n=9    w=7    WR= 77.78%  pnl@5=  +28.47
   cell==D72_maj_K2 & cell==P1_hr65_55_K2                                  n=9    w=7    WR= 77.78%  pnl@5=  +28.47
@@ -406,26 +957,26 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==MY195 & prob>=0.675                                               n=9    w=7    WR= 77.78%  pnl@5=   +6.14
   cell==MY290 & prob<=0.57                                                n=9    w=7    WR= 77.78%  pnl@5=  +34.54
   cell==UNION_P4_D72_K1_D72 & prob<=0.293                                 n=9    w=7    WR= 77.78%  pnl@5=  +33.24
-  side==DOWN & stream==prec & stream==filtboth                            n=9    w=7    WR= 77.78%  pnl@5=  +13.01
-  side==DOWN & stream==prec & cell==GREEDY                                n=9    w=7    WR= 77.78%  pnl@5=  +13.01
-  side==DOWN & prob>=0.675 & cell==PREC191                                n=9    w=7    WR= 77.78%  pnl@5=   +5.13
-  side==DOWN & stream==consensus_obl & cell==MY290                        n=9    w=7    WR= 77.78%  pnl@5=  +12.01
-  stream==prec & prob>=0.675 & cell==MY195                                n=9    w=7    WR= 77.78%  pnl@5=   +6.14
-  stream==prec & cell==IND2_T & stream==consensus_obl                     n=9    w=7    WR= 77.78%  pnl@5=   +8.71
+  cell==PREC191 & prob>=0.675 & side==DOWN                                n=9    w=7    WR= 77.78%  pnl@5=   +5.13
+  prob>=0.697 & cell==C8LGBM_g & cell==C57_A457_EU                        n=9    w=7    WR= 77.78%  pnl@5=   +7.11
+  prob>=0.697 & stream==c8lgbm & cell==C57_A457_EU                        n=9    w=7    WR= 77.78%  pnl@5=   +7.11
+  stream==filtboth & stream==prec & side==DOWN                            n=9    w=7    WR= 77.78%  pnl@5=  +13.01
+  stream==prec & stream==consensus_obl & cell==IND2_T                     n=9    w=7    WR= 77.78%  pnl@5=   +8.71
+  stream==prec & cell==IND2_L & cell==CELLS13                             n=9    w=7    WR= 77.78%  pnl@5=  +15.26
+  stream==prec & cell==MY195 & prob>=0.675                                n=9    w=7    WR= 77.78%  pnl@5=   +6.14
+  stream==prec & cell==GREEDY & side==DOWN                                n=9    w=7    WR= 77.78%  pnl@5=  +13.01
   stream==prec & cell==IND2_T & cell==CELLS13                             n=9    w=7    WR= 77.78%  pnl@5=  +15.26
   stream==prec & stream==newstreams & cell==CELLS13                       n=9    w=7    WR= 77.78%  pnl@5=  +11.56
-  stream==prec & cell==CELLS13 & cell==IND2_L                             n=9    w=7    WR= 77.78%  pnl@5=  +15.26
-  prob>=0.675 & cell==MY195 & prob>=0.653                                 n=9    w=7    WR= 77.78%  pnl@5=   +6.14
-  cell==BASE & cell==IND2_T & stream==consensus_obl                       n=9    w=7    WR= 77.78%  pnl@5=   +7.69
+  stream==consensus_obl & stream==shadow & cell==IND2_T                   n=9    w=7    WR= 77.78%  pnl@5=   +7.69
+  stream==consensus_obl & cell==IND2_T & cell==BASE                       n=9    w=7    WR= 77.78%  pnl@5=   +7.69
+  stream==consensus_obl & side==DOWN & cell==MY290                        n=9    w=7    WR= 77.78%  pnl@5=  +12.01
   cell==C8LGBM_g & stream==shadow & cell==C57_A457_EU                     n=9    w=7    WR= 77.78%  pnl@5=   +7.93
-  cell==C8LGBM_g & prob>=0.697 & cell==C57_A457_EU                        n=9    w=7    WR= 77.78%  pnl@5=   +7.11
   cell==C8LGBM_g & cell==C57_A457_EU & cell==CELLS13                      n=9    w=7    WR= 77.78%  pnl@5=   +7.93
-  stream==shadow & cell==IND2_T & stream==consensus_obl                   n=9    w=7    WR= 77.78%  pnl@5=   +7.69
-  stream==shadow & cell==C57_A457_EU & stream==c8lgbm                     n=9    w=7    WR= 77.78%  pnl@5=   +7.93
-  prob>=0.697 & cell==C57_A457_EU & stream==c8lgbm                        n=9    w=7    WR= 77.78%  pnl@5=   +7.11
-  cell==C57_A457_EU & stream==c8lgbm & cell==CELLS13                      n=9    w=7    WR= 77.78%  pnl@5=   +7.93
+  cell==MY195 & prob>=0.653 & prob>=0.675                                 n=9    w=7    WR= 77.78%  pnl@5=   +6.14
+  stream==shadow & stream==c8lgbm & cell==C57_A457_EU                     n=9    w=7    WR= 77.78%  pnl@5=   +7.93
+  stream==c8lgbm & cell==C57_A457_EU & cell==CELLS13                      n=9    w=7    WR= 77.78%  pnl@5=   +7.93
   stream==consensus_obl & stream==prec                                    n=22   w=17   WR= 77.27%  pnl@5=  +25.15
-  stream==prec & stream==consensus & stream==consensus_obl                n=22   w=17   WR= 77.27%  pnl@5=  +25.15
+  stream==consensus & stream==prec & stream==consensus_obl                n=22   w=17   WR= 77.27%  pnl@5=  +25.15
   asset==doge & cell==C8LGBM                                              n=35   w=27   WR= 77.14%  pnl@5=  +26.09
   prob>=0.753                                                             n=130  w=100  WR= 76.92%  pnl@5=  +47.03
   prob>=0.293 & prob>=0.753                                               n=130  w=100  WR= 76.92%  pnl@5=  +47.03
@@ -436,13 +987,13 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   prob>=0.675 & prob>=0.753                                               n=130  w=100  WR= 76.92%  pnl@5=  +47.03
   prob>=0.697 & prob>=0.753                                               n=130  w=100  WR= 76.92%  pnl@5=  +47.03
   prob>=0.723 & prob>=0.753                                               n=130  w=100  WR= 76.92%  pnl@5=  +47.03
-  prob>=0.675 & prob>=0.753 & prob>=0.697                                 n=130  w=100  WR= 76.92%  pnl@5=  +47.03
-  prob>=0.675 & prob>=0.753 & prob>=0.653                                 n=130  w=100  WR= 76.92%  pnl@5=  +47.03
-  prob>=0.753 & prob>=0.697 & prob>=0.653                                 n=130  w=100  WR= 76.92%  pnl@5=  +47.03
+  prob>=0.697 & prob>=0.653 & prob>=0.753                                 n=130  w=100  WR= 76.92%  pnl@5=  +47.03
+  prob>=0.697 & prob>=0.675 & prob>=0.753                                 n=130  w=100  WR= 76.92%  pnl@5=  +47.03
+  prob>=0.653 & prob>=0.675 & prob>=0.753                                 n=130  w=100  WR= 76.92%  pnl@5=  +47.03
   asset==hype                                                             n=26   w=20   WR= 76.92%  pnl@5=  +17.93
   asset==hype & prob>=0.293                                               n=26   w=20   WR= 76.92%  pnl@5=  +17.93
   asset==hype & prob>=0.57                                                n=26   w=20   WR= 76.92%  pnl@5=  +17.93
-  stream==prec & stream==consensus & stream==newstreams                   n=26   w=20   WR= 76.92%  pnl@5=  +33.22
+  stream==consensus & stream==prec & stream==newstreams                   n=26   w=20   WR= 76.92%  pnl@5=  +33.22
   cell==D72_maj_K4                                                        n=13   w=10   WR= 76.92%  pnl@5=  +33.20
   asset==eth & cell==D72_maj_K4                                           n=13   w=10   WR= 76.92%  pnl@5=  +33.20
   side==DOWN & cell==C8FLOW                                               n=13   w=10   WR= 76.92%  pnl@5=   +1.49
@@ -458,42 +1009,42 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==D72_maj_K4 & prob<=0.697                                          n=13   w=10   WR= 76.92%  pnl@5=  +33.20
   cell==D72_maj_K4 & prob<=0.723                                          n=13   w=10   WR= 76.92%  pnl@5=  +33.20
   cell==D72_maj_K4 & prob<=0.753                                          n=13   w=10   WR= 76.92%  pnl@5=  +33.20
-  side==DOWN & cell==C8FLOW & stream==cdc8                                n=13   w=10   WR= 76.92%  pnl@5=   +1.49
-  stream==prec & prob>=0.653 & cell==CELLS13                              n=13   w=10   WR= 76.92%  pnl@5=   +9.73
-  prob>=0.675 & stream==consensus & cell==BASE                            n=13   w=10   WR= 76.92%  pnl@5=   +7.42
-  prob>=0.675 & cell==C8LGBM_g & cell==C57_A457_EU                        n=13   w=10   WR= 76.92%  pnl@5=   +8.83
-  prob>=0.675 & cell==C57_A457_EU & stream==c8lgbm                        n=13   w=10   WR= 76.92%  pnl@5=   +8.83
+  cell==C8FLOW & stream==cdc8 & side==DOWN                                n=13   w=10   WR= 76.92%  pnl@5=   +1.49
   stream==consensus & cell==INCUMBENT & cell==MY290                       n=13   w=10   WR= 76.92%  pnl@5=  +13.58
+  stream==consensus & prob>=0.675 & cell==BASE                            n=13   w=10   WR= 76.92%  pnl@5=   +7.42
   asset==xrp & prob>=0.753 & stream==c8lgbm                               n=13   w=10   WR= 76.92%  pnl@5=   +5.35
-  stream==consensus_obl & cell==INCUMBENT & cell==MY290                   n=13   w=10   WR= 76.92%  pnl@5=  +13.58
-  cell==INCUMBENT & cell==MY290 & cell==C57_A457_EU                       n=13   w=10   WR= 76.92%  pnl@5=  +15.88
+  cell==INCUMBENT & stream==consensus_obl & cell==MY290                   n=13   w=10   WR= 76.92%  pnl@5=  +13.58
+  cell==INCUMBENT & cell==C57_A457_EU & cell==MY290                       n=13   w=10   WR= 76.92%  pnl@5=  +15.88
+  stream==prec & prob>=0.653 & cell==CELLS13                              n=13   w=10   WR= 76.92%  pnl@5=   +9.73
+  cell==C8LGBM_g & prob>=0.675 & cell==C57_A457_EU                        n=13   w=10   WR= 76.92%  pnl@5=   +8.83
+  prob>=0.675 & stream==c8lgbm & cell==C57_A457_EU                        n=13   w=10   WR= 76.92%  pnl@5=   +8.83
   cell==CELLS6 & prob<=0.626                                              n=30   w=23   WR= 76.67%  pnl@5=  +61.48
   cell==C8FLOW & prob>=0.653                                              n=17   w=13   WR= 76.47%  pnl@5=   +4.92
   stream==cdc8 & prob>=0.653                                              n=17   w=13   WR= 76.47%  pnl@5=   +4.92
-  cell==C8FLOW & stream==cdc8 & prob>=0.653                               n=17   w=13   WR= 76.47%  pnl@5=   +4.92
-  side==DOWN & stream==prec & stream==shadow                              n=25   w=19   WR= 76.00%  pnl@5=  +31.51
-  prob>=0.753 & asset==sol & stream==c8lgbm                               n=29   w=22   WR= 75.86%  pnl@5=  +12.91
+  cell==C8FLOW & prob>=0.653 & stream==cdc8                               n=17   w=13   WR= 76.47%  pnl@5=   +4.92
+  stream==prec & stream==shadow & side==DOWN                              n=25   w=19   WR= 76.00%  pnl@5=  +31.51
+  prob>=0.753 & stream==c8lgbm & asset==sol                               n=29   w=22   WR= 75.86%  pnl@5=  +12.91
   asset==eth & prob>=0.753                                                n=33   w=25   WR= 75.76%  pnl@5=   +7.26
-  side==DOWN & stream==prec & prob>=0.675                                 n=33   w=25   WR= 75.76%  pnl@5=  +17.48
+  stream==prec & prob>=0.675 & side==DOWN                                 n=33   w=25   WR= 75.76%  pnl@5=  +17.48
   stream==consensus & stream==prec                                        n=37   w=28   WR= 75.68%  pnl@5=  +46.54
   asset==doge & side==DOWN                                                n=41   w=31   WR= 75.61%  pnl@5=  +23.84
   cell==MY195 & prob>=0.602                                               n=41   w=31   WR= 75.61%  pnl@5=  +52.44
   cell==CELLS6 & prob<=0.723                                              n=94   w=71   WR= 75.53%  pnl@5=  +93.71
   cell==C8LGBM & prob>=0.723                                              n=124  w=93   WR= 75.00%  pnl@5=  +58.72
   asset==bnb & prob>=0.675                                                n=64   w=48   WR= 75.00%  pnl@5=  +24.55
-  prob>=0.675 & prob>=0.653 & asset==bnb                                  n=64   w=48   WR= 75.00%  pnl@5=  +24.55
-  stream==prec & stream==consensus & cell==BASE                           n=28   w=21   WR= 75.00%  pnl@5=  +33.63
-  stream==prec & stream==consensus & stream==shadow                       n=28   w=21   WR= 75.00%  pnl@5=  +33.63
-  side==DOWN & stream==prec & cell==BASE                                  n=24   w=18   WR= 75.00%  pnl@5=  +28.70
-  stream==consensus & stream==newstreams & cell==MY290                    n=24   w=18   WR= 75.00%  pnl@5=  +26.73
+  prob>=0.653 & prob>=0.675 & asset==bnb                                  n=64   w=48   WR= 75.00%  pnl@5=  +24.55
+  stream==consensus & stream==prec & stream==shadow                       n=28   w=21   WR= 75.00%  pnl@5=  +33.63
+  stream==consensus & stream==prec & cell==BASE                           n=28   w=21   WR= 75.00%  pnl@5=  +33.63
+  stream==consensus & cell==MY290 & stream==newstreams                    n=24   w=18   WR= 75.00%  pnl@5=  +26.73
+  stream==prec & side==DOWN & cell==BASE                                  n=24   w=18   WR= 75.00%  pnl@5=  +28.70
   cell==MY290 & stream==consensus_obl                                     n=20   w=15   WR= 75.00%  pnl@5=  +18.67
-  side==DOWN & prob>=0.675 & asset==bnb                                   n=20   w=15   WR= 75.00%  pnl@5=   +5.90
-  stream==prec & prob>=0.675 & cell==BASE                                 n=20   w=15   WR= 75.00%  pnl@5=   +7.12
-  stream==prec & prob>=0.675 & stream==shadow                             n=20   w=15   WR= 75.00%  pnl@5=   +7.12
-  stream==prec & stream==consensus_obl & cell==MY290                      n=20   w=15   WR= 75.00%  pnl@5=  +18.67
-  prob>=0.675 & cell==BASE & cell==MY290                                  n=20   w=15   WR= 75.00%  pnl@5=   +7.12
-  prob>=0.675 & stream==shadow & cell==MY290                              n=20   w=15   WR= 75.00%  pnl@5=   +7.12
   stream==consensus & stream==consensus_obl & cell==MY290                 n=20   w=15   WR= 75.00%  pnl@5=  +18.67
+  stream==prec & stream==consensus_obl & cell==MY290                      n=20   w=15   WR= 75.00%  pnl@5=  +18.67
+  stream==prec & prob>=0.675 & stream==shadow                             n=20   w=15   WR= 75.00%  pnl@5=   +7.12
+  stream==prec & prob>=0.675 & cell==BASE                                 n=20   w=15   WR= 75.00%  pnl@5=   +7.12
+  prob>=0.675 & asset==bnb & side==DOWN                                   n=20   w=15   WR= 75.00%  pnl@5=   +5.90
+  prob>=0.675 & stream==shadow & cell==MY290                              n=20   w=15   WR= 75.00%  pnl@5=   +7.12
+  prob>=0.675 & cell==BASE & cell==MY290                                  n=20   w=15   WR= 75.00%  pnl@5=   +7.12
   cell==D72_maj_K2                                                        n=16   w=12   WR= 75.00%  pnl@5=  +42.67
   asset==eth & cell==D72_maj_K2                                           n=16   w=12   WR= 75.00%  pnl@5=  +42.67
   cell==C57_A457_EU & cell==C8LGBM_g                                      n=16   w=12   WR= 75.00%  pnl@5=   +8.47
@@ -508,48 +1059,48 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==D72_maj_K2 & prob<=0.697                                          n=16   w=12   WR= 75.00%  pnl@5=  +42.67
   cell==D72_maj_K2 & prob<=0.723                                          n=16   w=12   WR= 75.00%  pnl@5=  +42.67
   cell==D72_maj_K2 & prob<=0.753                                          n=16   w=12   WR= 75.00%  pnl@5=  +42.67
-  stream==prec & cell==BASE & asset==sol                                  n=16   w=12   WR= 75.00%  pnl@5=  +15.32
   stream==prec & stream==shadow & asset==sol                              n=16   w=12   WR= 75.00%  pnl@5=  +15.32
-  cell==C8LGBM_g & stream==newstreams & cell==C57_A457_EU                 n=16   w=12   WR= 75.00%  pnl@5=   +8.47
+  stream==prec & asset==sol & cell==BASE                                  n=16   w=12   WR= 75.00%  pnl@5=  +15.32
   cell==C8LGBM_g & prob>=0.653 & cell==C57_A457_EU                        n=16   w=12   WR= 75.00%  pnl@5=   +8.47
-  cell==C8LGBM_g & cell==C57_A457_EU & stream==c8lgbm                     n=16   w=12   WR= 75.00%  pnl@5=   +8.47
-  stream==newstreams & cell==C57_A457_EU & stream==c8lgbm                 n=16   w=12   WR= 75.00%  pnl@5=   +8.47
-  prob>=0.653 & cell==C57_A457_EU & stream==c8lgbm                        n=16   w=12   WR= 75.00%  pnl@5=   +8.47
+  cell==C8LGBM_g & stream==c8lgbm & cell==C57_A457_EU                     n=16   w=12   WR= 75.00%  pnl@5=   +8.47
+  cell==C8LGBM_g & cell==C57_A457_EU & stream==newstreams                 n=16   w=12   WR= 75.00%  pnl@5=   +8.47
+  prob>=0.653 & stream==c8lgbm & cell==C57_A457_EU                        n=16   w=12   WR= 75.00%  pnl@5=   +8.47
+  stream==c8lgbm & cell==C57_A457_EU & stream==newstreams                 n=16   w=12   WR= 75.00%  pnl@5=   +8.47
   asset==hype & cell==C8LGBM_g                                            n=12   w=9    WR= 75.00%  pnl@5=   +1.81
   cell==BASE & cell==HW_PRIMARY                                           n=12   w=9    WR= 75.00%  pnl@5=   +8.03
   cell==CELLS6 & cell==HW_PRIMARY                                         n=12   w=9    WR= 75.00%  pnl@5=  +10.47
   cell==D72_maj_K1 & cell==P4_pmpct20_K2                                  n=12   w=9    WR= 75.00%  pnl@5=  +42.37
   cell==D72_maj_K2 & stream==P2_hr55_71                                   n=12   w=9    WR= 75.00%  pnl@5=  +29.47
   cell==ETHUP_T & stream==consensus_obl                                   n=12   w=9    WR= 75.00%  pnl@5=  +14.60
-  asset==hype & prob>=0.675 & cell==C8LGBM_g                              n=12   w=9    WR= 75.00%  pnl@5=   +1.81
-  asset==hype & cell==C8LGBM_g & prob>=0.653                              n=12   w=9    WR= 75.00%  pnl@5=   +1.81
-  asset==hype & cell==C8LGBM_g & stream==c8lgbm                           n=12   w=9    WR= 75.00%  pnl@5=   +1.81
-  side==DOWN & cell==C8FLOW & prob>=0.653                                 n=12   w=9    WR= 75.00%  pnl@5=   -1.84
-  side==DOWN & stream==prec & stream==newstreams                          n=12   w=9    WR= 75.00%  pnl@5=  +14.79
-  side==DOWN & stream==prec & cell==CELLS13                               n=12   w=9    WR= 75.00%  pnl@5=   +9.63
-  side==DOWN & cell==HW_PRIMARY & cell==BASE                              n=12   w=9    WR= 75.00%  pnl@5=   +8.03
-  side==DOWN & cell==HW_PRIMARY & cell==CELLS6                            n=12   w=9    WR= 75.00%  pnl@5=  +10.47
-  side==DOWN & stream==cdc8 & prob>=0.653                                 n=12   w=9    WR= 75.00%  pnl@5=   -1.84
-  stream==prec & stream==consensus_obl & cell==ETHUP_T                    n=12   w=9    WR= 75.00%  pnl@5=  +14.60
+  cell==C8FLOW & prob>=0.653 & side==DOWN                                 n=12   w=9    WR= 75.00%  pnl@5=   -1.84
   stream==consensus & stream==consensus_obl & cell==ETHUP_T               n=12   w=9    WR= 75.00%  pnl@5=  +14.60
-  cell==HW_PRIMARY & cell==BASE & stream==shadow                          n=12   w=9    WR= 75.00%  pnl@5=   +8.03
-  cell==HW_PRIMARY & cell==BASE & stream==filtboth                        n=12   w=9    WR= 75.00%  pnl@5=   +8.03
-  cell==HW_PRIMARY & cell==BASE & stream==newstreams                      n=12   w=9    WR= 75.00%  pnl@5=   +8.03
-  cell==HW_PRIMARY & cell==BASE & cell==GREEDY                            n=12   w=9    WR= 75.00%  pnl@5=   +8.03
-  cell==HW_PRIMARY & stream==shadow & prob>=0.653                         n=12   w=9    WR= 75.00%  pnl@5=   +6.73
-  cell==HW_PRIMARY & stream==shadow & cell==CELLS6                        n=12   w=9    WR= 75.00%  pnl@5=  +10.47
-  cell==HW_PRIMARY & stream==filtboth & cell==CELLS6                      n=12   w=9    WR= 75.00%  pnl@5=  +10.47
-  cell==HW_PRIMARY & stream==newstreams & cell==CELLS6                    n=12   w=9    WR= 75.00%  pnl@5=  +10.47
-  cell==HW_PRIMARY & cell==GREEDY & cell==CELLS6                          n=12   w=9    WR= 75.00%  pnl@5=  +10.47
-  cell==HW_PRIMARY & cell==CELLS6 & cell==CELLS13                         n=12   w=9    WR= 75.00%  pnl@5=  +10.47
-  cell==C8LGBM_g & prob>=0.697 & stream==filtboth                         n=12   w=9    WR= 75.00%  pnl@5=   +3.88
-  cell==C8LGBM_g & prob>=0.697 & cell==GREEDY                             n=12   w=9    WR= 75.00%  pnl@5=   +3.88
+  prob>=0.697 & stream==filtboth & cell==C8LGBM_g                         n=12   w=9    WR= 75.00%  pnl@5=   +3.88
   prob>=0.697 & stream==filtboth & stream==c8lgbm                         n=12   w=9    WR= 75.00%  pnl@5=   +3.88
+  prob>=0.697 & cell==C8LGBM_g & cell==GREEDY                             n=12   w=9    WR= 75.00%  pnl@5=   +3.88
   prob>=0.697 & cell==GREEDY & stream==c8lgbm                             n=12   w=9    WR= 75.00%  pnl@5=   +3.88
-  stream==consensus_obl & stream==newstreams & cell==ETHUP_T              n=12   w=9    WR= 75.00%  pnl@5=  +14.60
-  stream==consensus_obl & cell==ETHUP_T & cell==MY290                     n=12   w=9    WR= 75.00%  pnl@5=  +14.60
+  stream==filtboth & cell==HW_PRIMARY & cell==CELLS6                      n=12   w=9    WR= 75.00%  pnl@5=  +10.47
+  stream==filtboth & cell==HW_PRIMARY & cell==BASE                        n=12   w=9    WR= 75.00%  pnl@5=   +8.03
+  stream==prec & stream==consensus_obl & cell==ETHUP_T                    n=12   w=9    WR= 75.00%  pnl@5=  +14.60
+  stream==prec & side==DOWN & stream==newstreams                          n=12   w=9    WR= 75.00%  pnl@5=  +14.79
+  stream==prec & side==DOWN & cell==CELLS13                               n=12   w=9    WR= 75.00%  pnl@5=   +9.63
   stream==consensus_obl & cell==ETHUP_T & cell==C57_A457_EU               n=12   w=9    WR= 75.00%  pnl@5=  +14.60
+  stream==consensus_obl & cell==ETHUP_T & cell==MY290                     n=12   w=9    WR= 75.00%  pnl@5=  +14.60
+  stream==consensus_obl & cell==ETHUP_T & stream==newstreams              n=12   w=9    WR= 75.00%  pnl@5=  +14.60
+  cell==C8LGBM_g & prob>=0.653 & asset==hype                              n=12   w=9    WR= 75.00%  pnl@5=   +1.81
+  cell==C8LGBM_g & prob>=0.675 & asset==hype                              n=12   w=9    WR= 75.00%  pnl@5=   +1.81
+  cell==C8LGBM_g & asset==hype & stream==c8lgbm                           n=12   w=9    WR= 75.00%  pnl@5=   +1.81
+  prob>=0.653 & stream==shadow & cell==HW_PRIMARY                         n=12   w=9    WR= 75.00%  pnl@5=   +6.73
+  prob>=0.653 & stream==cdc8 & side==DOWN                                 n=12   w=9    WR= 75.00%  pnl@5=   -1.84
   prob>=0.653 & cell==MY290 & cell==CELLS13                               n=12   w=9    WR= 75.00%  pnl@5=   +7.69
+  stream==shadow & cell==HW_PRIMARY & cell==CELLS6                        n=12   w=9    WR= 75.00%  pnl@5=  +10.47
+  stream==shadow & cell==HW_PRIMARY & cell==BASE                          n=12   w=9    WR= 75.00%  pnl@5=   +8.03
+  cell==HW_PRIMARY & cell==GREEDY & cell==CELLS6                          n=12   w=9    WR= 75.00%  pnl@5=  +10.47
+  cell==HW_PRIMARY & cell==GREEDY & cell==BASE                            n=12   w=9    WR= 75.00%  pnl@5=   +8.03
+  cell==HW_PRIMARY & cell==CELLS6 & side==DOWN                            n=12   w=9    WR= 75.00%  pnl@5=  +10.47
+  cell==HW_PRIMARY & cell==CELLS6 & stream==newstreams                    n=12   w=9    WR= 75.00%  pnl@5=  +10.47
+  cell==HW_PRIMARY & cell==CELLS6 & cell==CELLS13                         n=12   w=9    WR= 75.00%  pnl@5=  +10.47
+  cell==HW_PRIMARY & side==DOWN & cell==BASE                              n=12   w=9    WR= 75.00%  pnl@5=   +8.03
+  cell==HW_PRIMARY & cell==BASE & stream==newstreams                      n=12   w=9    WR= 75.00%  pnl@5=   +8.03
   asset==sol & prob<=0.57                                                 n=8    w=6    WR= 75.00%  pnl@5=  +10.13
   asset==xrp & cell==C8DOWN                                               n=8    w=6    WR= 75.00%  pnl@5=   +7.85
   side==UP & cell==D72_maj_K4                                             n=8    w=6    WR= 75.00%  pnl@5=  +24.68
@@ -559,17 +1110,17 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==FILT_BOTH & cell==HW_PRIMARY                                      n=8    w=6    WR= 75.00%  pnl@5=   +4.05
   cell==HW_PRIMARY & stream==c8lgbm_gL                                    n=8    w=6    WR= 75.00%  pnl@5=   +3.86
   cell==HW_PRIMARY & stream==prec                                         n=8    w=6    WR= 75.00%  pnl@5=   +5.07
-  side==DOWN & stream==prec & cell==HW_PRIMARY                            n=8    w=6    WR= 75.00%  pnl@5=   +5.07
-  side==DOWN & cell==PREC191 & cell==MY195                                n=8    w=6    WR= 75.00%  pnl@5=  +15.44
-  stream==prec & cell==HW_PRIMARY & stream==filtboth                      n=8    w=6    WR= 75.00%  pnl@5=   +5.07
-  stream==prec & cell==HW_PRIMARY & stream==newstreams                    n=8    w=6    WR= 75.00%  pnl@5=   +5.07
+  asset==xrp & prob>=0.753 & cell==BASE                                   n=8    w=6    WR= 75.00%  pnl@5=   +2.87
+  cell==PREC191 & cell==MY195 & side==DOWN                                n=8    w=6    WR= 75.00%  pnl@5=  +15.44
+  stream==filtboth & stream==prec & cell==HW_PRIMARY                      n=8    w=6    WR= 75.00%  pnl@5=   +5.07
   stream==prec & cell==HW_PRIMARY & cell==GREEDY                          n=8    w=6    WR= 75.00%  pnl@5=   +5.07
+  stream==prec & cell==HW_PRIMARY & side==DOWN                            n=8    w=6    WR= 75.00%  pnl@5=   +5.07
+  stream==prec & cell==HW_PRIMARY & stream==newstreams                    n=8    w=6    WR= 75.00%  pnl@5=   +5.07
   stream==prec & cell==C57_A457_EU & cell==CELLS13                        n=8    w=6    WR= 75.00%  pnl@5=   +6.93
-  asset==xrp & cell==BASE & prob>=0.753                                   n=8    w=6    WR= 75.00%  pnl@5=   +2.87
-  cell==C8LGBM_g & cell==C57_A457_EU & cell==CELLS6                       n=8    w=6    WR= 75.00%  pnl@5=   +4.60
-  stream==consensus_obl & cell==MY290 & cell==IND2_L                      n=8    w=6    WR= 75.00%  pnl@5=   +4.07
-  stream==newstreams & cell==MY290 & cell==CELLS13                        n=8    w=6    WR= 75.00%  pnl@5=   +9.52
-  cell==C57_A457_EU & cell==CELLS6 & stream==c8lgbm                       n=8    w=6    WR= 75.00%  pnl@5=   +4.60
+  stream==consensus_obl & cell==IND2_L & cell==MY290                      n=8    w=6    WR= 75.00%  pnl@5=   +4.07
+  cell==C8LGBM_g & cell==CELLS6 & cell==C57_A457_EU                       n=8    w=6    WR= 75.00%  pnl@5=   +4.60
+  cell==CELLS6 & stream==c8lgbm & cell==C57_A457_EU                       n=8    w=6    WR= 75.00%  pnl@5=   +4.60
+  cell==MY290 & stream==newstreams & cell==CELLS13                        n=8    w=6    WR= 75.00%  pnl@5=   +9.52
   asset==hype & cell==GREEDY                                              n=4    w=3    WR= 75.00%  pnl@5=   +2.46
   asset==hype & stream==filtboth                                          n=4    w=3    WR= 75.00%  pnl@5=   +2.46
   asset==hype & stream==prec                                              n=4    w=3    WR= 75.00%  pnl@5=   +6.36
@@ -598,113 +1149,113 @@ CLASSIC / RUN3 -- 75%+ WR tier -- 708 qualifying rules
   cell==P3_base_86_K4 & prob>=0.293                                       n=4    w=3    WR= 75.00%  pnl@5=   +2.88
   stream==P1_hr65_55 & stream==prec                                       n=4    w=3    WR= 75.00%  pnl@5=  +11.59
   stream==P2_hr55_71 & stream==prec                                       n=4    w=3    WR= 75.00%  pnl@5=  +11.59
-  asset==hype & side==DOWN & stream==filtboth                             n=4    w=3    WR= 75.00%  pnl@5=   +2.46
-  asset==hype & side==DOWN & cell==GREEDY                                 n=4    w=3    WR= 75.00%  pnl@5=   +2.46
-  asset==hype & stream==prec & cell==BASE                                 n=4    w=3    WR= 75.00%  pnl@5=   +6.36
-  asset==hype & stream==prec & stream==shadow                             n=4    w=3    WR= 75.00%  pnl@5=   +6.36
-  asset==hype & stream==filtboth & stream==newstreams                     n=4    w=3    WR= 75.00%  pnl@5=   +2.46
-  asset==hype & stream==filtboth & cell==GREEDY                           n=4    w=3    WR= 75.00%  pnl@5=   +2.46
-  asset==hype & stream==newstreams & cell==GREEDY                         n=4    w=3    WR= 75.00%  pnl@5=   +2.46
-  side==DOWN & cell==C8FLOW & asset==bnb                                  n=4    w=3    WR= 75.00%  pnl@5=   -0.72
-  side==DOWN & cell==AGREE4_60 & cell==MY290                              n=4    w=3    WR= 75.00%  pnl@5=   +1.87
-  side==DOWN & cell==IND2N_T & cell==C8LGBM_g                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  side==DOWN & cell==IND2N_T & cell==CORE_L                               n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  side==DOWN & cell==IND2N_T & prob>=0.653                                n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  side==DOWN & cell==IND2N_T & stream==c8lgbm                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  side==DOWN & prob>=0.697 & cell==MY195                                  n=4    w=3    WR= 75.00%  pnl@5=   +1.83
-  side==DOWN & stream==cdc8 & asset==bnb                                  n=4    w=3    WR= 75.00%  pnl@5=   -0.72
-  side==DOWN & cell==MY290 & stream==c8lgbm                               n=4    w=3    WR= 75.00%  pnl@5=   +2.60
-  stream==prec & prob>=0.675 & cell==C8LGBM_g                             n=4    w=3    WR= 75.00%  pnl@5=   +3.66
-  stream==prec & cell==AGREE4_60 & cell==MY290                            n=4    w=3    WR= 75.00%  pnl@5=   +1.87
-  stream==prec & cell==AGREE4_60 & asset==sol                             n=4    w=3    WR= 75.00%  pnl@5=   +2.06
-  stream==prec & cell==BASE & cell==C8LGBM_g                              n=4    w=3    WR= 75.00%  pnl@5=   +2.07
-  stream==prec & cell==BASE & stream==c8lgbm                              n=4    w=3    WR= 75.00%  pnl@5=   +2.07
-  stream==prec & cell==C8LGBM_g & stream==shadow                          n=4    w=3    WR= 75.00%  pnl@5=   +2.07
-  stream==prec & stream==shadow & stream==c8lgbm                          n=4    w=3    WR= 75.00%  pnl@5=   +2.07
-  stream==prec & stream==newstreams & asset==sol                          n=4    w=3    WR= 75.00%  pnl@5=   +2.06
-  stream==prec & cell==C57_A457_EU & asset==sol                           n=4    w=3    WR= 75.00%  pnl@5=   +2.06
-  stream==prec & asset==sol & cell==CELLS13                               n=4    w=3    WR= 75.00%  pnl@5=   +1.79
-  prob>=0.675 & stream==consensus & cell==HW_PRIMARY                      n=4    w=3    WR= 75.00%  pnl@5=   +2.11
-  prob>=0.675 & cell==HW_PRIMARY & stream==consensus_obl                  n=4    w=3    WR= 75.00%  pnl@5=   +2.11
-  prob>=0.675 & cell==HW_PRIMARY & cell==IND2_L                           n=4    w=3    WR= 75.00%  pnl@5=   +2.11
-  prob>=0.675 & cell==C8LGBM_g & cell==MY290                              n=4    w=3    WR= 75.00%  pnl@5=   +3.66
-  cell==AGREE4_60 & stream==consensus & cell==C8LGBM_g                    n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & stream==consensus & stream==c8lgbm                    n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & cell==C8LGBM_g & stream==consensus_obl                n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & cell==C8LGBM_g & cell==CORE_L                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & cell==C8LGBM_g & cell==INCUMBENT                      n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & cell==C8LGBM_g & cell==IND2_L                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & stream==consensus_obl & stream==c8lgbm                n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & cell==CORE_L & stream==c8lgbm                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & stream==newstreams & cell==MY290                      n=4    w=3    WR= 75.00%  pnl@5=   +1.87
-  cell==AGREE4_60 & cell==INCUMBENT & stream==c8lgbm                      n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==AGREE4_60 & prob>=0.653 & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +1.53
-  cell==AGREE4_60 & cell==MY290 & cell==C57_A457_EU                       n=4    w=3    WR= 75.00%  pnl@5=   +1.87
-  cell==AGREE4_60 & stream==c8lgbm & cell==IND2_L                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  stream==consensus & cell==HW_PRIMARY & cell==C8LGBM_g                   n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  stream==consensus & cell==HW_PRIMARY & prob>=0.697                      n=4    w=3    WR= 75.00%  pnl@5=   +2.11
+  cell==C8FLOW & asset==bnb & side==DOWN                                  n=4    w=3    WR= 75.00%  pnl@5=   -0.72
+  stream==consensus & prob>=0.697 & cell==HW_PRIMARY                      n=4    w=3    WR= 75.00%  pnl@5=   +2.11
+  stream==consensus & cell==C8LGBM_g & cell==AGREE4_60                    n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==consensus & cell==C8LGBM_g & cell==HW_PRIMARY                   n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==consensus & prob>=0.653 & cell==IND2N_T                         n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  stream==consensus & prob>=0.675 & cell==HW_PRIMARY                      n=4    w=3    WR= 75.00%  pnl@5=   +2.11
+  stream==consensus & cell==AGREE4_60 & stream==c8lgbm                    n=4    w=3    WR= 75.00%  pnl@5=   +1.31
   stream==consensus & cell==HW_PRIMARY & cell==CELLS6                     n=4    w=3    WR= 75.00%  pnl@5=   +3.26
   stream==consensus & cell==HW_PRIMARY & stream==c8lgbm                   n=4    w=3    WR= 75.00%  pnl@5=   +1.31
   stream==consensus & cell==HW_PRIMARY & cell==CELLS13                    n=4    w=3    WR= 75.00%  pnl@5=   +3.26
-  stream==consensus & cell==IND2N_T & prob>=0.653                         n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==IND2N_L & prob>=0.653 & cell==IND2_T                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==IND2N_L & prob>=0.653 & cell==IND2N_T                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
   asset==xrp & cell==PREC191 & prob>=0.697                                n=4    w=3    WR= 75.00%  pnl@5=   +1.01
   asset==xrp & cell==C8LGBM_g & stream==shadow                            n=4    w=3    WR= 75.00%  pnl@5=   +1.95
   asset==xrp & cell==C8LGBM_g & cell==CELLS13                             n=4    w=3    WR= 75.00%  pnl@5=   +1.95
   asset==xrp & stream==c8lgbm & cell==CELLS13                             n=4    w=3    WR= 75.00%  pnl@5=   +1.95
-  cell==HW_PRIMARY & cell==BASE & cell==INCUMBENT                         n=4    w=3    WR= 75.00%  pnl@5=   -0.48
-  cell==HW_PRIMARY & cell==C8LGBM_g & stream==consensus_obl               n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & cell==C8LGBM_g & cell==CORE_L                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & cell==C8LGBM_g & cell==INCUMBENT                     n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & cell==C8LGBM_g & cell==IND2_L                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & stream==shadow & cell==INCUMBENT                     n=4    w=3    WR= 75.00%  pnl@5=   -0.48
-  cell==HW_PRIMARY & prob>=0.697 & stream==consensus_obl                  n=4    w=3    WR= 75.00%  pnl@5=   +2.11
-  cell==HW_PRIMARY & prob>=0.697 & cell==IND2_L                           n=4    w=3    WR= 75.00%  pnl@5=   +2.11
-  cell==HW_PRIMARY & stream==consensus_obl & cell==CELLS6                 n=4    w=3    WR= 75.00%  pnl@5=   +3.26
-  cell==HW_PRIMARY & stream==consensus_obl & stream==c8lgbm               n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & stream==consensus_obl & cell==CELLS13                n=4    w=3    WR= 75.00%  pnl@5=   +3.26
-  cell==HW_PRIMARY & cell==CORE_L & prob>=0.653                           n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & cell==CORE_L & stream==c8lgbm                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & cell==INCUMBENT & stream==c8lgbm                     n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & cell==CELLS6 & cell==IND2_L                          n=4    w=3    WR= 75.00%  pnl@5=   +3.26
-  cell==HW_PRIMARY & stream==c8lgbm & cell==IND2_L                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==HW_PRIMARY & cell==CELLS13 & cell==IND2_L                         n=4    w=3    WR= 75.00%  pnl@5=   +3.26
-  cell==BASE & cell==IND2N_T & prob>=0.653                                n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==BASE & cell==IND2_T & asset==sol                                  n=4    w=3    WR= 75.00%  pnl@5=   +1.22
-  cell==IND2N_T & cell==C8LGBM_g & prob>=0.653                            n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & stream==shadow & prob>=0.653                            n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & cell==IND2_T & prob>=0.653                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & cell==IND2N_L & prob>=0.653                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & cell==CORE_L & prob>=0.653                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & prob>=0.653 & cell==CELLS6                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & prob>=0.653 & stream==c8lgbm                            n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & prob>=0.653 & cell==CELLS13                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2N_T & prob>=0.653 & cell==IND2_L                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==C8LGBM_g & cell==IND2_T & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +1.44
-  cell==C8LGBM_g & stream==filtboth & cell==CORE_L                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==C8LGBM_g & stream==filtboth & asset==sol                          n=4    w=3    WR= 75.00%  pnl@5=   +2.77
-  cell==C8LGBM_g & stream==filtboth & cell==IND2_L                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==C8LGBM_g & cell==CORE_L & cell==C57_A457_EU                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==C8LGBM_g & cell==CORE_L & cell==GREEDY                            n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==C8LGBM_g & cell==C57_A457_EU & cell==IND2_L                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==C8LGBM_g & cell==GREEDY & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +2.77
-  cell==C8LGBM_g & cell==GREEDY & cell==IND2_L                            n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  stream==shadow & cell==IND2_T & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +1.22
-  stream==shadow & cell==CELLS13 & cell==FILT402                          n=4    w=3    WR= 75.00%  pnl@5=   +2.27
-  cell==IND2_T & cell==IND2N_L & prob>=0.653                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
-  cell==IND2_T & cell==CORE_L & asset==sol                                n=4    w=3    WR= 75.00%  pnl@5=   +1.44
-  cell==IND2_T & prob>=0.653 & asset==sol                                 n=4    w=3    WR= 75.00%  pnl@5=   +1.44
-  cell==IND2_T & cell==CELLS6 & asset==sol                                n=4    w=3    WR= 75.00%  pnl@5=   +1.22
-  cell==IND2_T & asset==sol & stream==c8lgbm                              n=4    w=3    WR= 75.00%  pnl@5=   +1.44
-  cell==IND2_T & asset==sol & cell==CELLS13                               n=4    w=3    WR= 75.00%  pnl@5=   +1.22
-  stream==filtboth & cell==CORE_L & stream==c8lgbm                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  stream==filtboth & cell==MY290 & cell==CELLS13                          n=4    w=3    WR= 75.00%  pnl@5=   +6.17
-  stream==filtboth & asset==sol & stream==c8lgbm                          n=4    w=3    WR= 75.00%  pnl@5=   +2.77
-  stream==filtboth & stream==c8lgbm & cell==IND2_L                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==CORE_L & cell==C57_A457_EU & stream==c8lgbm                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==INCUMBENT & cell==C8LGBM_g & cell==AGREE4_60                      n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==INCUMBENT & cell==C8LGBM_g & cell==HW_PRIMARY                     n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==INCUMBENT & cell==AGREE4_60 & stream==c8lgbm                      n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==INCUMBENT & stream==shadow & cell==HW_PRIMARY                     n=4    w=3    WR= 75.00%  pnl@5=   -0.48
+  cell==INCUMBENT & cell==HW_PRIMARY & stream==c8lgbm                     n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==INCUMBENT & cell==HW_PRIMARY & cell==BASE                         n=4    w=3    WR= 75.00%  pnl@5=   -0.48
+  prob>=0.697 & stream==consensus_obl & cell==HW_PRIMARY                  n=4    w=3    WR= 75.00%  pnl@5=   +2.11
+  prob>=0.697 & cell==IND2_L & cell==HW_PRIMARY                           n=4    w=3    WR= 75.00%  pnl@5=   +2.11
+  prob>=0.697 & cell==MY195 & side==DOWN                                  n=4    w=3    WR= 75.00%  pnl@5=   +1.83
+  cell==CORE_L & stream==filtboth & cell==C8LGBM_g                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & stream==filtboth & stream==c8lgbm                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & cell==C8LGBM_g & cell==AGREE4_60                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & cell==C8LGBM_g & cell==HW_PRIMARY                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & cell==C8LGBM_g & cell==GREEDY                            n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & cell==C8LGBM_g & cell==C57_A457_EU                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & prob>=0.653 & cell==HW_PRIMARY                           n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & prob>=0.653 & cell==IND2N_T                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==CORE_L & cell==AGREE4_60 & stream==c8lgbm                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & cell==HW_PRIMARY & stream==c8lgbm                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
   cell==CORE_L & cell==GREEDY & stream==c8lgbm                            n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  stream==newstreams & cell==CELLS13 & cell==FILT402                      n=4    w=3    WR= 75.00%  pnl@5=   +2.27
-  cell==MY290 & cell==GREEDY & cell==CELLS13                              n=4    w=3    WR= 75.00%  pnl@5=   +6.17
-  cell==C57_A457_EU & stream==c8lgbm & cell==IND2_L                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
-  cell==C57_A457_EU & cell==CELLS13 & cell==FILT402                       n=4    w=3    WR= 75.00%  pnl@5=   +2.27
-  cell==GREEDY & asset==sol & stream==c8lgbm                              n=4    w=3    WR= 75.00%  pnl@5=   +2.77
-  cell==GREEDY & stream==c8lgbm & cell==IND2_L                            n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==CORE_L & cell==IND2_T & asset==sol                                n=4    w=3    WR= 75.00%  pnl@5=   +1.44
+  cell==CORE_L & side==DOWN & cell==IND2N_T                               n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==CORE_L & stream==c8lgbm & cell==C57_A457_EU                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==filtboth & cell==C8LGBM_g & cell==IND2_L                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==filtboth & cell==C8LGBM_g & asset==sol                          n=4    w=3    WR= 75.00%  pnl@5=   +2.77
+  stream==filtboth & cell==IND2_L & stream==c8lgbm                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==filtboth & asset==hype & cell==GREEDY                           n=4    w=3    WR= 75.00%  pnl@5=   +2.46
+  stream==filtboth & asset==hype & side==DOWN                             n=4    w=3    WR= 75.00%  pnl@5=   +2.46
+  stream==filtboth & asset==hype & stream==newstreams                     n=4    w=3    WR= 75.00%  pnl@5=   +2.46
+  stream==filtboth & stream==c8lgbm & asset==sol                          n=4    w=3    WR= 75.00%  pnl@5=   +2.77
+  stream==filtboth & cell==MY290 & cell==CELLS13                          n=4    w=3    WR= 75.00%  pnl@5=   +6.17
+  stream==prec & cell==C8LGBM_g & prob>=0.675                             n=4    w=3    WR= 75.00%  pnl@5=   +3.66
+  stream==prec & cell==C8LGBM_g & stream==shadow                          n=4    w=3    WR= 75.00%  pnl@5=   +2.07
+  stream==prec & cell==C8LGBM_g & cell==BASE                              n=4    w=3    WR= 75.00%  pnl@5=   +2.07
+  stream==prec & cell==AGREE4_60 & asset==sol                             n=4    w=3    WR= 75.00%  pnl@5=   +2.06
+  stream==prec & cell==AGREE4_60 & cell==MY290                            n=4    w=3    WR= 75.00%  pnl@5=   +1.87
+  stream==prec & asset==hype & stream==shadow                             n=4    w=3    WR= 75.00%  pnl@5=   +6.36
+  stream==prec & asset==hype & cell==BASE                                 n=4    w=3    WR= 75.00%  pnl@5=   +6.36
+  stream==prec & stream==shadow & stream==c8lgbm                          n=4    w=3    WR= 75.00%  pnl@5=   +2.07
+  stream==prec & stream==c8lgbm & cell==BASE                              n=4    w=3    WR= 75.00%  pnl@5=   +2.07
+  stream==prec & asset==sol & cell==C57_A457_EU                           n=4    w=3    WR= 75.00%  pnl@5=   +2.06
+  stream==prec & asset==sol & stream==newstreams                          n=4    w=3    WR= 75.00%  pnl@5=   +2.06
+  stream==prec & asset==sol & cell==CELLS13                               n=4    w=3    WR= 75.00%  pnl@5=   +1.79
+  stream==consensus_obl & cell==C8LGBM_g & cell==AGREE4_60                n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==consensus_obl & cell==C8LGBM_g & cell==HW_PRIMARY               n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==consensus_obl & prob>=0.675 & cell==HW_PRIMARY                  n=4    w=3    WR= 75.00%  pnl@5=   +2.11
+  stream==consensus_obl & cell==AGREE4_60 & stream==c8lgbm                n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==consensus_obl & cell==HW_PRIMARY & cell==CELLS6                 n=4    w=3    WR= 75.00%  pnl@5=   +3.26
+  stream==consensus_obl & cell==HW_PRIMARY & stream==c8lgbm               n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  stream==consensus_obl & cell==HW_PRIMARY & cell==CELLS13                n=4    w=3    WR= 75.00%  pnl@5=   +3.26
+  cell==C8LGBM_g & cell==IND2_L & cell==AGREE4_60                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==C8LGBM_g & cell==IND2_L & cell==HW_PRIMARY                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==C8LGBM_g & cell==IND2_L & cell==GREEDY                            n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==C8LGBM_g & cell==IND2_L & cell==C57_A457_EU                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==C8LGBM_g & prob>=0.653 & cell==IND2N_T                            n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==C8LGBM_g & prob>=0.675 & cell==MY290                              n=4    w=3    WR= 75.00%  pnl@5=   +3.66
+  cell==C8LGBM_g & cell==GREEDY & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +2.77
+  cell==C8LGBM_g & cell==IND2_T & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +1.44
+  cell==C8LGBM_g & side==DOWN & cell==IND2N_T                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==IND2_L & prob>=0.653 & cell==IND2N_T                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==IND2_L & prob>=0.675 & cell==HW_PRIMARY                           n=4    w=3    WR= 75.00%  pnl@5=   +2.11
+  cell==IND2_L & cell==AGREE4_60 & stream==c8lgbm                         n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==IND2_L & cell==HW_PRIMARY & cell==CELLS6                          n=4    w=3    WR= 75.00%  pnl@5=   +3.26
+  cell==IND2_L & cell==HW_PRIMARY & stream==c8lgbm                        n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==IND2_L & cell==HW_PRIMARY & cell==CELLS13                         n=4    w=3    WR= 75.00%  pnl@5=   +3.26
+  cell==IND2_L & cell==GREEDY & stream==c8lgbm                            n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  cell==IND2_L & stream==c8lgbm & cell==C57_A457_EU                       n=4    w=3    WR= 75.00%  pnl@5=   +1.31
+  prob>=0.653 & cell==AGREE4_60 & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +1.53
+  prob>=0.653 & stream==shadow & cell==IND2N_T                            n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  prob>=0.653 & cell==IND2_T & cell==IND2N_T                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  prob>=0.653 & cell==IND2_T & asset==sol                                 n=4    w=3    WR= 75.00%  pnl@5=   +1.44
+  prob>=0.653 & cell==CELLS6 & cell==IND2N_T                              n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  prob>=0.653 & side==DOWN & cell==IND2N_T                                n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  prob>=0.653 & cell==IND2N_T & stream==c8lgbm                            n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  prob>=0.653 & cell==IND2N_T & cell==BASE                                n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  prob>=0.653 & cell==IND2N_T & cell==CELLS13                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  cell==AGREE4_60 & side==DOWN & cell==MY290                              n=4    w=3    WR= 75.00%  pnl@5=   +1.87
+  cell==AGREE4_60 & cell==C57_A457_EU & cell==MY290                       n=4    w=3    WR= 75.00%  pnl@5=   +1.87
+  cell==AGREE4_60 & cell==MY290 & stream==newstreams                      n=4    w=3    WR= 75.00%  pnl@5=   +1.87
+  asset==bnb & stream==cdc8 & side==DOWN                                  n=4    w=3    WR= 75.00%  pnl@5=   -0.72
+  asset==hype & cell==GREEDY & side==DOWN                                 n=4    w=3    WR= 75.00%  pnl@5=   +2.46
+  asset==hype & cell==GREEDY & stream==newstreams                         n=4    w=3    WR= 75.00%  pnl@5=   +2.46
+  stream==shadow & cell==IND2_T & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +1.22
+  stream==shadow & cell==FILT402 & cell==CELLS13                          n=4    w=3    WR= 75.00%  pnl@5=   +2.27
+  cell==GREEDY & stream==c8lgbm & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +2.77
+  cell==GREEDY & cell==MY290 & cell==CELLS13                              n=4    w=3    WR= 75.00%  pnl@5=   +6.17
+  cell==IND2_T & cell==CELLS6 & asset==sol                                n=4    w=3    WR= 75.00%  pnl@5=   +1.22
+  cell==IND2_T & stream==c8lgbm & asset==sol                              n=4    w=3    WR= 75.00%  pnl@5=   +1.44
+  cell==IND2_T & asset==sol & cell==BASE                                  n=4    w=3    WR= 75.00%  pnl@5=   +1.22
+  cell==IND2_T & asset==sol & cell==CELLS13                               n=4    w=3    WR= 75.00%  pnl@5=   +1.22
+  cell==FILT402 & cell==C57_A457_EU & cell==CELLS13                       n=4    w=3    WR= 75.00%  pnl@5=   +2.27
+  cell==FILT402 & stream==newstreams & cell==CELLS13                      n=4    w=3    WR= 75.00%  pnl@5=   +2.27
+  side==DOWN & cell==IND2N_T & stream==c8lgbm                             n=4    w=3    WR= 75.00%  pnl@5=   +0.42
+  side==DOWN & stream==c8lgbm & cell==MY290                               n=4    w=3    WR= 75.00%  pnl@5=   +2.60

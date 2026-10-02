@@ -1,5 +1,8 @@
-EXHAUSTIVE / MINE -- 90%+ WR tier -- 23 qualifying rules
+EXHAUSTIVE / MINE -- 90%+ WR tier -- 26 qualifying rules
 ====================================================================================================
+  asset==doge & stream==c8lgbm & prob>=0.752                              n=15   w=15   WR=100.00%  pnl@5=  +35.57
+  asset==doge & cell==C8LGBM & prob>=0.752                                n=11   w=11   WR=100.00%  pnl@5=  +28.20
+  asset==hype & prob>=0.675 & prob<=0.722                                 n=10   w=10   WR=100.00%  pnl@5=  +23.57
   asset==doge & prob>=0.752                                               n=18   w=17   WR= 94.44%  pnl@5=  +34.38
   cell==C8DOWN & prob>=0.696 & prob<=0.722                                n=17   w=16   WR= 94.12%  pnl@5=  +32.80
   asset==hype & prob>=0.628 & prob<=0.722                                 n=14   w=13   WR= 92.86%  pnl@5=  +28.12

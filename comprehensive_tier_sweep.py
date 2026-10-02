@@ -175,9 +175,12 @@ def sweep_pruned_top40(ded, filt, min_n=3):
     return list(seen.values())
 
 def tiers_from_uniq(uniq, ded):
+    """Cumulative tiers: 90%+ includes every WR>=90 rule (100% rules too),
+    75%+ includes every WR>=75 rule (90%+ and 100% rules too). NOT disjoint
+    bands -- a "+" tier must be a superset of every stricter tier above it."""
     out = {}
-    for name, lo, hi in [("100%+", 100, 100), ("90%+", 90, 99.999), ("75%+", 75, 89.999)]:
-        qual = [x for x in uniq if lo <= x[1]["wr"] <= hi]
+    for name, lo in [("100%+", 100), ("90%+", 90), ("75%+", 75)]:
+        qual = [x for x in uniq if x[1]["wr"] >= lo]
         qual.sort(key=lambda x: (-x[1]["wr"], -x[1]["n"]))
         um = np.zeros(len(ded), dtype=bool)
         for *_, m in qual: um |= m

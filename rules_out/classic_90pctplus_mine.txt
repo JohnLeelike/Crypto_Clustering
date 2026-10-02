@@ -1,5 +1,8 @@
-CLASSIC / MINE -- 90%+ WR tier -- 16 qualifying rules
+CLASSIC / MINE -- 90%+ WR tier -- 19 qualifying rules
 ====================================================================================================
+  asset==hype & prob>=0.667 & prob<=0.732                                 n=13   w=13   WR=100.00%  pnl@5=  +33.29
+  asset==doge & stream==c8lgbm & prob>=0.763                              n=12   w=12   WR=100.00%  pnl@5=  +26.20
+  asset==hype & prob>=0.687 & prob<=0.732                                 n=10   w=10   WR=100.00%  pnl@5=  +23.57
   asset==doge & prob>=0.763                                               n=15   w=14   WR= 93.33%  pnl@5=  +25.01
   asset==hype & prob>=0.637 & prob<=0.732                                 n=14   w=13   WR= 92.86%  pnl@5=  +28.12
   asset==xrp & cell==BASE & prob<=0.763                                   n=12   w=11   WR= 91.67%  pnl@5=  +39.47
