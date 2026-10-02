@@ -284,3 +284,54 @@ for tier in ["100%+", "90%+", "75%+"]:
              "win":combined_lookup[k][0], "pnl5":round(combined_lookup[k][1],2)} for k in found]
     pd.DataFrame(rows).sort_values("ts").to_csv(
         f"final_tier_{tier.replace('%','pct').replace('+','plus')}_v2.csv", index=False)
+
+# ============================================================================
+# ONE CONSOLIDATED REPORT: for each final tier, which rules (from any of the
+# 6 source/variant combos) actually contributed at least one event to the
+# final merged result -- not every rule that was found, only the ones that
+# are actually "in" the final list.
+# ============================================================================
+ALL_SOURCES_FOR_REPORT = [
+    ("classic/mine",   mine_c_ded,  mine_c_tiers),
+    ("classic/theirs", theirs_c_ded, theirs_c_tiers),
+    ("classic/run3",   run3_c_ded,  run3_c_tiers),
+    ("exhaustive/mine",   mine_e_ded,  mine_e_tiers),
+    ("exhaustive/theirs", theirs_e_ded, theirs_e_tiers),
+    ("exhaustive/run3",   run3_e_ded,  run3_e_tiers),
+]
+
+def rule_keyset(mask, ded):
+    return set(ded.loc[mask, "key"])
+
+with open("FINAL_RULES_REPORT.txt", "w") as rep:
+    rep.write("FINAL TIER RESULTS -- rules that actually contributed to each tier\n")
+    rep.write("=" * 100 + "\n\n")
+
+    for tier in ["100%+", "90%+", "75%+"]:
+        named = [("classic", classic_final[tier]), ("exhaustive", exhaustive_final[tier])]
+        base_name, merged, (n0, wr0, p0), (n, wr, p) = greedy_merge(named, combined_lookup)
+
+        rep.write(f"TIER {tier}  ->  N={n}  WR={wr:.2f}%  pnl@5=${p:+.2f}\n")
+        rep.write("-" * 100 + "\n")
+
+        contributing_total = 0
+        for src_name, ded, tiers_dict in ALL_SOURCES_FOR_REPORT:
+            contributing = []
+            for labs, s, mask in tiers_dict[tier]["rules"]:
+                rk = rule_keyset(mask, ded)
+                overlap = rk & merged
+                if overlap:
+                    contributing.append((labs, s, len(overlap)))
+            contributing.sort(key=lambda x: -x[2])
+            contributing_total += len(contributing)
+            rep.write(f"\n  [{src_name}] {len(contributing)} contributing rules "
+                      f"(of {len(tiers_dict[tier]['rules'])} that qualified for this tier):\n")
+            for labs, s, cov in contributing:
+                rep.write(f"      {' & '.join(labs):<65} n={s['n']:<4} WR={s['wr']:6.2f}%  "
+                          f"pnl@5={s['pnl']:+8.2f}   covers {cov} final event(s)\n")
+
+        rep.write(f"\n  TOTAL contributing rules across all 6 sources: {contributing_total}\n")
+        rep.write("=" * 100 + "\n\n")
+
+print("\nWrote FINAL_RULES_REPORT.txt (one file, all 3 tiers, only the rules that "
+      "actually contributed to each final result)")
