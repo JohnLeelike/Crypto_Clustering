@@ -1,0 +1,17 @@
+CLASSIC / RUN3 -- 90%+ WR tier -- 15 qualifying rules
+====================================================================================================
+  asset==doge & prob>=0.753                                               n=16   w=15   WR= 93.75%  pnl@5=  +28.78
+  stream==prec & stream==consensus & prob>=0.653                          n=12   w=11   WR= 91.67%  pnl@5=  +21.16
+  stream==prec & stream==consensus_obl & stream==filtboth                 n=12   w=11   WR= 91.67%  pnl@5=  +29.16
+  stream==prec & stream==consensus_obl & cell==GREEDY                     n=12   w=11   WR= 91.67%  pnl@5=  +29.16
+  asset==hype & stream==shadow                                            n=11   w=10   WR= 90.91%  pnl@5=  +13.58
+  stream==prec & stream==filtboth & cell==INCUMBENT                       n=11   w=10   WR= 90.91%  pnl@5=  +25.38
+  stream==prec & cell==INCUMBENT & cell==GREEDY                           n=11   w=10   WR= 90.91%  pnl@5=  +25.38
+  stream==consensus & prob>=0.653 & cell==MY290                           n=11   w=10   WR= 90.91%  pnl@5=  +19.12
+  stream==consensus_obl & stream==filtboth & cell==MY290                  n=11   w=10   WR= 90.91%  pnl@5=  +27.13
+  stream==consensus_obl & cell==MY290 & cell==GREEDY                      n=11   w=10   WR= 90.91%  pnl@5=  +27.13
+  cell==CELLS6 & stream==prec                                             n=10   w=9    WR= 90.00%  pnl@5=  +24.96
+  side==DOWN & cell==C8FLOW & prob>=0.675                                 n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  side==DOWN & prob>=0.675 & stream==cdc8                                 n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  stream==prec & stream==shadow & cell==CELLS6                            n=10   w=9    WR= 90.00%  pnl@5=  +24.96
+  stream==prec & cell==CELLS6 & cell==CELLS13                             n=10   w=9    WR= 90.00%  pnl@5=  +24.96

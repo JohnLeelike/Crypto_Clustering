@@ -1,0 +1,8 @@
+CLASSIC / THEIRS -- 90%+ WR tier -- 6 qualifying rules
+====================================================================================================
+  asset==doge & prob>=0.759                                               n=15   w=14   WR= 93.33%  pnl@5=  +25.01
+  asset==hype & stream==shadow                                            n=11   w=10   WR= 90.91%  pnl@5=  +13.58
+  side==DOWN & cell==C8FLOW & prob>=0.67                                  n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  side==DOWN & prob>=0.67 & stream==cdc8                                  n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  stream==prec & prob>=0.652 & stream==newstreams                         n=10   w=9    WR= 90.00%  pnl@5=  +17.27
+  prob>=0.759 & asset==xrp & stream==c8lgbm                               n=10   w=9    WR= 90.00%  pnl@5=  +13.11

@@ -1,0 +1,18 @@
+CLASSIC / MINE -- 90%+ WR tier -- 16 qualifying rules
+====================================================================================================
+  asset==doge & prob>=0.763                                               n=15   w=14   WR= 93.33%  pnl@5=  +25.01
+  asset==hype & prob>=0.637 & prob<=0.732                                 n=14   w=13   WR= 92.86%  pnl@5=  +28.12
+  asset==xrp & cell==BASE & prob<=0.763                                   n=12   w=11   WR= 91.67%  pnl@5=  +39.47
+  side==UP & cell==CELLS13 & prob>=0.763                                  n=12   w=11   WR= 91.67%  pnl@5=  +11.14
+  asset==hype & stream==shadow                                            n=11   w=10   WR= 90.91%  pnl@5=  +13.58
+  asset==bnb & side==UP & prob>=0.763                                     n=11   w=10   WR= 90.91%  pnl@5=  +14.41
+  asset==doge & side==UP & prob>=0.763                                    n=11   w=10   WR= 90.91%  pnl@5=  +15.55
+  asset==hype & stream==c8lgbm & prob<=0.732                              n=11   w=10   WR= 90.91%  pnl@5=  +19.70
+  stream==c8down & prob>=0.687 & prob<=0.709                              n=11   w=10   WR= 90.91%  pnl@5=  +19.11
+  asset==hype & prob>=0.667 & prob<=0.763                                 n=20   w=18   WR= 90.00%  pnl@5=  +31.37
+  asset==hype & side==DOWN & prob>=0.6                                    n=10   w=9    WR= 90.00%  pnl@5=  +20.74
+  asset==hype & prob>=0.637 & prob<=0.709                                 n=10   w=9    WR= 90.00%  pnl@5=  +18.42
+  asset==xrp & cell==BASE & prob<=0.732                                   n=10   w=9    WR= 90.00%  pnl@5=  +32.97
+  side==DOWN & cell==C8FLOW & prob>=0.667                                 n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  cell==HW_PRIMARY & stream==shadow & prob<=0.763                         n=10   w=9    WR= 90.00%  pnl@5=  +19.53
+  cell==IND2_L & prob>=0.687 & prob<=0.763                                n=10   w=9    WR= 90.00%  pnl@5=  +17.26

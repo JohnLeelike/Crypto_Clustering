@@ -1,0 +1,25 @@
+EXHAUSTIVE / MINE -- 90%+ WR tier -- 23 qualifying rules
+====================================================================================================
+  asset==doge & prob>=0.752                                               n=18   w=17   WR= 94.44%  pnl@5=  +34.38
+  cell==C8DOWN & prob>=0.696 & prob<=0.722                                n=17   w=16   WR= 94.12%  pnl@5=  +32.80
+  asset==hype & prob>=0.628 & prob<=0.722                                 n=14   w=13   WR= 92.86%  pnl@5=  +28.12
+  asset==hype & prob>=0.675 & prob<=0.752                                 n=14   w=13   WR= 92.86%  pnl@5=  +24.98
+  asset==hype & prob>=0.696 & prob<=0.752                                 n=13   w=12   WR= 92.31%  pnl@5=  +23.65
+  side==UP & cell==CELLS13 & prob>=0.752                                  n=13   w=12   WR= 92.31%  pnl@5=  +12.80
+  asset==bnb & side==UP & prob>=0.752                                     n=12   w=11   WR= 91.67%  pnl@5=  +16.25
+  asset==doge & side==UP & prob>=0.752                                    n=12   w=11   WR= 91.67%  pnl@5=  +19.33
+  asset==sol & cell==C8LGBM & prob<=0.675                                 n=12   w=11   WR= 91.67%  pnl@5=  +30.73
+  asset==xrp & cell==BASE & prob<=0.752                                   n=12   w=11   WR= 91.67%  pnl@5=  +39.47
+  stream==consensus & prob>=0.675 & prob<=0.752                           n=12   w=11   WR= 91.67%  pnl@5=  +22.50
+  asset==hype & stream==shadow                                            n=11   w=10   WR= 90.91%  pnl@5=  +13.58
+  asset==bnb & cell==C8LGBM_gL & prob<=0.653                              n=11   w=10   WR= 90.91%  pnl@5=  +34.57
+  asset==hype & stream==c8lgbm & prob<=0.722                              n=11   w=10   WR= 90.91%  pnl@5=  +19.70
+  cell==BASE & stream==prec & prob<=0.602                                 n=11   w=10   WR= 90.91%  pnl@5=  +33.98
+  stream==c8down & prob>=0.696 & prob<=0.722                              n=11   w=10   WR= 90.91%  pnl@5=  +18.16
+  asset==hype & stream==shadow & prob>=0.602                              n=10   w=9    WR= 90.00%  pnl@5=   +9.13
+  asset==hype & stream==shadow & prob<=0.752                              n=10   w=9    WR= 90.00%  pnl@5=  +12.47
+  asset==xrp & cell==BASE & prob<=0.722                                   n=10   w=9    WR= 90.00%  pnl@5=  +32.97
+  side==DOWN & cell==C8FLOW & prob>=0.675                                 n=10   w=9    WR= 90.00%  pnl@5=   +8.45
+  cell==HW_PRIMARY & stream==shadow & prob<=0.752                         n=10   w=9    WR= 90.00%  pnl@5=  +19.53
+  stream==consensus & prob>=0.675 & prob<=0.722                           n=10   w=9    WR= 90.00%  pnl@5=  +19.75
+  stream==newstreams & stream==prec & prob>=0.653                         n=10   w=9    WR= 90.00%  pnl@5=  +17.27
