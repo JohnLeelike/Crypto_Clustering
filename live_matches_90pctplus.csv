@@ -1,0 +1,314 @@
+symbol,ts,side,prob,pending,matched_rule
+ETH/USDT,2026-08-12 01:15:00+00:00,DOWN,0.1401,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+ETH/USDT,2026-08-12 21:25:00+00:00,UP,0.253,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+ETH/USDT,2026-08-13 01:30:00+00:00,UP,0.2612,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
+ETH/USDT,2026-08-13 18:55:00+00:00,DOWN,0.2247,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+ETH/USDT,2026-08-16 21:25:00+00:00,UP,0.2069,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
+ETH/USDT,2026-08-16 21:30:00+00:00,UP,0.2127,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
+ETH/USDT,2026-08-27 22:35:00+00:00,DOWN,0.1752,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+ETH/USDT,2026-08-28 10:10:00+00:00,UP,0.193,True,side==UP & cell==UNION_P4_D72_K1_D72 & prob<=0.293
+ETH/USDT,2026-08-28 21:50:00+00:00,UP,0.1183,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
+ETH/USDT,2026-08-28 21:55:00+00:00,UP,0.1793,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
+ETH/USDT,2026-09-01 03:35:00+00:00,DOWN,0.171,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+ETH/USDT,2026-09-05 21:45:00+00:00,DOWN,0.1813,True,cell==D6_ge2_K2 & cell==P4_pmpct20_K4
+ETH/USDT,2026-09-08 10:55:00+00:00,UP,0.2364,True,side==UP & cell==UNION_P4_D72_K1_D72 & prob<=0.293
+ETH/USDT,2026-09-09 18:55:00+00:00,UP,0.3141,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+ETH/USDT,2026-09-10 03:50:00+00:00,DOWN,0.2161,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+ETH/USDT,2026-09-10 07:40:00+00:00,UP,0.2534,True,side==UP & cell==UNION_P4_D72_K1_D72 & prob<=0.293
+ETH/USDT,2026-09-10 20:10:00+00:00,DOWN,0.17,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+ETH/USDT,2026-09-10 20:45:00+00:00,DOWN,0.315,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+SOL/USDT,2026-09-11 07:25:00+00:00,DOWN,0.8091,True,side==DOWN & cell==C8FLOW & prob>=0.667
+BNB/USDT,2026-09-11 08:05:00+00:00,DOWN,0.6752,True,side==DOWN & cell==C8FLOW & prob>=0.667
+ETH/USDT,2026-09-11 10:10:00+00:00,DOWN,0.7672,True,side==DOWN & cell==C8FLOW & prob>=0.667
+SOL/USDT,2026-09-11 10:10:00+00:00,DOWN,0.785,True,side==DOWN & cell==C8FLOW & prob>=0.667
+BNB/USDT,2026-09-11 10:10:00+00:00,DOWN,0.7611,True,side==DOWN & cell==C8FLOW & prob>=0.667
+XRP/USDT,2026-09-11 10:10:00+00:00,DOWN,0.8067,True,side==DOWN & cell==C8FLOW & prob>=0.667
+SOL/USDT,2026-09-11 10:15:00+00:00,UP,0.6862,True,asset==sol & cell==C8FLOW
+BNB/USDT,2026-09-11 10:15:00+00:00,UP,0.7038,True,cell==C8FLOW & asset==bnb & prob>=0.67
+DOGE/USDT,2026-09-11 10:15:00+00:00,UP,0.686,True,cell==C8FLOW & prob>=0.67 & prob<=0.687
+BNB/USDT,2026-09-11 11:00:00+00:00,DOWN,0.6838,True,side==DOWN & cell==C8FLOW & prob>=0.667
+BNB/USDT,2026-09-11 11:10:00+00:00,UP,0.6784,True,cell==C8FLOW & asset==bnb & prob>=0.67
+ETH/USDT,2026-09-11 12:20:00+00:00,DOWN,0.7857,True,side==DOWN & cell==C8FLOW & prob>=0.667
+ETH/USDT,2026-09-11 15:15:00+00:00,DOWN,0.6871,True,side==DOWN & cell==C8FLOW & prob>=0.667
+ETH/USDT,2026-09-11 18:10:00+00:00,DOWN,0.6846,True,side==DOWN & cell==C8FLOW & prob>=0.667
+DOGE/USDT,2026-09-12 00:05:00+00:00,DOWN,0.61,True,cell==MY195 & prob>=0.608 & prob<=0.63
+ETH/USDT,2026-09-12 01:05:00+00:00,UP,0.6875,True,prob>=0.652 & cell==PREC191 & cell==MY195
+ETH/USDT,2026-09-12 01:20:00+00:00,DOWN,0.6823,True,cell==MY195 & prob>=0.652 & prob<=0.709
+SOL/USDT,2026-09-12 05:40:00+00:00,DOWN,0.5597,True,asset==sol & side==DOWN & prob<=0.57
+XRP/USDT,2026-09-12 05:55:00+00:00,DOWN,0.5692,True,asset==xrp & cell==MY195
+DOGE/USDT,2026-09-12 05:55:00+00:00,DOWN,0.5692,True,asset==doge & side==DOWN & cell==MY195
+ETH/USDT,2026-09-12 13:40:00+00:00,DOWN,0.6171,True,cell==MY195 & prob>=0.608 & prob<=0.63
+DOGE/USDT,2026-09-12 15:35:00+00:00,UP,0.6574,True,prob>=0.652 & cell==PREC191 & cell==MY195
+ETH/USDT,2026-09-12 17:55:00+00:00,UP,0.6172,True,cell==MY195 & prob>=0.608 & prob<=0.63
+ETH/USDT,2026-09-12 19:50:00+00:00,DOWN,0.61,True,cell==MY195 & prob>=0.608 & prob<=0.63
+ETH/USDT,2026-09-13 09:20:00+00:00,DOWN,0.6207,True,cell==MY195 & prob>=0.608 & prob<=0.63
+ETH/USDT,2026-09-13 11:00:00+00:00,UP,0.7025,True,prob>=0.652 & cell==PREC191 & cell==MY195
+DOGE/USDT,2026-09-13 14:00:00+00:00,UP,0.6,True,asset==doge & cell==MY195 & prob>=0.584
+XRP/USDT,2026-09-13 14:35:00+00:00,UP,0.6225,True,asset==xrp & cell==MY195
+ETH/USDT,2026-09-13 14:35:00+00:00,UP,0.6225,True,cell==MY195 & prob>=0.608 & prob<=0.63
+XRP/USDT,2026-09-13 15:45:00+00:00,DOWN,0.57,True,asset==xrp & cell==MY195
+ETH/USDT,2026-09-13 17:25:00+00:00,DOWN,0.62,True,cell==MY195 & prob>=0.608 & prob<=0.63
+XRP/USDT,2026-09-13 17:35:00+00:00,UP,0.6425,True,asset==xrp & cell==MY195
+DOGE/USDT,2026-09-13 19:20:00+00:00,DOWN,0.62,True,cell==MY195 & prob>=0.608 & prob<=0.63
+ETH/USDT,2026-09-13 22:30:00+00:00,UP,0.625,True,cell==MY195 & prob>=0.608 & prob<=0.63
+ETH/USDT,2026-09-14 04:25:00+00:00,UP,0.6253,True,cell==MY195 & prob>=0.608 & prob<=0.63
+ETH/USDT,2026-09-14 06:15:00+00:00,DOWN,0.2327,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+ETH/USDT,2026-09-14 15:00:00+00:00,DOWN,0.6925,True,side==DOWN & prob>=0.687 & cell==PREC191
+ETH/USDT,2026-09-14 19:20:00+00:00,UP,0.7325,True,side==UP & stream==prec & prob>=0.73
+ETH/USDT,2026-09-15 10:30:00+00:00,UP,0.2351,True,side==UP & cell==UNION_P4_D72_K1_D72 & prob<=0.293
+ETH/USDT,2026-09-15 15:25:00+00:00,UP,0.7415,True,side==UP & stream==prec & prob>=0.73
+ETH/USDT,2026-09-15 18:00:00+00:00,DOWN,0.7023,True,side==DOWN & prob>=0.687 & cell==PREC191
+XRP/USDT,2026-09-15 20:45:00+00:00,UP,0.735,True,side==UP & stream==prec & prob>=0.73
+ETH/USDT,2026-09-16 10:15:00+00:00,UP,0.2718,True,side==UP & cell==UNION_P4_D72_K1_D72 & prob<=0.293
+ETH/USDT,2026-09-16 12:25:00+00:00,DOWN,0.625,True,cell==MY195 & prob>=0.608 & prob<=0.63
+XRP/USDT,2026-09-16 15:00:00+00:00,UP,0.6625,True,asset==xrp & cell==MY195
+ETH/USDT,2026-09-16 18:25:00+00:00,DOWN,0.7208,True,side==DOWN & prob>=0.687 & cell==PREC191
+ETH/USDT,2026-09-16 18:30:00+00:00,UP,0.745,True,side==UP & stream==prec & prob>=0.73
+ETH/USDT,2026-09-16 19:05:00+00:00,DOWN,0.705,True,cell==MY195 & prob>=0.652 & prob<=0.709
+XRP/USDT,2026-09-17 03:35:00+00:00,DOWN,0.7464,True,asset==xrp & cell==BASE & prob<=0.763
+ETH/USDT,2026-09-17 06:10:00+00:00,DOWN,0.1908,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+ETH/USDT,2026-09-17 13:10:00+00:00,DOWN,0.5633,True,side==DOWN & cell==CELLS6 & prob<=0.57
+ETH/USDT,2026-09-17 15:05:00+00:00,DOWN,0.5875,True,cell==CELLS6 & prob>=0.584 & prob<=0.608
+ETH/USDT,2026-09-17 15:10:00+00:00,DOWN,0.5925,True,cell==CELLS6 & prob>=0.584 & prob<=0.608
+ETH/USDT,2026-09-17 21:45:00+00:00,DOWN,0.6703,True,cell==CELLS6 & prob>=0.67 & prob<=0.687
+DOGE/USDT,2026-09-17 23:35:00+00:00,DOWN,0.7058,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+XRP/USDT,2026-09-18 03:20:00+00:00,DOWN,0.6,True,asset==xrp & cell==BASE & prob<=0.763
+SOL/USDT,2026-09-18 03:25:00+00:00,DOWN,0.7186,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+SOL/USDT,2026-09-18 11:15:00+00:00,UP,0.595,True,cell==BASE & stream==prec & prob<=0.602
+ETH/USDT,2026-09-18 15:05:00+00:00,DOWN,0.64,True,cell==CELLS6 & stream==prec
+ETH/USDT,2026-09-18 17:25:00+00:00,UP,0.7728,True,side==UP & cell==CELLS13 & prob>=0.763
+SOL/USDT,2026-09-18 18:35:00+00:00,UP,0.745,True,side==UP & stream==prec & prob>=0.73
+ETH/USDT,2026-09-18 19:15:00+00:00,UP,0.58,True,cell==BASE & stream==prec & prob<=0.602
+DOGE/USDT,2026-09-18 20:40:00+00:00,UP,0.7663,True,asset==doge & prob>=0.763
+XRP/USDT,2026-09-18 20:40:00+00:00,UP,0.7111,True,asset==xrp & cell==BASE & prob<=0.763
+BNB/USDT,2026-09-18 20:40:00+00:00,UP,0.7966,True,side==UP & cell==CELLS13 & prob>=0.763
+ETH/USDT,2026-09-18 20:50:00+00:00,DOWN,0.6986,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+ETH/USDT,2026-09-18 21:40:00+00:00,UP,0.5784,True,cell==BASE & stream==prec & prob<=0.602
+ETH/USDT,2026-09-19 04:45:00+00:00,DOWN,0.7116,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+SOL/USDT,2026-09-19 05:55:00+00:00,DOWN,0.6996,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+XRP/USDT,2026-09-19 08:55:00+00:00,DOWN,0.72,True,side==DOWN & prob>=0.687 & cell==PREC191
+SOL/USDT,2026-09-19 10:25:00+00:00,UP,0.674,True,asset==sol & cell==C8LGBM & prob<=0.675
+XRP/USDT,2026-09-19 12:50:00+00:00,UP,0.7592,True,asset==xrp & stream==c8lgbm & prob>=0.759
+HYPE/USDT,2026-09-19 17:20:00+00:00,DOWN,0.7102,True,asset==hype & prob>=0.667 & prob<=0.763
+DOGE/USDT,2026-09-19 17:20:00+00:00,DOWN,0.7528,True,asset==doge & prob>=0.752
+HYPE/USDT,2026-09-19 17:35:00+00:00,UP,0.6585,True,asset==hype & prob>=0.637 & prob<=0.732
+DOGE/USDT,2026-09-19 21:05:00+00:00,DOWN,0.7639,True,asset==doge & prob>=0.763
+ETH/USDT,2026-09-20 01:15:00+00:00,UP,0.2486,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
+DOGE/USDT,2026-09-20 06:10:00+00:00,UP,0.768,True,asset==doge & prob>=0.763
+DOGE/USDT,2026-09-20 08:10:00+00:00,UP,0.7661,True,asset==doge & prob>=0.763
+SOL/USDT,2026-09-20 08:35:00+00:00,DOWN,0.6677,True,asset==sol & cell==C8LGBM & prob<=0.675
+BNB/USDT,2026-09-20 10:15:00+00:00,UP,0.7879,True,asset==bnb & side==UP & prob>=0.763
+HYPE/USDT,2026-09-20 11:20:00+00:00,UP,0.7639,True,prob>=0.67 & asset==hype & cell==C8LGBM
+DOGE/USDT,2026-09-20 11:20:00+00:00,UP,0.7553,True,asset==doge & prob>=0.753
+SOL/USDT,2026-09-20 17:20:00+00:00,DOWN,0.6505,True,stream==c8lgbm & prob<=0.652
+SOL/USDT,2026-09-20 20:20:00+00:00,DOWN,0.6529,True,asset==sol & cell==C8LGBM & prob<=0.675
+BNB/USDT,2026-09-20 20:40:00+00:00,UP,0.7993,True,asset==bnb & side==UP & prob>=0.763
+SOL/USDT,2026-09-20 22:10:00+00:00,UP,0.6612,True,asset==sol & cell==C8LGBM & prob<=0.675
+HYPE/USDT,2026-09-21 01:25:00+00:00,DOWN,0.6678,True,asset==hype & prob>=0.667 & prob<=0.763
+HYPE/USDT,2026-09-21 02:20:00+00:00,UP,0.6717,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-09-21 03:30:00+00:00,UP,0.735,True,side==UP & stream==prec & prob>=0.73
+BNB/USDT,2026-09-21 22:35:00+00:00,UP,0.7775,True,asset==bnb & side==UP & prob>=0.763
+BNB/USDT,2026-09-21 23:55:00+00:00,UP,0.7898,True,asset==bnb & side==UP & prob>=0.763
+DOGE/USDT,2026-09-22 08:05:00+00:00,UP,0.7852,True,asset==doge & prob>=0.763
+BNB/USDT,2026-09-22 12:20:00+00:00,UP,0.7996,True,asset==bnb & side==UP & prob>=0.763
+XRP/USDT,2026-09-22 13:35:00+00:00,UP,0.7938,True,asset==xrp & stream==c8lgbm & prob>=0.759
+ETH/USDT,2026-09-22 16:50:00+00:00,UP,0.7546,True,side==UP & stream==prec & prob>=0.73
+DOGE/USDT,2026-09-22 16:50:00+00:00,UP,0.7806,True,asset==doge & prob>=0.763
+BNB/USDT,2026-09-22 17:20:00+00:00,UP,0.7666,True,asset==bnb & side==UP & prob>=0.763
+SOL/USDT,2026-09-22 20:25:00+00:00,UP,0.6617,True,asset==sol & cell==C8LGBM & prob<=0.675
+DOGE/USDT,2026-09-22 21:10:00+00:00,DOWN,0.7766,True,asset==doge & prob>=0.763
+XRP/USDT,2026-09-22 21:10:00+00:00,DOWN,0.8073,True,asset==xrp & stream==c8lgbm & prob>=0.759
+DOGE/USDT,2026-09-22 21:30:00+00:00,DOWN,0.7523,True,asset==doge & prob>=0.752
+BNB/USDT,2026-09-22 23:35:00+00:00,UP,0.8154,True,asset==bnb & side==UP & prob>=0.763
+SOL/USDT,2026-09-23 00:10:00+00:00,UP,0.6527,True,asset==sol & cell==C8LGBM & prob<=0.675
+XRP/USDT,2026-09-23 12:50:00+00:00,DOWN,0.7075,True,side==DOWN & prob>=0.687 & cell==PREC191
+ETH/USDT,2026-09-24 01:35:00+00:00,DOWN,0.3051,True,side==DOWN & cell==P1_hr65_55_K2 & prob>=0.293
+SOL/USDT,2026-09-24 05:50:00+00:00,DOWN,0.6704,True,asset==sol & cell==C8LGBM & prob<=0.675
+ETH/USDT,2026-09-24 05:50:00+00:00,DOWN,0.6518,True,stream==c8lgbm & prob<=0.652
+BNB/USDT,2026-09-24 06:25:00+00:00,UP,0.7671,True,asset==bnb & side==UP & prob>=0.763
+HYPE/USDT,2026-09-24 07:40:00+00:00,DOWN,0.7042,True,asset==hype & prob>=0.667 & prob<=0.763
+SOL/USDT,2026-09-24 15:20:00+00:00,UP,0.6503,True,stream==c8lgbm & prob<=0.652
+ETH/USDT,2026-09-24 21:35:00+00:00,DOWN,0.3282,True,cell==D6_ge2_K2 & cell==P4_pmpct20_K4
+BNB/USDT,2026-09-24 22:25:00+00:00,UP,0.7597,True,asset==bnb & side==UP & prob>=0.752
+BNB/USDT,2026-09-24 23:00:00+00:00,UP,0.7861,True,asset==bnb & side==UP & prob>=0.763
+DOGE/USDT,2026-09-25 06:15:00+00:00,UP,0.7745,True,asset==doge & prob>=0.763
+SOL/USDT,2026-09-25 16:00:00+00:00,UP,0.662,True,asset==sol & cell==C8LGBM & prob<=0.675
+SOL/USDT,2026-09-25 20:00:00+00:00,DOWN,0.6736,True,asset==sol & cell==C8LGBM & prob<=0.675
+ETH/USDT,2026-09-26 03:15:00+00:00,UP,0.7651,True,side==UP & cell==CELLS13 & prob>=0.763
+XRP/USDT,2026-09-26 05:10:00+00:00,DOWN,0.7338,True,asset==xrp & cell==BASE & prob<=0.763
+SOL/USDT,2026-09-26 05:15:00+00:00,DOWN,0.555,True,asset==sol & side==DOWN & prob<=0.57
+DOGE/USDT,2026-09-26 05:20:00+00:00,UP,0.7889,True,asset==doge & prob>=0.763
+XRP/USDT,2026-09-26 05:20:00+00:00,UP,0.8035,True,asset==xrp & stream==c8lgbm & prob>=0.759
+BNB/USDT,2026-09-26 05:20:00+00:00,UP,0.7859,True,asset==bnb & side==UP & prob>=0.763
+XRP/USDT,2026-09-26 06:05:00+00:00,UP,0.8186,True,asset==xrp & stream==c8lgbm & prob>=0.759
+XRP/USDT,2026-09-26 07:55:00+00:00,UP,0.8025,True,side==UP & cell==CELLS13 & prob>=0.763
+SOL/USDT,2026-09-26 08:40:00+00:00,DOWN,0.7181,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+XRP/USDT,2026-09-26 08:40:00+00:00,DOWN,0.6193,True,asset==xrp & stream==shadow & prob<=0.652
+XRP/USDT,2026-09-26 09:25:00+00:00,DOWN,0.6626,True,asset==xrp & cell==BASE & prob<=0.763
+ETH/USDT,2026-09-26 09:30:00+00:00,UP,0.5836,True,cell==BASE & stream==prec & prob<=0.602
+SOL/USDT,2026-09-26 10:05:00+00:00,UP,0.6578,True,asset==sol & cell==C8LGBM & prob<=0.675
+ETH/USDT,2026-09-26 10:35:00+00:00,DOWN,0.6275,True,cell==CELLS6 & stream==prec
+ETH/USDT,2026-09-26 12:00:00+00:00,DOWN,0.5613,True,side==DOWN & cell==CELLS6 & prob<=0.57
+ETH/USDT,2026-09-26 12:10:00+00:00,DOWN,0.6841,True,prob>=0.652 & cell==CELLS6 & stream==prec
+SOL/USDT,2026-09-26 12:20:00+00:00,DOWN,0.7575,True,prob>=0.652 & cell==CELLS6 & stream==prec
+DOGE/USDT,2026-09-26 13:30:00+00:00,UP,0.7761,True,asset==doge & prob>=0.763
+ETH/USDT,2026-09-26 13:35:00+00:00,DOWN,0.5625,True,side==DOWN & cell==CELLS6 & prob<=0.57
+DOGE/USDT,2026-09-26 14:35:00+00:00,DOWN,0.7208,True,asset==doge & cell==CELLS6 & prob<=0.73
+SOL/USDT,2026-09-26 15:20:00+00:00,UP,0.5799,True,cell==BASE & stream==prec & prob<=0.602
+HYPE/USDT,2026-09-26 17:40:00+00:00,UP,0.7359,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-09-26 18:35:00+00:00,DOWN,0.7047,True,stream==c8down & prob>=0.687 & prob<=0.709
+ETH/USDT,2026-09-26 18:45:00+00:00,DOWN,0.7045,True,stream==c8down & prob>=0.687 & prob<=0.709
+ETH/USDT,2026-09-26 19:10:00+00:00,DOWN,0.6025,True,cell==BASE & cell==PREC191
+DOGE/USDT,2026-09-26 20:05:00+00:00,DOWN,0.7096,True,asset==doge & cell==CELLS6 & prob<=0.73
+BNB/USDT,2026-09-27 01:55:00+00:00,UP,0.6283,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+ETH/USDT,2026-09-27 01:55:00+00:00,DOWN,0.1516,True,cell==D6_ge2_K2 & cell==P4_pmpct20_K4
+BNB/USDT,2026-09-27 04:05:00+00:00,UP,0.6128,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+BNB/USDT,2026-09-27 04:15:00+00:00,DOWN,0.6369,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+ETH/USDT,2026-09-27 11:30:00+00:00,DOWN,0.6952,True,cell==IND2_L & prob>=0.687 & prob<=0.763
+ETH/USDT,2026-09-27 12:45:00+00:00,DOWN,0.6002,True,cell==CELLS6 & prob>=0.584 & prob<=0.608
+ETH/USDT,2026-09-27 13:00:00+00:00,DOWN,0.7045,True,stream==c8down & prob>=0.687 & prob<=0.709
+ETH/USDT,2026-09-27 13:15:00+00:00,DOWN,0.6375,True,cell==CELLS6 & stream==prec
+ETH/USDT,2026-09-27 14:45:00+00:00,DOWN,0.6496,True,cell==CELLS6 & stream==prec
+ETH/USDT,2026-09-27 14:55:00+00:00,DOWN,0.5883,True,cell==CELLS6 & prob>=0.584 & prob<=0.608
+BNB/USDT,2026-09-27 17:40:00+00:00,UP,0.6177,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+ETH/USDT,2026-09-27 18:00:00+00:00,DOWN,0.6963,True,cell==IND2_L & prob>=0.687 & prob<=0.763
+HYPE/USDT,2026-09-27 19:30:00+00:00,UP,0.67,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-09-27 20:30:00+00:00,UP,0.1714,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+BNB/USDT,2026-09-27 20:50:00+00:00,DOWN,0.7099,True,asset==bnb & side==DOWN & cell==C8LGBM_gL
+SOL/USDT,2026-09-27 20:50:00+00:00,DOWN,0.7358,True,cell==IND2_L & prob>=0.687 & prob<=0.763
+ETH/USDT,2026-09-27 20:50:00+00:00,DOWN,0.6984,True,stream==c8down & prob>=0.687 & prob<=0.709
+HYPE/USDT,2026-09-27 22:20:00+00:00,UP,0.7184,True,asset==hype & prob>=0.667 & prob<=0.763
+DOGE/USDT,2026-09-27 22:25:00+00:00,UP,0.5612,True,asset==doge & cell==CELLS13 & prob<=0.709
+SOL/USDT,2026-09-27 23:25:00+00:00,UP,0.5624,True,asset==sol & cell==CELLS13 & prob<=0.57
+HYPE/USDT,2026-09-28 00:20:00+00:00,UP,0.7447,True,asset==hype & prob>=0.667 & prob<=0.763
+DOGE/USDT,2026-09-28 01:10:00+00:00,DOWN,0.8386,True,asset==doge & prob>=0.763
+SOL/USDT,2026-09-28 01:15:00+00:00,DOWN,0.565,True,asset==sol & side==DOWN & prob<=0.57
+ETH/USDT,2026-09-28 06:15:00+00:00,DOWN,0.5983,True,side==DOWN & cell==FILT402
+ETH/USDT,2026-09-28 07:40:00+00:00,DOWN,0.7013,True,side==DOWN & cell==FILT402
+DOGE/USDT,2026-09-28 09:15:00+00:00,UP,0.6743,True,asset==doge & cell==C8LGBM_g & prob<=0.675
+ETH/USDT,2026-09-28 09:35:00+00:00,DOWN,0.6826,True,side==DOWN & cell==FILT402
+ETH/USDT,2026-09-28 09:55:00+00:00,DOWN,0.6698,True,stream==consensus & prob>=0.653 & stream==prec
+ETH/USDT,2026-09-28 10:15:00+00:00,UP,0.7558,True,prob>=0.652 & stream==newstreams & stream==prec
+ETH/USDT,2026-09-28 12:05:00+00:00,UP,0.7762,True,side==UP & cell==CELLS13 & prob>=0.763
+XRP/USDT,2026-09-28 12:05:00+00:00,UP,0.7766,True,side==UP & cell==CELLS13 & prob>=0.763
+SOL/USDT,2026-09-28 12:05:00+00:00,UP,0.7821,True,side==UP & cell==CELLS13 & prob>=0.763
+XRP/USDT,2026-09-28 12:15:00+00:00,UP,0.6125,True,asset==xrp & cell==BASE & prob<=0.763
+HYPE/USDT,2026-09-28 12:45:00+00:00,UP,0.7583,True,asset==hype & prob>=0.667 & prob<=0.763
+SOL/USDT,2026-09-28 12:45:00+00:00,UP,0.7238,True,asset==sol & cell==C8LGBM_gL & stream==prec
+ETH/USDT,2026-09-28 14:10:00+00:00,DOWN,0.6063,True,cell==CELLS6 & prob>=0.584 & prob<=0.608
+ETH/USDT,2026-09-28 14:15:00+00:00,DOWN,0.5625,True,side==DOWN & cell==CELLS6 & prob<=0.57
+XRP/USDT,2026-09-28 16:20:00+00:00,UP,0.7623,True,asset==xrp & stream==c8lgbm & prob>=0.759
+DOGE/USDT,2026-09-28 18:55:00+00:00,DOWN,0.6753,True,side==DOWN & cell==FILT402
+HYPE/USDT,2026-09-28 19:15:00+00:00,DOWN,0.6,True,asset==hype & stream==shadow
+ETH/USDT,2026-09-28 19:15:00+00:00,DOWN,0.5709,True,side==DOWN & cell==FILT402
+XRP/USDT,2026-09-28 19:40:00+00:00,UP,0.5622,True,asset==xrp & cell==BASE & prob<=0.763
+ETH/USDT,2026-09-28 19:55:00+00:00,DOWN,0.6233,True,side==DOWN & cell==FILT402
+ETH/USDT,2026-09-28 20:05:00+00:00,UP,0.68,True,prob>=0.652 & stream==newstreams & stream==prec
+ETH/USDT,2026-09-28 21:05:00+00:00,DOWN,0.3562,True,side==DOWN & cell==P1_hr65_55_K2 & prob>=0.293
+DOGE/USDT,2026-09-28 22:05:00+00:00,DOWN,0.6562,True,asset==doge & stream==newstreams & prob>=0.608
+SOL/USDT,2026-09-28 23:00:00+00:00,UP,0.5544,True,asset==sol & cell==CELLS13 & prob<=0.57
+ETH/USDT,2026-09-28 23:40:00+00:00,UP,0.5825,True,stream==consensus_obl & prob<=0.608
+ETH/USDT,2026-09-29 00:50:00+00:00,DOWN,0.7125,True,cell==IND2_L & prob>=0.687 & prob<=0.763
+ETH/USDT,2026-09-29 05:40:00+00:00,UP,0.648,True,cell==GREEDY & stream==consensus_obl & stream==prec
+SOL/USDT,2026-09-29 05:55:00+00:00,UP,0.5925,True,cell==BASE & stream==prec & prob<=0.602
+DOGE/USDT,2026-09-29 08:05:00+00:00,DOWN,0.7297,True,asset==doge & stream==newstreams & prob>=0.608
+XRP/USDT,2026-09-29 08:05:00+00:00,DOWN,0.7242,True,cell==C57_A457_EU & prob>=0.709 & prob<=0.759
+ETH/USDT,2026-09-29 09:05:00+00:00,UP,0.7799,True,side==UP & cell==CELLS13 & prob>=0.763
+ETH/USDT,2026-09-29 10:10:00+00:00,UP,0.6934,True,prob>=0.652 & stream==newstreams & stream==prec
+BNB/USDT,2026-09-29 11:10:00+00:00,DOWN,0.5907,True,asset==bnb & prob>=0.584 & prob<=0.608
+ETH/USDT,2026-09-29 11:15:00+00:00,UP,0.6136,True,cell==GREEDY & stream==prec & prob>=0.602
+SOL/USDT,2026-09-29 11:20:00+00:00,DOWN,0.6859,True,cell==CELLS6 & prob>=0.67 & prob<=0.687
+HYPE/USDT,2026-09-29 11:20:00+00:00,DOWN,0.7549,True,asset==hype & prob>=0.667 & prob<=0.763
+SOL/USDT,2026-09-29 11:50:00+00:00,UP,0.7483,True,side==UP & stream==prec & prob>=0.73
+DOGE/USDT,2026-09-29 12:40:00+00:00,DOWN,0.7381,True,asset==doge & stream==newstreams & prob>=0.608
+HYPE/USDT,2026-09-29 12:45:00+00:00,UP,0.6075,True,asset==hype & stream==shadow
+ETH/USDT,2026-09-29 13:05:00+00:00,UP,0.6322,True,cell==GREEDY & stream==consensus_obl & stream==prec
+ETH/USDT,2026-09-29 14:00:00+00:00,DOWN,0.565,True,side==DOWN & cell==CELLS6 & prob<=0.57
+XRP/USDT,2026-09-29 14:30:00+00:00,DOWN,0.6962,True,cell==C57_A457_EU & prob>=0.675 & prob<=0.753
+SOL/USDT,2026-09-29 15:00:00+00:00,DOWN,0.6375,True,cell==IND2_T & stream==newstreams
+HYPE/USDT,2026-09-29 15:10:00+00:00,UP,0.7577,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-09-29 15:50:00+00:00,DOWN,0.6746,True,cell==HW_PRIMARY & stream==shadow & prob<=0.763
+HYPE/USDT,2026-09-29 16:15:00+00:00,UP,0.7519,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-09-29 16:40:00+00:00,DOWN,0.6981,True,stream==c8down & prob>=0.687 & prob<=0.709
+SOL/USDT,2026-09-29 16:40:00+00:00,DOWN,0.7032,True,stream==c8down & prob>=0.687 & prob<=0.709
+ETH/USDT,2026-09-30 01:05:00+00:00,DOWN,0.6725,True,cell==CELLS6 & prob>=0.67 & prob<=0.687
+ETH/USDT,2026-09-30 03:20:00+00:00,UP,0.2817,True,cell==D72_maj_K2 & cell==UNION_P4_D72_K1_D72
+XRP/USDT,2026-09-30 04:20:00+00:00,DOWN,0.8234,True,asset==xrp & stream==c8lgbm & prob>=0.759
+SOL/USDT,2026-09-30 06:20:00+00:00,DOWN,0.6889,True,stream==c8down & prob>=0.687 & prob<=0.709
+DOGE/USDT,2026-09-30 08:05:00+00:00,DOWN,0.6621,True,asset==doge & cell==CELLS6 & prob<=0.73
+BNB/USDT,2026-09-30 13:35:00+00:00,DOWN,0.6234,True,cell==IND2_L & stream==newstreams & stream==prec
+BNB/USDT,2026-09-30 15:10:00+00:00,UP,0.6414,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+XRP/USDT,2026-09-30 17:05:00+00:00,DOWN,0.8175,True,asset==xrp & stream==c8lgbm & prob>=0.759
+DOGE/USDT,2026-09-30 17:10:00+00:00,DOWN,0.7924,True,asset==doge & prob>=0.763
+XRP/USDT,2026-09-30 17:10:00+00:00,DOWN,0.8097,True,asset==xrp & stream==c8lgbm & prob>=0.759
+ETH/USDT,2026-09-30 17:20:00+00:00,DOWN,0.694,True,cell==IND2_L & prob>=0.687 & prob<=0.763
+HYPE/USDT,2026-09-30 17:25:00+00:00,DOWN,0.6931,True,asset==hype & prob>=0.667 & prob<=0.763
+HYPE/USDT,2026-09-30 18:50:00+00:00,UP,0.7066,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-09-30 20:55:00+00:00,DOWN,0.6687,True,asset==eth & cell==C57_A457_EU & prob>=0.653
+DOGE/USDT,2026-09-30 21:50:00+00:00,DOWN,0.5815,True,asset==doge & cell==HW_PRIMARY & prob>=0.57
+BNB/USDT,2026-09-30 21:50:00+00:00,DOWN,0.5877,True,asset==bnb & prob>=0.584 & prob<=0.608
+XRP/USDT,2026-09-30 22:15:00+00:00,UP,0.6866,True,cell==C8LGBM_g & stream==prec & prob<=0.709
+ETH/USDT,2026-09-30 23:10:00+00:00,UP,0.6644,True,prob>=0.652 & stream==newstreams & stream==prec
+ETH/USDT,2026-10-01 01:25:00+00:00,DOWN,0.1365,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+ETH/USDT,2026-10-01 02:25:00+00:00,DOWN,0.6857,True,cell==CELLS6 & prob>=0.67 & prob<=0.687
+BNB/USDT,2026-10-01 03:00:00+00:00,DOWN,0.6204,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+BNB/USDT,2026-10-01 03:40:00+00:00,UP,0.6139,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+BNB/USDT,2026-10-01 05:35:00+00:00,UP,0.6275,True,asset==bnb & stream==prec
+ETH/USDT,2026-10-01 05:50:00+00:00,UP,0.8323,True,side==UP & cell==CELLS13 & prob>=0.763
+HYPE/USDT,2026-10-01 05:50:00+00:00,UP,0.7046,True,asset==hype & prob>=0.667 & prob<=0.763
+DOGE/USDT,2026-10-01 05:50:00+00:00,UP,0.8335,True,asset==doge & prob>=0.763
+SOL/USDT,2026-10-01 06:05:00+00:00,UP,0.6168,True,asset==sol & cell==C8LGBM_gL & stream==prec
+ETH/USDT,2026-10-01 06:40:00+00:00,DOWN,0.7329,True,cell==C57_A457_EU & prob>=0.709 & prob<=0.759
+ETH/USDT,2026-10-01 06:45:00+00:00,UP,0.5856,True,cell==INCUMBENT & prob<=0.608
+BNB/USDT,2026-10-01 07:15:00+00:00,DOWN,0.6065,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+ETH/USDT,2026-10-01 07:25:00+00:00,DOWN,0.7175,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+BNB/USDT,2026-10-01 07:40:00+00:00,DOWN,0.595,True,side==DOWN & cell==INCUMBENT & stream==prec
+BNB/USDT,2026-10-01 07:55:00+00:00,DOWN,0.6201,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+SOL/USDT,2026-10-01 09:50:00+00:00,DOWN,0.6828,True,cell==CELLS6 & prob>=0.67 & prob<=0.687
+DOGE/USDT,2026-10-01 09:50:00+00:00,DOWN,0.6055,True,cell==CELLS6 & prob>=0.584 & prob<=0.608
+SOL/USDT,2026-10-01 10:05:00+00:00,DOWN,0.7126,True,cell==C8DOWN & prob>=0.696 & prob<=0.722
+ETH/USDT,2026-10-01 10:45:00+00:00,UP,0.5543,True,cell==C57_A457_EU & cell==MY290 & prob<=0.57
+DOGE/USDT,2026-10-01 10:55:00+00:00,UP,0.7751,True,asset==doge & prob>=0.763
+ETH/USDT,2026-10-01 10:55:00+00:00,UP,0.807,True,side==UP & cell==CELLS13 & prob>=0.763
+HYPE/USDT,2026-10-01 10:55:00+00:00,UP,0.7191,True,asset==hype & prob>=0.667 & prob<=0.763
+SOL/USDT,2026-10-01 12:30:00+00:00,DOWN,0.6939,True,stream==c8down & prob>=0.687 & prob<=0.709
+XRP/USDT,2026-10-01 13:05:00+00:00,DOWN,0.6923,True,asset==xrp & cell==BASE & prob<=0.763
+ETH/USDT,2026-10-01 13:15:00+00:00,UP,0.5071,True,cell==C57_A457_EU & cell==MY290 & prob<=0.57
+DOGE/USDT,2026-10-01 16:15:00+00:00,UP,0.7838,True,asset==doge & prob>=0.763
+ETH/USDT,2026-10-01 17:25:00+00:00,UP,0.6576,True,prob>=0.652 & stream==newstreams & stream==prec
+HYPE/USDT,2026-10-01 17:55:00+00:00,DOWN,0.7155,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-10-01 18:10:00+00:00,UP,0.5754,True,cell==INCUMBENT & prob<=0.608
+BNB/USDT,2026-10-01 18:15:00+00:00,DOWN,0.6434,True,asset==bnb & cell==C8LGBM_gL & prob<=0.653
+ETH/USDT,2026-10-01 20:05:00+00:00,DOWN,0.2848,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+XRP/USDT,2026-10-01 22:05:00+00:00,UP,0.6904,True,asset==xrp & cell==BASE & prob<=0.763
+ETH/USDT,2026-10-02 02:00:00+00:00,DOWN,0.1543,True,cell==D6_ge2_K2 & cell==P4_pmpct20_K4
+ETH/USDT,2026-10-02 02:10:00+00:00,UP,0.5524,True,cell==C57_A457_EU & cell==MY290 & prob<=0.57
+XRP/USDT,2026-10-02 02:35:00+00:00,DOWN,0.7196,True,cell==C57_A457_EU & prob>=0.709 & prob<=0.759
+SOL/USDT,2026-10-02 02:35:00+00:00,DOWN,0.6578,True,prob>=0.652 & stream==newstreams & stream==prec
+ETH/USDT,2026-10-02 02:50:00+00:00,UP,0.7584,True,side==UP & cell==CELLS13 & prob>=0.752
+XRP/USDT,2026-10-02 03:15:00+00:00,DOWN,0.7574,True,cell==C57_A457_EU & prob>=0.709 & prob<=0.759
+DOGE/USDT,2026-10-02 03:15:00+00:00,DOWN,0.7011,True,stream==c8down & prob>=0.687 & prob<=0.709
+HYPE/USDT,2026-10-02 03:15:00+00:00,DOWN,0.704,True,asset==hype & prob>=0.667 & prob<=0.763
+DOGE/USDT,2026-10-02 04:50:00+00:00,DOWN,0.6527,True,asset==doge & stream==newstreams & prob>=0.608
+HYPE/USDT,2026-10-02 06:00:00+00:00,DOWN,0.7407,True,asset==hype & prob>=0.667 & prob<=0.763
+ETH/USDT,2026-10-02 06:15:00+00:00,DOWN,0.6771,True,cell==HW_PRIMARY & stream==shadow & prob<=0.763
+XRP/USDT,2026-10-02 07:05:00+00:00,DOWN,0.7607,True,cell==IND2_L & prob>=0.687 & prob<=0.763
+ETH/USDT,2026-10-02 08:05:00+00:00,DOWN,0.7166,True,cell==HW_PRIMARY & stream==shadow & prob<=0.763
+XRP/USDT,2026-10-02 10:10:00+00:00,DOWN,0.6868,True,asset==xrp & cell==BASE & prob<=0.763
+ETH/USDT,2026-10-02 10:55:00+00:00,UP,0.6148,True,cell==GREEDY & stream==consensus_obl & stream==prec
+ETH/USDT,2026-10-02 13:15:00+00:00,DOWN,0.5859,True,cell==HW_PRIMARY & stream==shadow & prob<=0.763
+DOGE/USDT,2026-10-02 13:35:00+00:00,UP,0.6556,True,asset==doge & cell==C8LGBM_g & prob<=0.67
+ETH/USDT,2026-10-02 13:55:00+00:00,DOWN,0.6753,True,cell==CELLS6 & prob>=0.67 & prob<=0.687
+SOL/USDT,2026-10-02 14:20:00+00:00,UP,0.6,True,cell==BASE & stream==prec & prob<=0.602
+XRP/USDT,2026-10-02 15:05:00+00:00,DOWN,0.5261,True,asset==xrp & cell==BASE & prob<=0.763
+HYPE/USDT,2026-10-02 15:25:00+00:00,DOWN,0.705,True,asset==hype & prob>=0.667 & prob<=0.763
+XRP/USDT,2026-10-02 15:40:00+00:00,DOWN,0.5988,True,asset==xrp & cell==BASE & prob<=0.763
+ETH/USDT,2026-10-02 16:45:00+00:00,UP,0.6515,True,stream==c8lgbm & prob<=0.652
+SOL/USDT,2026-10-02 16:55:00+00:00,DOWN,0.5588,True,side==DOWN & cell==CELLS6 & prob<=0.57
+SOL/USDT,2026-10-02 17:05:00+00:00,DOWN,0.6615,True,cell==HW_PRIMARY & stream==shadow & prob<=0.763
+DOGE/USDT,2026-10-02 18:40:00+00:00,DOWN,0.735,True,cell==HW_PRIMARY & stream==shadow & prob<=0.763
+ETH/USDT,2026-10-02 19:25:00+00:00,UP,0.6976,True,prob>=0.652 & stream==newstreams & stream==prec
+ETH/USDT,2026-10-02 20:50:00+00:00,UP,0.1558,True,cell==D72_maj_K1 & cell==P1_hr65_55_K1 & cell==P4_pmpct20_K2
+DOGE/USDT,2026-10-02 20:55:00+00:00,DOWN,0.6387,True,asset==doge & stream==newstreams & prob>=0.608
+ETH/USDT,2026-10-02 21:00:00+00:00,UP,0.3401,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
+ETH/USDT,2026-10-02 21:30:00+00:00,UP,0.2287,True,side==UP & cell==D72_maj_K1 & cell==P1_hr65_55_K2
