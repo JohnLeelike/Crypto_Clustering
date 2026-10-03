@@ -1,0 +1,167 @@
+<title>Portfolio Cell Performance</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* layout: stacked bar-chart panels -- stream x cell x side WR vs breakeven (7d, 14d),
+   pooled-by-portfolio WR (14d), then tier-by-recency comparison (live vs pruned, 7d/14d) */
+:root{
+  color-scheme: light;
+  --bg:#fafaf8; --surface-1:#ffffff; --border:#e4e2dc;
+  --text-primary:#17160f; --text-secondary:#5c5a50; --text-muted:#8b8878;
+  --pos:#1baf7a; --neg:#d14b4b; --neutral:#8b8878;
+  --live:#eb6834; --pruned:#1baf7a;
+  --track:#f1efe8; --grid:#ece9e0;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#15140f; --surface-1:#1d1c16; --border:#34322a;
+    --text-primary:#f4f2ea; --text-secondary:#b8b5a8; --text-muted:#7d7a6d;
+    --pos:#199e70; --neg:#e0615f; --neutral:#7d7a6d;
+    --live:#d95926; --pruned:#199e70;
+    --track:#262419; --grid:#2a2820;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#15140f; --surface-1:#1d1c16; --border:#34322a;
+  --text-primary:#f4f2ea; --text-secondary:#b8b5a8; --text-muted:#7d7a6d;
+  --pos:#199e70; --neg:#e0615f; --neutral:#7d7a6d;
+  --live:#d95926; --pruned:#199e70;
+  --track:#262419; --grid:#2a2820;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--text-primary); font-family:"IBM Plex Sans",system-ui,sans-serif; padding:20px 16px 48px; max-width:900px; margin:0 auto}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+h1{font-size:1.25rem; font-weight:600; margin:0 0 4px; text-wrap:balance}
+.sub{color:var(--text-secondary); font-size:.85rem; margin:0 0 24px; line-height:1.5}
+.panel{border:1px solid var(--border); border-radius:10px; background:var(--surface-1); padding:16px; margin-bottom:22px}
+.panel-title{font-weight:600; font-size:.95rem; margin-bottom:2px}
+.panel-sub{color:var(--text-muted); font-size:.76rem; margin-bottom:14px}
+.row{display:flex; align-items:center; gap:10px; padding:4px 0}
+.row + .row{border-top:1px solid var(--grid)}
+.row-label{width:168px; flex-shrink:0; font-size:.72rem; color:var(--text-secondary); line-height:1.3}
+.row-label b{color:var(--text-primary); font-weight:600; display:block; font-size:.74rem}
+.bar-track{position:relative; flex:1; min-width:0; height:16px; background:var(--track); border-radius:4px; overflow:visible}
+.bar-fill{position:absolute; top:0; left:0; height:100%; border-radius:4px; transition:width .2s}
+.bar-fill.pos{background:var(--pos)}
+.bar-fill.neg{background:var(--neg)}
+.be-tick{position:absolute; top:-3px; bottom:-3px; width:2px; background:var(--text-muted)}
+.row-val{width:92px; flex-shrink:0; text-align:right; font-size:.74rem}
+.row-val .wr{font-weight:600}
+.row-val .edge{display:block; font-size:.68rem; color:var(--text-muted)}
+.legend-note{display:flex; gap:16px; flex-wrap:wrap; font-size:.72rem; color:var(--text-muted); margin-top:10px}
+.legend-note span{display:inline-flex; align-items:center; gap:5px}
+.tick-sw{display:inline-block; width:2px; height:11px; background:var(--text-muted)}
+.sw{width:11px; height:11px; border-radius:3px; display:inline-block}
+
+/* tier recency grid */
+.tier-grid{display:grid; grid-template-columns:1fr; gap:16px}
+.tier-block{border:1px solid var(--border); border-radius:8px; padding:12px}
+.tier-block h3{margin:0 0 8px; font-size:.86rem; font-weight:600}
+.n20-note{margin-top:8px; font-size:.7rem; color:var(--text-muted); padding-top:8px; border-top:1px solid var(--grid)}
+.n20-note b{color:var(--text-primary)}
+@media (max-width:540px){ .row-label{width:110px} .row-val{width:76px} }
+</style>
+
+<h1>Portfolio Cell Performance</h1>
+<p class="sub">Win rate vs. breakeven (the tick mark on each bar) for every stream &times; cell &times; side combination, last 7 and 14 days of the original 9-stream backtest &mdash; plus how the 100%/90%/75% live-filter tiers hold up over the same recency windows, all-rules vs. pruned, and restricted to rules with &ge;20 historical trades.</p>
+
+<div id="panels"></div>
+
+<script>
+const DATA = {"cells_7d":[{"stream":"P3_base_86","cell":"P3_base_86_K1","side":"UP","n":12,"w":8,"wr":66.67,"ask":0.463,"breakeven":48.0,"edge":18.67,"t":1.37,"pnl":18.12},{"stream":"D72_maj","cell":"D72_maj_K1","side":"DOWN","n":9,"w":6,"wr":66.67,"ask":0.457,"breakeven":47.33,"edge":19.33,"t":1.23,"pnl":27.54},{"stream":"P4_pmpct20","cell":"P4_pmpct20_K1","side":"UP","n":12,"w":8,"wr":66.67,"ask":0.453,"breakeven":46.98,"edge":19.68,"t":1.45,"pnl":20.45},{"stream":"D72_maj","cell":"D72_maj_K4","side":"UP","n":5,"w":3,"wr":60.0,"ask":0.542,"breakeven":55.79,"edge":4.21,"t":0.19,"pnl":9.08},{"stream":"P1_hr65_55","cell":"P1_hr65_55_K1","side":"UP","n":10,"w":6,"wr":60.0,"ask":0.466,"breakeven":48.25,"edge":11.75,"t":0.76,"pnl":6.18},{"stream":"P2_hr55_71","cell":"P2_hr55_71_K1","side":"UP","n":10,"w":6,"wr":60.0,"ask":0.466,"breakeven":48.25,"edge":11.75,"t":0.76,"pnl":6.18},{"stream":"D72_maj","cell":"D72_maj_K1","side":"UP","n":12,"w":7,"wr":58.33,"ask":0.447,"breakeven":46.33,"edge":12.01,"t":0.84,"pnl":11.64},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_D72","side":"UP","n":7,"w":4,"wr":57.14,"ask":0.469,"breakeven":48.48,"edge":8.66,"t":0.46,"pnl":8.78},{"stream":"P2_hr55_71","cell":"P2_hr55_71_K1","side":"DOWN","n":7,"w":4,"wr":57.14,"ask":0.449,"breakeven":46.49,"edge":10.65,"t":0.57,"pnl":8.41},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_both","side":"UP","n":23,"w":13,"wr":56.52,"ask":0.472,"breakeven":48.84,"edge":7.69,"t":0.74,"pnl":29.82},{"stream":"D6_ge2","cell":"D6_ge2_K2","side":"DOWN","n":9,"w":5,"wr":55.56,"ask":0.519,"breakeven":53.51,"edge":2.05,"t":0.12,"pnl":6.63},{"stream":"P3_base_86","cell":"P3_base_86_K2","side":"DOWN","n":9,"w":5,"wr":55.56,"ask":0.519,"breakeven":53.51,"edge":2.05,"t":0.12,"pnl":6.63},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_both","side":"DOWN","n":20,"w":11,"wr":55.0,"ask":0.499,"breakeven":51.42,"edge":3.58,"t":0.32,"pnl":11.23},{"stream":"P3_base_86","cell":"P3_base_86_K1","side":"DOWN","n":10,"w":5,"wr":50.0,"ask":0.479,"breakeven":49.56,"edge":0.44,"t":0.03,"pnl":3.36},{"stream":"P4_pmpct20","cell":"P4_pmpct20_K1","side":"DOWN","n":16,"w":8,"wr":50.0,"ask":0.507,"breakeven":52.38,"edge":-2.38,"t":-0.19,"pnl":-5.32},{"stream":"P2_hr55_71","cell":"P2_hr55_71_K2","side":"UP","n":8,"w":4,"wr":50.0,"ask":0.462,"breakeven":47.86,"edge":2.14,"t":0.12,"pnl":17.07},{"stream":"P4_pmpct20","cell":"P4_pmpct20_K2","side":"DOWN","n":8,"w":4,"wr":50.0,"ask":0.485,"breakeven":50.18,"edge":-0.18,"t":-0.01,"pnl":2.86},{"stream":"P5_hr65_conf2","cell":"P5_hr65_conf2_K2","side":"UP","n":8,"w":4,"wr":50.0,"ask":0.462,"breakeven":47.86,"edge":2.14,"t":0.12,"pnl":17.07},{"stream":"P1_hr65_55","cell":"P1_hr65_55_K2","side":"UP","n":8,"w":4,"wr":50.0,"ask":0.462,"breakeven":47.86,"edge":2.14,"t":0.12,"pnl":17.07},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_P4","side":"DOWN","n":10,"w":5,"wr":50.0,"ask":0.512,"breakeven":52.82,"edge":-2.82,"t":-0.18,"pnl":-4.69},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_P4","side":"UP","n":11,"w":5,"wr":45.45,"ask":0.465,"breakeven":48.18,"edge":-2.73,"t":-0.18,"pnl":-8.0},{"stream":"P4_pmpct20","cell":"P4_pmpct20_K2","side":"UP","n":18,"w":8,"wr":44.44,"ask":0.494,"breakeven":51.03,"edge":-6.58,"t":-0.56,"pnl":1.91}],"cells_14d":[{"stream":"D72_maj","cell":"D72_maj_K4","side":"DOWN","n":5,"w":4,"wr":80.0,"ask":0.558,"breakeven":57.47,"edge":22.53,"t":1.26,"pnl":8.52},{"stream":"D72_maj","cell":"D72_maj_K4","side":"UP","n":6,"w":4,"wr":66.67,"ask":0.515,"breakeven":53.1,"edge":13.57,"t":0.7,"pnl":17.02},{"stream":"P4_pmpct20","cell":"P4_pmpct20_K2","side":"DOWN","n":14,"w":9,"wr":64.29,"ask":0.472,"breakeven":48.9,"edge":15.39,"t":1.2,"pnl":29.1},{"stream":"P1_hr65_55","cell":"P1_hr65_55_K2","side":"DOWN","n":11,"w":7,"wr":63.64,"ask":0.501,"breakeven":51.68,"edge":11.95,"t":0.82,"pnl":21.35},{"stream":"P2_hr55_71","cell":"P2_hr55_71_K2","side":"DOWN","n":11,"w":7,"wr":63.64,"ask":0.501,"breakeven":51.68,"edge":11.95,"t":0.82,"pnl":21.35},{"stream":"P5_hr65_conf2","cell":"P5_hr65_conf2_K2","side":"DOWN","n":11,"w":7,"wr":63.64,"ask":0.501,"breakeven":51.68,"edge":11.95,"t":0.82,"pnl":21.35},{"stream":"P3_base_86","cell":"P3_base_86_K2","side":"DOWN","n":19,"w":12,"wr":63.16,"ask":0.503,"breakeven":51.9,"edge":11.26,"t":1.02,"pnl":28.42},{"stream":"D6_ge2","cell":"D6_ge2_K2","side":"DOWN","n":19,"w":12,"wr":63.16,"ask":0.503,"breakeven":51.9,"edge":11.26,"t":1.02,"pnl":28.42},{"stream":"D72_maj","cell":"D72_maj_K2","side":"DOWN","n":8,"w":5,"wr":62.5,"ask":0.539,"breakeven":55.48,"edge":7.02,"t":0.41,"pnl":6.87},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_both","side":"DOWN","n":39,"w":24,"wr":61.54,"ask":0.49,"breakeven":50.63,"edge":10.91,"t":1.4,"pnl":63.2},{"stream":"P2_hr55_71","cell":"P2_hr55_71_K1","side":"DOWN","n":13,"w":8,"wr":61.54,"ask":0.458,"breakeven":47.39,"edge":14.15,"t":1.05,"pnl":36.45},{"stream":"D72_maj","cell":"D72_maj_K1","side":"DOWN","n":15,"w":9,"wr":60.0,"ask":0.48,"breakeven":49.68,"edge":10.32,"t":0.82,"pnl":30.19},{"stream":"P1_hr65_55","cell":"P1_hr65_55_K1","side":"DOWN","n":7,"w":4,"wr":57.14,"ask":0.439,"breakeven":45.45,"edge":11.69,"t":0.63,"pnl":25.78},{"stream":"P1_hr65_55","cell":"P1_hr65_55_K2","side":"UP","n":14,"w":8,"wr":57.14,"ask":0.466,"breakeven":48.28,"edge":8.86,"t":0.67,"pnl":33.13},{"stream":"P2_hr55_71","cell":"P2_hr55_71_K2","side":"UP","n":14,"w":8,"wr":57.14,"ask":0.466,"breakeven":48.28,"edge":8.86,"t":0.67,"pnl":33.13},{"stream":"P5_hr65_conf2","cell":"P5_hr65_conf2_K2","side":"UP","n":14,"w":8,"wr":57.14,"ask":0.466,"breakeven":48.28,"edge":8.86,"t":0.67,"pnl":33.13},{"stream":"P4_pmpct20","cell":"P4_pmpct20_K1","side":"DOWN","n":30,"w":17,"wr":56.67,"ask":0.5,"breakeven":51.57,"edge":5.09,"t":0.56,"pnl":28.67},{"stream":"P3_base_86","cell":"P3_base_86_K1","side":"DOWN","n":16,"w":9,"wr":56.25,"ask":0.475,"breakeven":49.13,"edge":7.12,"t":0.57,"pnl":31.39},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_P4","side":"DOWN","n":18,"w":10,"wr":55.56,"ask":0.51,"breakeven":52.59,"edge":2.96,"t":0.25,"pnl":1.26},{"stream":"P4_pmpct20","cell":"P4_pmpct20_K1","side":"UP","n":20,"w":11,"wr":55.0,"ask":0.484,"breakeven":50.1,"edge":4.9,"t":0.44,"pnl":3.98},{"stream":"D72_maj","cell":"D72_maj_K1","side":"UP","n":20,"w":10,"wr":50.0,"ask":0.41,"breakeven":42.66,"edge":7.34,"t":0.66,"pnl":9.54},{"stream":"UNION_P4_D72","cell":"UNION_P4_D72_K1_D72","side":"UP","n":12,"w":6,"wr":50.0,"ask":0.403,"breakeven":41.88,"edge":8.12,"t":0.56,"pnl":8.0}],"pooled_14d":[{"portfolio":"P5_hr65_conf2","n":34,"w":20,"wr":58.82,"ask":0.449,"breakeven":46.41,"edge":12.41,"t":1.47,"pnl":71.97},{"portfolio":"P2_hr55_71","n":65,"w":37,"wr":56.92,"ask":0.463,"breakeven":47.93,"edge":8.99,"t":1.46,"pnl":97.08},{"portfolio":"P1_hr65_55","n":58,"w":32,"wr":55.17,"ask":0.456,"breakeven":47.22,"edge":7.95,"t":1.22,"pnl":85.07},{"portfolio":"D72_maj","n":94,"w":51,"wr":54.26,"ask":0.464,"breakeven":47.98,"edge":6.28,"t":1.22,"pnl":101.84},{"portfolio":"P4_pmpct20","n":117,"w":62,"wr":52.99,"ask":0.481,"breakeven":49.68,"edge":3.31,"t":0.72,"pnl":68.63},{"portfolio":"D6_ge2","n":51,"w":27,"wr":52.94,"ask":0.47,"breakeven":48.58,"edge":4.36,"t":0.62,"pnl":47.01},{"portfolio":"UNION_P4_D72","n":131,"w":69,"wr":52.67,"ask":0.474,"breakeven":48.98,"edge":3.69,"t":0.85,"pnl":79.43},{"portfolio":"P3_base_86","n":89,"w":46,"wr":51.69,"ask":0.472,"breakeven":48.85,"edge":2.83,"t":0.54,"pnl":62.12},{"portfolio":"D72_ge5","n":36,"w":16,"wr":44.44,"ask":0.44,"breakeven":45.52,"edge":-1.07,"t":-0.13,"pnl":21.11}],"recency":{"100%+|live_all|7":{"n":129,"w":126,"wr":97.67,"pnl":380.86},"100%+|live_all|14":{"n":157,"w":154,"wr":98.09,"pnl":470.08},"100%+|pruned_all|7":{"n":118,"w":118,"wr":100.0,"pnl":368.84},"100%+|pruned_all|14":{"n":146,"w":146,"wr":100.0,"pnl":458.06},"100%+|live_n20|7":{"n":0,"w":0,"wr":0.0,"pnl":0.0},"100%+|live_n20|14":{"n":0,"w":0,"wr":0.0,"pnl":0.0},"100%+|pruned_n20|7":{"n":0,"w":0,"wr":0.0,"pnl":0.0},"100%+|pruned_n20|14":{"n":0,"w":0,"wr":0.0,"pnl":0.0},"90%+|live_all|7":{"n":178,"w":158,"wr":88.76,"pnl":368.66},"90%+|live_all|14":{"n":228,"w":205,"wr":89.91,"pnl":490.54},"90%+|pruned_all|7":{"n":164,"w":150,"wr":91.46,"pnl":371.36},"90%+|pruned_all|14":{"n":214,"w":197,"wr":92.06,"pnl":493.24},"90%+|live_n20|7":{"n":16,"w":14,"wr":87.5,"pnl":16.64},"90%+|live_n20|14":{"n":20,"w":18,"wr":90.0,"pnl":31.37},"90%+|pruned_n20|7":{"n":16,"w":14,"wr":87.5,"pnl":16.64},"90%+|pruned_n20|14":{"n":20,"w":18,"wr":90.0,"pnl":31.37},"75%+|live_all|7":{"n":440,"w":297,"wr":67.5,"pnl":154.75},"75%+|live_all|14":{"n":736,"w":503,"wr":68.34,"pnl":307.66},"75%+|pruned_all|7":{"n":349,"w":259,"wr":74.21,"pnl":303.93},"75%+|pruned_all|14":{"n":546,"w":411,"wr":75.27,"pnl":512.94},"75%+|live_n20|7":{"n":369,"w":251,"wr":68.02,"pnl":73.08},"75%+|live_n20|14":{"n":639,"w":439,"wr":68.7,"pnl":161.19},"75%+|pruned_n20|7":{"n":232,"w":170,"wr":73.28,"pnl":104.28},"75%+|pruned_n20|14":{"n":378,"w":283,"wr":74.87,"pnl":209.58}}};
+
+function fmtPct(v){ return (v>=0?"+":"") + v.toFixed(2) + "p"; }
+function fmtMoney(v){ return (v>=0?"+$":"-$") + Math.abs(v).toFixed(2); }
+
+function renderCellPanel(container, title, sub, rows, labelFn, maxAsk){
+  const panel = document.createElement("div");
+  panel.className = "panel";
+  panel.innerHTML = `<div class="panel-title">${title}</div><div class="panel-sub">${sub}</div><div class="rows"></div>
+    <div class="legend-note">
+      <span><span class="sw" style="background:var(--pos)"></span>positive edge</span>
+      <span><span class="sw" style="background:var(--neg)"></span>negative edge</span>
+      <span><span class="tick-sw"></span>breakeven WR</span>
+    </div>`;
+  const rowsEl = panel.querySelector(".rows");
+  rows.forEach(r=>{
+    const edgePos = r.edge >= 0;
+    const row = document.createElement("div");
+    row.className = "row";
+    row.innerHTML = `
+      <div class="row-label">${labelFn(r)}</div>
+      <div class="bar-track">
+        <div class="bar-fill ${edgePos?'pos':'neg'}" style="width:${r.wr}%"></div>
+        <div class="be-tick" style="left:${r.breakeven}%"></div>
+      </div>
+      <div class="row-val">
+        <span class="wr mono">${r.wr.toFixed(1)}%</span>
+        <span class="edge mono">${fmtPct(r.edge)} &middot; n=${r.n}</span>
+      </div>`;
+    rowsEl.appendChild(row);
+  });
+  container.appendChild(panel);
+}
+
+const panels = document.getElementById("panels");
+
+renderCellPanel(panels, "Stream &times; cell &times; side &mdash; last 7 days",
+  "sorted by win rate, n&ge;5", DATA.cells_7d,
+  r=>`<b>${r.stream}</b>${r.cell} &middot; ${r.side}`);
+
+renderCellPanel(panels, "Stream &times; cell &times; side &mdash; last 14 days",
+  "sorted by win rate, n&ge;5", DATA.cells_14d,
+  r=>`<b>${r.stream}</b>${r.cell} &middot; ${r.side}`);
+
+renderCellPanel(panels, "Pooled by portfolio &mdash; last 14 days",
+  "all cells combined per stream", DATA.pooled_14d,
+  r=>`<b>${r.portfolio}</b>`);
+
+// ---- tier recency comparison ----
+const tierPanel = document.createElement("div");
+tierPanel.className = "panel";
+tierPanel.innerHTML = `<div class="panel-title">Live-filter tiers by recency</div>
+  <div class="panel-sub">all rules vs. pruned (dropped rules with a poor historical track record), last 7d / 14d</div>
+  <div class="tier-grid" id="tier-grid"></div>`;
+panels.appendChild(tierPanel);
+
+const tierGrid = tierPanel.querySelector("#tier-grid");
+const TIERS = ["100%+","90%+","75%+"];
+const TIER_FLOOR = {"100%+":100, "90%+":90, "75%+":75};
+
+TIERS.forEach(tier=>{
+  const block = document.createElement("div");
+  block.className = "tier-block";
+  const rows = [
+    {label:"Live, 7d",   key:`${tier}|live_all|7`,   color:"live"},
+    {label:"Pruned, 7d", key:`${tier}|pruned_all|7`, color:"pruned"},
+    {label:"Live, 14d",   key:`${tier}|live_all|14`,   color:"live"},
+    {label:"Pruned, 14d", key:`${tier}|pruned_all|14`, color:"pruned"},
+  ];
+  let rowsHtml = "";
+  rows.forEach(r=>{
+    const d = DATA.recency[r.key];
+    const pos = d.wr >= TIER_FLOOR[tier];
+    rowsHtml += `
+      <div class="row">
+        <div class="row-label"><b>${r.label}</b>n=${d.n}</div>
+        <div class="bar-track">
+          <div class="bar-fill ${pos?'pos':'neg'}" style="width:${Math.min(d.wr,100)}%"></div>
+          <div class="be-tick" style="left:${TIER_FLOOR[tier]}%"></div>
+        </div>
+        <div class="row-val">
+          <span class="wr mono">${d.wr.toFixed(1)}%</span>
+          <span class="edge mono">${fmtMoney(d.pnl)}</span>
+        </div>
+      </div>`;
+  });
+  const n20_7 = DATA.recency[`${tier}|live_n20|7`];
+  const n20_7p = DATA.recency[`${tier}|pruned_n20|7`];
+  const n20_14 = DATA.recency[`${tier}|live_n20|14`];
+  const n20_14p = DATA.recency[`${tier}|pruned_n20|14`];
+  block.innerHTML = `<h3>${tier} tier &mdash; floor marked at ${TIER_FLOOR[tier]}%</h3>${rowsHtml}
+    <div class="n20-note">Rules with &ge;20 historical trades only: 7d <b>n=${n20_7.n}</b> (${n20_7.wr.toFixed(1)}% live / ${n20_7p.wr.toFixed(1)}% pruned)
+    &middot; 14d <b>n=${n20_14.n}</b> (${n20_14.wr.toFixed(1)}% live / ${n20_14p.wr.toFixed(1)}% pruned)${n20_7.n===0&&n20_14.n===0?' &mdash; no rule in this tier has that much history yet':''}</div>`;
+  tierGrid.appendChild(block);
+});
+</script>
