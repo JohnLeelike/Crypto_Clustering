@@ -1,0 +1,187 @@
+<title>Greedy Max PnL: Hour-22 Filter Comparison</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#fafaf8; --surface-1:#ffffff; --border:#e4e2dc;
+  --text-primary:#17160f; --text-secondary:#5c5a50; --text-muted:#8b8878;
+  --grid:#ece9e0; --pos:#1baf7a;
+  --s1:#8b8878; --s2:#2a78d6; --s3:#eb6834;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#15140f; --surface-1:#1d1c16; --border:#34322a;
+    --text-primary:#f4f2ea; --text-secondary:#b8b5a8; --text-muted:#7d7a6d;
+    --grid:#2a2820; --pos:#199e70;
+    --s1:#7d7a6d; --s2:#3987e5; --s3:#d95926;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#15140f; --surface-1:#1d1c16; --border:#34322a;
+  --text-primary:#f4f2ea; --text-secondary:#b8b5a8; --text-muted:#7d7a6d;
+  --grid:#2a2820; --pos:#199e70;
+  --s1:#7d7a6d; --s2:#3987e5; --s3:#d95926;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--text-primary); font-family:"IBM Plex Sans",system-ui,sans-serif; padding:20px 16px 44px; max-width:880px; margin:0 auto}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+h1{font-size:1.2rem; font-weight:600; margin:0 0 4px; text-wrap:balance}
+.sub{color:var(--text-secondary); font-size:.85rem; margin:0 0 16px; line-height:1.5}
+.panel{border:1px solid var(--border); border-radius:10px; background:var(--surface-1); padding:16px}
+.legend{display:flex; gap:10px 16px; flex-wrap:wrap; margin-bottom:12px; font-size:.75rem; color:var(--text-secondary)}
+.legend span{display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
+.legend .sw{width:16px; height:3px; border-radius:2px; display:inline-block}
+.legend .thick{height:4px}
+.chart-wrap{position:relative}
+svg.chart{display:block; width:100%; height:auto; overflow:visible}
+.gridline{stroke:var(--grid); stroke-width:1}
+.axis-label{fill:var(--text-muted); font-size:9px; font-family:"IBM Plex Mono",monospace}
+.crosshair{stroke:var(--text-muted); stroke-width:1; stroke-dasharray:3 3; opacity:0}
+.hover-dot{opacity:0}
+.tooltip{position:absolute; pointer-events:none; background:var(--surface-1); border:1px solid var(--border);
+  border-radius:8px; padding:8px 10px; font-size:.72rem; box-shadow:0 4px 16px rgba(0,0,0,.14); opacity:0;
+  transition:opacity .08s; white-space:nowrap; z-index:5}
+.tooltip .t-date{color:var(--text-muted); margin-bottom:5px; font-weight:600}
+.tooltip .t-row{display:flex; align-items:center; gap:8px; justify-content:space-between}
+.tooltip .t-row + .t-row{margin-top:3px}
+.tooltip .dot{display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:4px}
+.stats{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:14px}
+.stat-card{border:1px solid var(--border); border-radius:8px; padding:10px 12px}
+.stat-card .k{font-size:.72rem; color:var(--text-muted); margin-bottom:4px}
+.stat-card .v{font-size:.95rem; font-weight:600}
+.stat-card .v2{font-size:.72rem; color:var(--text-secondary); margin-top:2px}
+.foot{color:var(--text-muted); font-size:.74rem; line-height:1.6; margin-top:14px}
+@media (max-width:520px){ .stats{grid-template-columns:1fr} }
+</style>
+
+<h1>Greedy Max PnL: Hour-22 (UTC) Filter Comparison</h1>
+<p class="sub">$100 start, $5 per trade. Three ways of handling the one hour (22:00&nbsp;UTC) that showed a persistent negative edge across both halves of the backtest.</p>
+
+<div class="panel">
+  <div class="legend" id="legend"></div>
+  <div class="chart-wrap">
+    <svg class="chart" id="chart" viewBox="0 0 880 400" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="tooltip" id="tooltip"></div>
+  </div>
+  <div class="stats" id="stats"></div>
+</div>
+<p class="foot"><b>A. Baseline</b>: greedy max-PnL selection run on all hours, untouched.<br>
+<b>B. Pre-filter</b>: hour-22 events removed from every candidate's event pool <i>before</i> the greedy selection runs, so the algorithm re-optimizes around cleaner data.<br>
+<b>C. Post-filter</b>: the same baseline (A) selection, then hour-22 trades are simply stripped out of the already-chosen set afterward.</p>
+
+<script>
+const DATA = {"A_baseline": {"n": 107, "final_equity": 280.16, "pnl": 180.16, "max_dd": -35.09, "max_dd_pct": -13.45, "wr": 60.75, "points": [{"t": "2026-09-11T00:00:00Z", "e": 100.0}, {"t": "2026-09-11T10:05:00+00:00", "e": 106.9886}, {"t": "2026-09-13T04:40:00+00:00", "e": 101.7436}, {"t": "2026-09-13T13:25:00+00:00", "e": 96.5721}, {"t": "2026-09-13T13:30:00+00:00", "e": 99.7655}, {"t": "2026-09-13T15:05:00+00:00", "e": 107.0555}, {"t": "2026-09-13T16:40:00+00:00", "e": 101.8875}, {"t": "2026-09-13T16:45:00+00:00", "e": 108.3159}, {"t": "2026-09-13T16:55:00+00:00", "e": 116.9808}, {"t": "2026-09-13T17:05:00+00:00", "e": 111.7988}, {"t": "2026-09-13T20:35:00+00:00", "e": 119.4058}, {"t": "2026-09-13T20:45:00+00:00", "e": 114.2063}, {"t": "2026-09-13T20:50:00+00:00", "e": 116.663}, {"t": "2026-09-13T20:55:00+00:00", "e": 125.7212}, {"t": "2026-09-13T21:10:00+00:00", "e": 120.4902}, {"t": "2026-09-13T21:15:00+00:00", "e": 115.3362}, {"t": "2026-09-13T21:20:00+00:00", "e": 110.1787}, {"t": "2026-09-13T21:25:00+00:00", "e": 113.5098}, {"t": "2026-09-14T06:15:00+00:00", "e": 118.5354}, {"t": "2026-09-15T06:55:00+00:00", "e": 124.703}, {"t": "2026-09-15T10:00:00+00:00", "e": 127.8964}, {"t": "2026-09-16T04:25:00+00:00", "e": 130.1373}, {"t": "2026-09-16T04:40:00+00:00", "e": 139.6122}, {"t": "2026-09-16T06:40:00+00:00", "e": 141.1071}, {"t": "2026-09-16T23:15:00+00:00", "e": 135.8411}, {"t": "2026-09-17T04:40:00+00:00", "e": 130.6066}, {"t": "2026-09-17T04:50:00+00:00", "e": 137.5953}, {"t": "2026-09-17T06:10:00+00:00", "e": 145.8883}, {"t": "2026-09-17T20:25:00+00:00", "e": 151.3411}, {"t": "2026-09-18T02:35:00+00:00", "e": 146.1661}, {"t": "2026-09-19T02:50:00+00:00", "e": 149.0976}, {"t": "2026-09-19T03:05:00+00:00", "e": 171.5884}, {"t": "2026-09-19T13:05:00+00:00", "e": 176.0358}, {"t": "2026-09-19T15:05:00+00:00", "e": 170.8607}, {"t": "2026-09-19T15:10:00+00:00", "e": 174.7942}, {"t": "2026-09-19T21:20:00+00:00", "e": 178.2679}, {"t": "2026-09-19T23:15:00+00:00", "e": 182.3661}, {"t": "2026-09-20T01:15:00+00:00", "e": 191.4243}, {"t": "2026-09-20T10:10:00+00:00", "e": 186.2353}, {"t": "2026-09-20T20:05:00+00:00", "e": 189.709}, {"t": "2026-09-20T20:10:00+00:00", "e": 193.8073}, {"t": "2026-09-20T20:25:00+00:00", "e": 188.6743}, {"t": "2026-09-20T20:30:00+00:00", "e": 190.5207}, {"t": "2026-09-20T20:40:00+00:00", "e": 185.3282}, {"t": "2026-09-20T20:45:00+00:00", "e": 180.1707}, {"t": "2026-09-21T04:45:00+00:00", "e": 174.9327}, {"t": "2026-09-21T04:50:00+00:00", "e": 179.3801}, {"t": "2026-09-22T13:00:00+00:00", "e": 174.1456}, {"t": "2026-09-22T21:50:00+00:00", "e": 181.7526}, {"t": "2026-09-23T03:25:00+00:00", "e": 182.649}, {"t": "2026-09-23T03:40:00+00:00", "e": 177.376}, {"t": "2026-09-23T10:25:00+00:00", "e": 183.2946}, {"t": "2026-09-23T22:10:00+00:00", "e": 187.742}, {"t": "2026-09-23T22:20:00+00:00", "e": 193.6606}, {"t": "2026-09-24T01:35:00+00:00", "e": 204.5481}, {"t": "2026-09-24T21:35:00+00:00", "e": 208.6464}, {"t": "2026-09-24T23:30:00+00:00", "e": 215.9364}, {"t": "2026-09-25T01:05:00+00:00", "e": 210.7824}, {"t": "2026-09-25T01:10:00+00:00", "e": 215.808}, {"t": "2026-09-25T02:05:00+00:00", "e": 222.5097}, {"t": "2026-09-25T02:15:00+00:00", "e": 217.3452}, {"t": "2026-09-25T04:15:00+00:00", "e": 237.0652}, {"t": "2026-09-25T21:05:00+00:00", "e": 231.9287}, {"t": "2026-09-25T21:10:00+00:00", "e": 239.8696}, {"t": "2026-09-25T22:25:00+00:00", "e": 244.6946}, {"t": "2026-09-25T22:35:00+00:00", "e": 239.5021}, {"t": "2026-09-25T22:50:00+00:00", "e": 234.3236}, {"t": "2026-09-25T22:55:00+00:00", "e": 241.9306}, {"t": "2026-09-25T23:15:00+00:00", "e": 249.8715}, {"t": "2026-09-26T20:10:00+00:00", "e": 244.6615}, {"t": "2026-09-26T20:45:00+00:00", "e": 239.5495}, {"t": "2026-09-26T20:50:00+00:00", "e": 243.819}, {"t": "2026-09-27T01:55:00+00:00", "e": 253.2939}, {"t": "2026-09-27T13:15:00+00:00", "e": 260.9009}, {"t": "2026-09-27T20:25:00+00:00", "e": 255.7399}, {"t": "2026-09-27T20:50:00+00:00", "e": 250.5579}, {"t": "2026-09-27T22:10:00+00:00", "e": 245.4354}, {"t": "2026-09-28T21:00:00+00:00", "e": 240.2184}, {"t": "2026-09-28T21:05:00+00:00", "e": 247.207}, {"t": "2026-09-28T21:15:00+00:00", "e": 250.2672}, {"t": "2026-09-28T22:40:00+00:00", "e": 245.1237}, {"t": "2026-09-28T22:50:00+00:00", "e": 239.9767}, {"t": "2026-09-28T22:55:00+00:00", "e": 234.8017}, {"t": "2026-09-28T23:05:00+00:00", "e": 236.135}, {"t": "2026-09-28T23:25:00+00:00", "e": 230.932}, {"t": "2026-09-30T06:15:00+00:00", "e": 225.806}, {"t": "2026-09-30T06:25:00+00:00", "e": 232.5077}, {"t": "2026-09-30T06:40:00+00:00", "e": 242.8947}, {"t": "2026-09-30T06:50:00+00:00", "e": 245.1357}, {"t": "2026-10-01T01:25:00+00:00", "e": 250.8162}, {"t": "2026-10-01T04:50:00+00:00", "e": 256.0509}, {"t": "2026-10-01T10:05:00+00:00", "e": 275.7709}, {"t": "2026-10-01T20:05:00+00:00", "e": 284.4358}, {"t": "2026-10-01T22:15:00+00:00", "e": 286.6767}, {"t": "2026-10-01T22:25:00+00:00", "e": 281.4772}, {"t": "2026-10-01T22:40:00+00:00", "e": 284.2842}, {"t": "2026-10-01T22:55:00+00:00", "e": 289.5189}, {"t": "2026-10-01T23:00:00+00:00", "e": 284.4139}, {"t": "2026-10-01T23:05:00+00:00", "e": 287.3454}, {"t": "2026-10-01T23:30:00+00:00", "e": 282.1949}, {"t": "2026-10-01T23:35:00+00:00", "e": 276.9884}, {"t": "2026-10-01T23:40:00+00:00", "e": 278.7432}, {"t": "2026-10-02T01:55:00+00:00", "e": 273.6697}, {"t": "2026-10-02T02:00:00+00:00", "e": 277.0008}, {"t": "2026-10-02T02:05:00+00:00", "e": 271.7313}, {"t": "2026-10-02T04:20:00+00:00", "e": 266.4198}, {"t": "2026-10-02T21:00:00+00:00", "e": 275.8947}, {"t": "2026-10-02T21:30:00+00:00", "e": 280.1642}]}, "B_prefilter": {"n": 73, "final_equity": 293.38, "pnl": 193.38, "max_dd": -21.38, "max_dd_pct": -11.02, "wr": 65.75, "points": [{"t": "2026-09-11T00:00:00Z", "e": 100.0}, {"t": "2026-09-11T10:05:00+00:00", "e": 106.9886}, {"t": "2026-09-13T04:40:00+00:00", "e": 101.7436}, {"t": "2026-09-13T13:25:00+00:00", "e": 96.5721}, {"t": "2026-09-13T13:30:00+00:00", "e": 99.7655}, {"t": "2026-09-13T15:05:00+00:00", "e": 107.0555}, {"t": "2026-09-13T16:40:00+00:00", "e": 101.8875}, {"t": "2026-09-13T16:45:00+00:00", "e": 108.3159}, {"t": "2026-09-13T20:35:00+00:00", "e": 115.9229}, {"t": "2026-09-13T20:45:00+00:00", "e": 110.7234}, {"t": "2026-09-13T20:50:00+00:00", "e": 113.1801}, {"t": "2026-09-13T20:55:00+00:00", "e": 122.2383}, {"t": "2026-09-13T21:15:00+00:00", "e": 117.0844}, {"t": "2026-09-14T06:15:00+00:00", "e": 122.1099}, {"t": "2026-09-15T06:55:00+00:00", "e": 128.2776}, {"t": "2026-09-15T10:00:00+00:00", "e": 131.4709}, {"t": "2026-09-16T04:40:00+00:00", "e": 140.9458}, {"t": "2026-09-16T06:40:00+00:00", "e": 142.4407}, {"t": "2026-09-16T23:15:00+00:00", "e": 137.1747}, {"t": "2026-09-17T04:40:00+00:00", "e": 131.9402}, {"t": "2026-09-17T04:50:00+00:00", "e": 138.9288}, {"t": "2026-09-17T06:10:00+00:00", "e": 147.2219}, {"t": "2026-09-17T20:25:00+00:00", "e": 152.6747}, {"t": "2026-09-18T02:35:00+00:00", "e": 147.4997}, {"t": "2026-09-19T02:50:00+00:00", "e": 150.4312}, {"t": "2026-09-19T03:05:00+00:00", "e": 172.922}, {"t": "2026-09-19T13:05:00+00:00", "e": 177.3693}, {"t": "2026-09-19T21:20:00+00:00", "e": 180.843}, {"t": "2026-09-19T23:15:00+00:00", "e": 184.9413}, {"t": "2026-09-20T01:15:00+00:00", "e": 193.9995}, {"t": "2026-09-20T10:10:00+00:00", "e": 188.8105}, {"t": "2026-09-20T20:05:00+00:00", "e": 192.2842}, {"t": "2026-09-20T20:25:00+00:00", "e": 187.1512}, {"t": "2026-09-20T20:30:00+00:00", "e": 188.9976}, {"t": "2026-09-20T20:40:00+00:00", "e": 183.8051}, {"t": "2026-09-20T20:45:00+00:00", "e": 178.6476}, {"t": "2026-09-21T04:45:00+00:00", "e": 173.4096}, {"t": "2026-09-21T04:50:00+00:00", "e": 177.857}, {"t": "2026-09-22T13:00:00+00:00", "e": 172.6225}, {"t": "2026-09-23T10:25:00+00:00", "e": 178.5411}, {"t": "2026-09-24T01:35:00+00:00", "e": 189.4287}, {"t": "2026-09-24T21:35:00+00:00", "e": 193.5269}, {"t": "2026-09-24T23:30:00+00:00", "e": 200.8169}, {"t": "2026-09-25T01:05:00+00:00", "e": 195.6629}, {"t": "2026-09-25T02:05:00+00:00", "e": 202.3647}, {"t": "2026-09-25T04:15:00+00:00", "e": 222.0847}, {"t": "2026-09-25T21:05:00+00:00", "e": 216.9482}, {"t": "2026-09-25T21:10:00+00:00", "e": 224.8891}, {"t": "2026-09-25T23:15:00+00:00", "e": 232.83}, {"t": "2026-09-26T20:10:00+00:00", "e": 227.62}, {"t": "2026-09-26T20:45:00+00:00", "e": 222.508}, {"t": "2026-09-26T20:50:00+00:00", "e": 226.7775}, {"t": "2026-09-27T01:55:00+00:00", "e": 236.2523}, {"t": "2026-09-27T13:15:00+00:00", "e": 243.8593}, {"t": "2026-09-27T20:25:00+00:00", "e": 238.6983}, {"t": "2026-09-27T20:50:00+00:00", "e": 233.5163}, {"t": "2026-09-28T21:05:00+00:00", "e": 240.505}, {"t": "2026-09-28T23:05:00+00:00", "e": 241.8382}, {"t": "2026-09-28T23:25:00+00:00", "e": 236.6352}, {"t": "2026-09-30T06:15:00+00:00", "e": 231.5092}, {"t": "2026-09-30T06:25:00+00:00", "e": 238.211}, {"t": "2026-09-30T06:40:00+00:00", "e": 248.598}, {"t": "2026-09-30T06:50:00+00:00", "e": 250.8389}, {"t": "2026-10-01T01:25:00+00:00", "e": 256.5195}, {"t": "2026-10-01T04:50:00+00:00", "e": 261.7542}, {"t": "2026-10-01T10:05:00+00:00", "e": 281.4741}, {"t": "2026-10-01T20:05:00+00:00", "e": 290.139}, {"t": "2026-10-01T23:35:00+00:00", "e": 284.9325}, {"t": "2026-10-01T23:40:00+00:00", "e": 286.6873}, {"t": "2026-10-02T01:55:00+00:00", "e": 281.6138}, {"t": "2026-10-02T02:00:00+00:00", "e": 284.9449}, {"t": "2026-10-02T04:20:00+00:00", "e": 279.6334}, {"t": "2026-10-02T21:00:00+00:00", "e": 289.1083}, {"t": "2026-10-02T21:30:00+00:00", "e": 293.3778}]}, "C_postfilter": {"n": 93, "final_equity": 283.24, "pnl": 183.24, "max_dd": -23.1, "max_dd_pct": -12.36, "wr": 62.37, "points": [{"t": "2026-09-11T00:00:00Z", "e": 100.0}, {"t": "2026-09-11T10:05:00+00:00", "e": 106.9886}, {"t": "2026-09-13T04:40:00+00:00", "e": 101.7436}, {"t": "2026-09-13T13:25:00+00:00", "e": 96.5721}, {"t": "2026-09-13T13:30:00+00:00", "e": 99.7655}, {"t": "2026-09-13T15:05:00+00:00", "e": 107.0555}, {"t": "2026-09-13T16:40:00+00:00", "e": 101.8875}, {"t": "2026-09-13T16:45:00+00:00", "e": 108.3159}, {"t": "2026-09-13T16:55:00+00:00", "e": 116.9808}, {"t": "2026-09-13T17:05:00+00:00", "e": 111.7988}, {"t": "2026-09-13T20:35:00+00:00", "e": 119.4058}, {"t": "2026-09-13T20:45:00+00:00", "e": 114.2063}, {"t": "2026-09-13T20:50:00+00:00", "e": 116.663}, {"t": "2026-09-13T20:55:00+00:00", "e": 125.7212}, {"t": "2026-09-13T21:10:00+00:00", "e": 120.4902}, {"t": "2026-09-13T21:15:00+00:00", "e": 115.3362}, {"t": "2026-09-13T21:20:00+00:00", "e": 110.1787}, {"t": "2026-09-13T21:25:00+00:00", "e": 113.5098}, {"t": "2026-09-14T06:15:00+00:00", "e": 118.5354}, {"t": "2026-09-15T06:55:00+00:00", "e": 124.703}, {"t": "2026-09-15T10:00:00+00:00", "e": 127.8964}, {"t": "2026-09-16T04:25:00+00:00", "e": 130.1373}, {"t": "2026-09-16T04:40:00+00:00", "e": 139.6122}, {"t": "2026-09-16T06:40:00+00:00", "e": 141.1071}, {"t": "2026-09-16T23:15:00+00:00", "e": 135.8411}, {"t": "2026-09-17T04:40:00+00:00", "e": 130.6066}, {"t": "2026-09-17T04:50:00+00:00", "e": 137.5953}, {"t": "2026-09-17T06:10:00+00:00", "e": 145.8883}, {"t": "2026-09-17T20:25:00+00:00", "e": 151.3411}, {"t": "2026-09-18T02:35:00+00:00", "e": 146.1661}, {"t": "2026-09-19T02:50:00+00:00", "e": 149.0976}, {"t": "2026-09-19T03:05:00+00:00", "e": 171.5884}, {"t": "2026-09-19T13:05:00+00:00", "e": 176.0358}, {"t": "2026-09-19T15:05:00+00:00", "e": 170.8607}, {"t": "2026-09-19T15:10:00+00:00", "e": 174.7942}, {"t": "2026-09-19T21:20:00+00:00", "e": 178.2679}, {"t": "2026-09-19T23:15:00+00:00", "e": 182.3661}, {"t": "2026-09-20T01:15:00+00:00", "e": 191.4243}, {"t": "2026-09-20T10:10:00+00:00", "e": 186.2353}, {"t": "2026-09-20T20:05:00+00:00", "e": 189.709}, {"t": "2026-09-20T20:10:00+00:00", "e": 193.8073}, {"t": "2026-09-20T20:25:00+00:00", "e": 188.6743}, {"t": "2026-09-20T20:30:00+00:00", "e": 190.5207}, {"t": "2026-09-20T20:40:00+00:00", "e": 185.3282}, {"t": "2026-09-20T20:45:00+00:00", "e": 180.1707}, {"t": "2026-09-21T04:45:00+00:00", "e": 174.9327}, {"t": "2026-09-21T04:50:00+00:00", "e": 179.3801}, {"t": "2026-09-22T13:00:00+00:00", "e": 174.1456}, {"t": "2026-09-22T21:50:00+00:00", "e": 181.7526}, {"t": "2026-09-23T03:25:00+00:00", "e": 182.649}, {"t": "2026-09-23T03:40:00+00:00", "e": 177.376}, {"t": "2026-09-23T10:25:00+00:00", "e": 183.2946}, {"t": "2026-09-24T01:35:00+00:00", "e": 194.1821}, {"t": "2026-09-24T21:35:00+00:00", "e": 198.2804}, {"t": "2026-09-24T23:30:00+00:00", "e": 205.5704}, {"t": "2026-09-25T01:05:00+00:00", "e": 200.4164}, {"t": "2026-09-25T01:10:00+00:00", "e": 205.442}, {"t": "2026-09-25T02:05:00+00:00", "e": 212.1437}, {"t": "2026-09-25T02:15:00+00:00", "e": 206.9792}, {"t": "2026-09-25T04:15:00+00:00", "e": 226.6992}, {"t": "2026-09-25T21:05:00+00:00", "e": 221.5627}, {"t": "2026-09-25T21:10:00+00:00", "e": 229.5036}, {"t": "2026-09-25T23:15:00+00:00", "e": 237.4445}, {"t": "2026-09-26T20:10:00+00:00", "e": 232.2345}, {"t": "2026-09-26T20:45:00+00:00", "e": 227.1225}, {"t": "2026-09-26T20:50:00+00:00", "e": 231.392}, {"t": "2026-09-27T01:55:00+00:00", "e": 240.8669}, {"t": "2026-09-27T13:15:00+00:00", "e": 248.4739}, {"t": "2026-09-27T20:25:00+00:00", "e": 243.3129}, {"t": "2026-09-27T20:50:00+00:00", "e": 238.1309}, {"t": "2026-09-28T21:00:00+00:00", "e": 232.9139}, {"t": "2026-09-28T21:05:00+00:00", "e": 239.9025}, {"t": "2026-09-28T21:15:00+00:00", "e": 242.9627}, {"t": "2026-09-28T23:05:00+00:00", "e": 244.296}, {"t": "2026-09-28T23:25:00+00:00", "e": 239.093}, {"t": "2026-09-30T06:15:00+00:00", "e": 233.967}, {"t": "2026-09-30T06:25:00+00:00", "e": 240.6687}, {"t": "2026-09-30T06:40:00+00:00", "e": 251.0557}, {"t": "2026-09-30T06:50:00+00:00", "e": 253.2967}, {"t": "2026-10-01T01:25:00+00:00", "e": 258.9772}, {"t": "2026-10-01T04:50:00+00:00", "e": 264.2119}, {"t": "2026-10-01T10:05:00+00:00", "e": 283.9319}, {"t": "2026-10-01T20:05:00+00:00", "e": 292.5968}, {"t": "2026-10-01T23:00:00+00:00", "e": 287.4918}, {"t": "2026-10-01T23:05:00+00:00", "e": 290.4233}, {"t": "2026-10-01T23:30:00+00:00", "e": 285.2728}, {"t": "2026-10-01T23:35:00+00:00", "e": 280.0663}, {"t": "2026-10-01T23:40:00+00:00", "e": 281.8211}, {"t": "2026-10-02T01:55:00+00:00", "e": 276.7476}, {"t": "2026-10-02T02:00:00+00:00", "e": 280.0787}, {"t": "2026-10-02T02:05:00+00:00", "e": 274.8092}, {"t": "2026-10-02T04:20:00+00:00", "e": 269.4977}, {"t": "2026-10-02T21:00:00+00:00", "e": 278.9726}, {"t": "2026-10-02T21:30:00+00:00", "e": 283.2421}]}};
+function fmtMoney(v){ return (v<0?"-$":"$") + Math.abs(v).toFixed(2); }
+function fmtDate(iso){
+  const d = new Date(iso);
+  return d.toLocaleDateString(undefined,{month:"short",day:"numeric"}) + " " + d.toLocaleTimeString(undefined,{hour:"2-digit",minute:"2-digit"});
+}
+
+const SERIES = [
+  {key:"A_baseline",   label:"A. Baseline (all hours)",        color:"var(--s1)", w:1.8, dash:""},
+  {key:"B_prefilter",  label:"B. Pre-filter, then re-run greedy", color:"var(--s2)", w:2.6, dash:""},
+  {key:"C_postfilter", label:"C. Baseline, strip hr-22 after",  color:"var(--s3)", w:2.6, dash:"6 4"},
+];
+
+const legend = document.getElementById("legend");
+SERIES.forEach(s=>{
+  const d = DATA[s.key];
+  const span = document.createElement("span");
+  span.innerHTML = `<span class="sw ${s.w>2?'thick':''}" style="background:${s.color}"></span>${s.label} (${fmtMoney(d.final_equity)}, n=${d.n})`;
+  legend.appendChild(span);
+});
+
+const stats = document.getElementById("stats");
+SERIES.forEach(s=>{
+  const d = DATA[s.key];
+  const card = document.createElement("div");
+  card.className = "stat-card";
+  card.innerHTML = `<div class="k">${s.label}</div><div class="v mono">${fmtMoney(d.final_equity)}</div>
+    <div class="v2 mono">n=${d.n} &middot; WR ${d.wr.toFixed(1)}% &middot; maxDD ${fmtMoney(d.max_dd)} (${d.max_dd_pct.toFixed(1)}%)</div>`;
+  stats.appendChild(card);
+});
+
+const W=880, H=400, PAD_L=48, PAD_R=14, PAD_T=16, PAD_B=26;
+const allEq = SERIES.flatMap(s=>DATA[s.key].points.map(p=>p.e));
+const allT = SERIES.flatMap(s=>DATA[s.key].points.map(p=>new Date(p.t).getTime()));
+const minY=Math.min(100,...allEq), maxY=Math.max(...allEq);
+const yPad=(maxY-minY)*0.08||10; const y0=minY-yPad, y1=maxY+yPad;
+const t0=Math.min(...allT), t1=Math.max(...allT);
+function xPos(t){ return PAD_L + (t-t0)/(t1-t0)*(W-PAD_L-PAD_R); }
+function yPos(v){ return PAD_T + (1-(v-y0)/(y1-y0))*(H-PAD_T-PAD_B); }
+
+const svg = document.getElementById("chart");
+const tooltip = document.getElementById("tooltip");
+const ns="http://www.w3.org/2000/svg";
+function el(tag,attrs){ const e=document.createElementNS(ns,tag); for(const k in attrs) e.setAttribute(k,attrs[k]); return e; }
+
+const gridGroup = el("g",{});
+for(let i=0;i<=5;i++){
+  const v=y0+(y1-y0)*i/5, yy=yPos(v);
+  gridGroup.appendChild(el("line",{x1:PAD_L,x2:W-PAD_R,y1:yy,y2:yy,class:"gridline"}));
+  const lbl=el("text",{x:PAD_L-6,y:yy+3,class:"axis-label","text-anchor":"end"}); lbl.textContent="$"+Math.round(v);
+  gridGroup.appendChild(lbl);
+}
+for(let i=0;i<=5;i++){
+  const t=t0+(t1-t0)*i/5, xx=xPos(t);
+  const lbl=el("text",{x:xx,y:H-8,class:"axis-label","text-anchor":"middle"});
+  lbl.textContent=new Date(t).toLocaleDateString(undefined,{month:"short",day:"numeric"});
+  gridGroup.appendChild(lbl);
+}
+gridGroup.appendChild(el("line",{x1:PAD_L,x2:W-PAD_R,y1:yPos(100),y2:yPos(100),class:"gridline","stroke-dasharray":"2 2"}));
+svg.appendChild(gridGroup);
+
+const seriesPaths=[];
+SERIES.forEach(s=>{
+  const d=DATA[s.key];
+  const pts=d.points.map(p=>[xPos(new Date(p.t).getTime()), yPos(p.e)]);
+  const path="M"+pts.map(p=>p[0].toFixed(1)+","+p[1].toFixed(1)).join("L");
+  const attrs = {d:path, class:"series-path", stroke:s.color, fill:"none", "stroke-width":s.w};
+  if(s.dash) attrs["stroke-dasharray"]=s.dash;
+  svg.appendChild(el("path",attrs));
+  svg.appendChild(el("circle",{cx:pts[pts.length-1][0],cy:pts[pts.length-1][1],r:s.w>2?4.5:3,fill:s.color}));
+  seriesPaths.push({s,data:d,pts});
+});
+
+const crosshair=el("line",{x1:0,x2:0,y1:PAD_T,y2:H-PAD_B,class:"crosshair"});
+svg.appendChild(crosshair);
+const hoverDots=seriesPaths.map(sp=>{ const dot=el("circle",{r:sp.s.w>2?5:3.5,fill:sp.s.color,class:"hover-dot",stroke:"var(--surface-1)","stroke-width":1.5}); svg.appendChild(dot); return dot; });
+const hitRect=el("rect",{x:PAD_L,y:PAD_T,width:W-PAD_L-PAD_R,height:H-PAD_T-PAD_B,fill:"transparent"});
+svg.appendChild(hitRect);
+
+function showTooltip(evt){
+  const rect=svg.getBoundingClientRect(); const scaleX=W/rect.width;
+  const mx=(evt.clientX-rect.left)*scaleX;
+  let best={idx:0,dist:Infinity};
+  seriesPaths.forEach(sp=>{
+    let lo=0,hi=sp.pts.length-1;
+    while(lo<hi){ const mid=(lo+hi)>>1; if(sp.pts[mid][0]<mx) lo=mid+1; else hi=mid; }
+    if(Math.abs(sp.pts[lo][0]-mx)<best.dist) best={idx:lo,dist:Math.abs(sp.pts[lo][0]-mx)};
+  });
+  crosshair.setAttribute("x1",seriesPaths[0].pts[best.idx][0]);
+  crosshair.setAttribute("x2",seriesPaths[0].pts[best.idx][0]);
+  crosshair.style.opacity=1;
+  let rows="";
+  const sorted = seriesPaths.map((sp,i)=>{
+    const idx=Math.min(best.idx, sp.pts.length-1);
+    return {sp, idx, i, e: sp.data.points[idx].e};
+  }).sort((a,b)=>b.e-a.e);
+  sorted.forEach(({sp,idx,i,e})=>{
+    hoverDots[i].setAttribute("cx",sp.pts[idx][0]); hoverDots[i].setAttribute("cy",sp.pts[idx][1]); hoverDots[i].style.opacity=1;
+    rows+=`<div class="t-row"><span><span class="dot" style="background:${sp.s.color}"></span>${sp.s.label}</span><span class="mono">${fmtMoney(e)}</span></div>`;
+  });
+  const dateStr = fmtDate(seriesPaths[0].data.points[Math.min(best.idx,seriesPaths[0].data.points.length-1)].t);
+  tooltip.innerHTML = `<div class="t-date">${dateStr}</div>${rows}`;
+  tooltip.style.opacity=1;
+  const tw=tooltip.offsetWidth; let left=(mx/scaleX)+12;
+  if(left+tw>rect.width) left=(mx/scaleX)-tw-12;
+  tooltip.style.left=left+"px"; tooltip.style.top="8px";
+}
+function hideTooltip(){ crosshair.style.opacity=0; hoverDots.forEach(d=>d.style.opacity=0); tooltip.style.opacity=0; }
+hitRect.addEventListener("mousemove", showTooltip);
+hitRect.addEventListener("mouseleave", hideTooltip);
+hitRect.addEventListener("touchmove", e=>{ showTooltip(e.touches[0]); e.preventDefault(); }, {passive:false});
+hitRect.addEventListener("touchend", hideTooltip);
+</script>
